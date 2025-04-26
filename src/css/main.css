@@ -1,0 +1,27 @@
+.button-join {
+	width: 83px;
+	height: 41px;
+
+	padding: 20, 10;
+
+	border: none;
+	border-radius: 5px;
+
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-join-normal {
+	@extent .button-join;
+
+	background-color: var(--color-RED);
+}
+
+.button-join-hover {
+	@extent .button-join;
+
+	background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
+}
