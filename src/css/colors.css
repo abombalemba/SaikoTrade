@@ -1,0 +1,22 @@
+:root {
+	--color-BLACK: #111111;
+	--color-LIGHT-BLACK: #111111;
+	--color-PRICES: #3F3F3F;
+	--color-GRAY-TEXT: #444444;
+	--color-GRAY-DESC: #666666;
+	--color-GRAY: #6D6D6D;
+	--color-LIGHT-GRAY: #D9D9D9;
+	--color-BG-GRAY: #F7F7F7;
+	--color-WHITE: #FFFFFF;
+	--color-VINOUS: #9B2D30;
+	--color-RED: #D43A2B;
+	--color-RED-ACTIVE: #D43A2D;
+	--color-YELLOW: #FBB124;
+	--color-GREEN: #008000;
+	--color-DISCOUNT: #FBA90C;
+	--color-BUTTON-TO-BASKET-ACTIVE: #E48D8D;
+	--color-BLUE: #0275D8;
+	--color-BLUE-ACTIVE: #0053B6;
+	--color-LIGHT-BLUE: #E3EEE3;
+	--color-LIGHT-BLUE-HEADER: #F2F5F7;
+}
