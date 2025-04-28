@@ -1,27 +1,43 @@
-.button-join {
-	width: 83px;
-	height: 41px;
-
-	padding: 20, 10;
-
-	border: none;
-	border-radius: 5px;
-
-	cursor: pointer;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.button-join, .button-join-hover, .button-join-normal {
+  width: 83px;
+  height: 41px;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-join-normal {
-	@extent .button-join;
-
-	background-color: var(--color-RED);
+  background-color: var(--color-RED);
 }
 
 .button-join-hover {
-	@extent .button-join;
-
-	background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
+  background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
 }
+
+.button-to-cart, .button-to-cart-hover, .button-to-cart-normal {
+  width: 110px;
+  height: 40px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-to-cart-normal {
+  color: var(--color-WHITE);
+  background-color: var(--color-RED);
+}
+
+.button-to-cart-hover {
+  color: var(--color-WHITE);
+  background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
+}
+
+/*# sourceMappingURL=main.css.map */

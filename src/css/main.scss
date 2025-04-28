@@ -1,0 +1,57 @@
+.button-join {
+	width: 83px;
+	height: 41px;
+
+	padding: 20px 10px;
+
+	border: none;
+	border-radius: 5px;
+
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-join-normal {
+	@extend .button-join;
+
+	background-color: var(--color-RED);
+}
+
+.button-join-hover {
+	@extend .button-join;
+
+	background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
+}
+
+.button-to-cart {
+	width: 110px;
+	height: 40px;
+
+	padding: 10px 10px;
+
+	border: none;
+	border-radius: 5px;
+
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-to-cart-normal {
+	@extend .button-to-cart;
+
+	color: var(--color-WHITE);
+	background-color: var(--color-RED);
+}
+
+.button-to-cart-hover {
+	@extend .button-to-cart;
+
+	color: var(--color-WHITE);
+	background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
+}
