@@ -68,141 +68,241 @@
 	font-style: normal;	
 }
 
-.open-serif-14-bold {
-	font-family: 'Open-sans', sans-serif;
+@font-face {
+	font-family: 'my-open-sans-14-bold';
+	src: url('fonts/OpenSans/static/OpenSans-Bold.ttf');
+}
+
+.open-sans-14-bold {
+	font-family: 'my-open-sans-14-bold', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	font-style: normal;	
 }
 
-.open-serif-16-bold {
-	font-family: 'Open-sans', sans-serif;
+@font-face {
+	font-family: 'my-open-sans-16-bold';
+	src: url('fonts/OpenSans/static/OpenSans-Bold.ttf');
+}
+
+.open-sans-16-bold {
+	font-family: 'my-open-sans-16-bold', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: normal;
 }
 
-.open-serif-22-reg {
-	font-family: 'Open-sans', sans-serif;
+@font-face {
+	font-family: 'my-open-sans-22-reg';
+	src: url('fonts/OpenSans/static/OpenSans-Regular.ttf');
+}
+
+.open-sans-22-reg {
+	font-family: 'my-open-sans-22-reg', sans-serif;
 	font-size: 22px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
-.open-serif-22-bold {
-	font-family: 'Open-sans', sans-serif;
+@font-face {
+	font-family: 'my-open-sans-22-bold';
+	src: url('fonts/OpenSans/static/OpenSans-Bold.ttf');
+}
+
+.open-sans-22-bold {
+	font-family: 'my-open-sans-22-bold', sans-serif;
 	font-size: 22px;
 	font-weight: bold;
 	font-style: normal;	
 }
 
-.open-serif-36-reg {
-	font-family: 'Open-sans', sans-serif;
+@font-face {
+	font-family: 'my-open-sans-36-reg';
+	src: url('fonts/OpenSans/static/OpenSans-Regular.ttf');
+}
+
+.open-sans-36-reg {
+	font-family: 'my-open-sans-36-reg', sans-serif;
 	font-size: 36px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-7-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-7-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-7-reg', sans-serif;
 	font-size: 7px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-11-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-11-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-11-reg', sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-12-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-12-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-12-reg', sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-13-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-13-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-13-reg', sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	font-style: normal;	
+}
+
+@font-face {
+	font-family: 'my-poppins-13-bold';
+	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 .poppins-13-bold {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-13-bold', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-14-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-14-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-14-reg', sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-14-bold';
+	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
 .poppins-14-bold {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-14-bold', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-15-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-15-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-15-reg', sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-16-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-16-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-16-reg', sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-16-bold';
+	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
 .poppins-16-bold {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-16-bold', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-20-bold';
+	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
 .poppins-20-bold {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-20-bold', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-25-bold';
+	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
 .poppins-25-bold {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-25-bold', sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-27-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-27-reg {
-	font-family: 'Poppins', sans-serif;
+	fonts-family: 'my-poppins-27-reg', sans-serif;
 	font-size: 27px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-35-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-35-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-35-reg', sans-serif;
 	font-size: 35px;
 	font-weight: normal;
 	font-style: normal;	
 }
 
+@font-face {
+	font-family: 'my-poppins-36-reg';
+	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 .poppins-36-reg {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'my-poppins-36-reg', sans-serif;
 	font-size: 36px;
 	font-weight: normal;
 	font-style: normal;	
