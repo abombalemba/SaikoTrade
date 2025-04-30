@@ -1,66 +1,107 @@
-<header>
-	<div id="up">
-		<div style="display: inline-block">
-			<p class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK);">Здравствуйте, Гость!</p>
+<div id="up">
+	<div style="display: inline-block">
+		<p class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK);">Здравствуйте, Гость!</p>
+	</div>
+
+	<div style="display: inline-block">
+		<div style="display: flex; align-items: center;">
+			<img src="images/symbols/heart/active.png" alt="heart">
+			<p class="poppins-14-reg" style="color: var(--color-RED);">Избранное (0)</p>
 		</div>
+	</div>
 
-		<div style="display: inline-block">
-			<div style="display: flex; align-items: center;">
-				<img src="images/symbols/heart/active.png" alt="heart">
-				<p class="poppins-14-reg" style="color: var(--color-RED);">Избранное (0)</p>
-			</div>
+	<div style="display: inline-block">
+		<div style="display: flex; align-items: center;" onmouseover="headerUpAccount(true)" onmouseout="headerUpAccount(false)">
+			<img id="header-up-account-icon" src="images/icons/account-normal.png" alt="account">
+			<p id="header-up-account-text" class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Личный кабинет</p>
 		</div>
+	</div>
 
-		<div style="display: inline-block">
-			<div style="display: flex; align-items: center;">
-				<img src="images/icons/account.png" alt="account">
-				<p class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Личный кабинет</p>
-			</div>
-		</div>	
-
-		<div style="display: inline-block">
-			<div style="display: flex; align-items: center;">
-				<img src="images/icons/account-add.png" alt="account">
-				<p class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Создать аккаунт</p>
-			</div>
+	<div style="display: inline-block">
+		<div style="display: flex; align-items: center;" onmouseover="headerUpAccountAdd(true)" onmouseout="headerUpAccountAdd(false)">
+			<img id="header-up-account-add-icon" src="images/icons/account-add-normal.png" alt="account">
+			<p id="header-up-account-add-text" class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Создать аккаунт</p>
 		</div>
+	</div>
 
+	<a href="https://play.google.com/store/apps/details?id=com.saikotrade.app&hl=ru&gl=US">
 		<div style="display: inline-block">
 			<img src="images/download/googleplay.png" height="30" alt="googleplay">
 		</div>
+	</a>
 
+	<a href="https://apps.apple.com/us/app/saikotrade/id1565500745">
 		<div style="display: inline-block">
 			<img src="images/download/appstore.png" height="30" alt="appstore">
 		</div>
-	</div>
+	</a>
+</div>
 
-	<div id="center">
+<div id="center">
+	<a href="index.html">
 		<div id="header/center/1" style="display: inline-block">
 			<img src="images/logo/logo.png" alt="logo">
 		</div>
+	</a>
 
-		<div id="header/center/2" style="display: inline-block">
-			<div style="display: flex; align-items: center;">
-				<img src="images/icons/phone.png" alt="phone">
-				<p class="poppins-25-bold" style="color: var(--color-BLACK)">+8180-58-53-55-25</p>
-			</div>
-
-			<div style="display: flex; align-items: center;">
-				<img src="images/icons/email.png" alt="email">
-				<p class="poppins-25-bold" style="color: var(--color-RED);">info@saikotrade.com</p>
-			</div>
+	<div id="header/center/2" style="display: inline-block">
+		<div style="display: flex; align-items: center;">
+			<img src="images/icons/phone.png" alt="phone">
+			<p class="poppins-25-bold" style="color: var(--color-BLACK)">+8180-58-53-55-25</p>
 		</div>
 
-		<div id="header/center/3" style="display: inline-block">
-
-		</div>
-
-		<div id="header/center/4" style="display: inline-block">
-
+		<div style="display: flex; align-items: center;">
+			<img src="images/icons/email.png" alt="email">
+			<p class="poppins-25-bold" style="color: var(--color-RED);">info@saikotrade.com</p>
 		</div>
 	</div>
-	
-	<div id="down" style="background-color: var(--color-BLACK);">
 
+	<div id="header/center/3" style="display: inline-block">
+		<input type="text" placeholder="Поиск по сайту..." style="width: 220px; height: 40px; background-color: var(--color-LIGHT-GRAY);">
+		<div id="header-center-search" onmouseover="headerCenterSearch(true)" onmouseout="headerCenterSearch(false)" style="background-color: var(--color-RED); width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+			<img src="images/icons/search.png" alt="search">
+		</div>
 	</div>
-</header>
+
+	<div id="header/center/4" style="display: inline-block; width: 324px; height: 150px; padding: 30px;">
+		<img src="images/icons/basket-normal.png" alt="basket-normal" width="50px" height="auto">
+		<div>
+			<p class="poppins-14-reg" style="color: var(--color-GRAY)">0 позиций</p>
+			<p class="poppins-14-bold" style="color: var(--color-GRAY)">0 руб.</p>
+		</div>
+	</div>
+</div>
+
+<div id="down" style="background-color: var(--color-BLACK); height: 56px;">
+	<div style="display: flex; justify-content: center; align-items: center;">
+		<a id="header-down-button1" href="https://saikotrade.com/" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-RED); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			ГЛАВНАЯ
+		</a>
+		<a id="header-down-button2" href="https://saikotrade.com/katalog-tovarov/" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			КАТАЛОГ
+		</a>
+		<a id="header-down-button3" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			ДОСТАВКА И ОПЛАТА
+		</a>
+		<a id="header-down-button4" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			КАК ЗАКАЗАТЬ
+		</a>
+		<a id="header-down-button5" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			ОТСЛЕЖИВАНИЕ
+		</a>
+		<a id="header-down-button6" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			О НАС
+		</a>
+		<a id="header-down-button7" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			ОТЗЫВЫ
+		</a>
+		<a id="header-down-button8" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			ПОЛЕЗНЫЕ СТАТЬИ
+		</a>
+		<a id="header-down-button9" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+			КОНТАКТЫ
+		</a>
+	</div>
+
+	<div></div>
+</div>
