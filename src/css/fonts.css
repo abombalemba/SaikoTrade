@@ -70,7 +70,7 @@
 
 @font-face {
 	font-family: 'my-open-sans-14-bold';
-	src: url('fonts/OpenSans/static/OpenSans-Bold.ttf');
+	src: url('../fonts/OpenSans/static/OpenSans-Bold.ttf');
 }
 
 .open-sans-14-bold {
@@ -82,7 +82,7 @@
 
 @font-face {
 	font-family: 'my-open-sans-16-bold';
-	src: url('fonts/OpenSans/static/OpenSans-Bold.ttf');
+	src: url('../fonts/OpenSans/static/OpenSans-Bold.ttf');
 }
 
 .open-sans-16-bold {
@@ -94,7 +94,7 @@
 
 @font-face {
 	font-family: 'my-open-sans-22-reg';
-	src: url('fonts/OpenSans/static/OpenSans-Regular.ttf');
+	src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf');
 }
 
 .open-sans-22-reg {
@@ -106,7 +106,7 @@
 
 @font-face {
 	font-family: 'my-open-sans-22-bold';
-	src: url('fonts/OpenSans/static/OpenSans-Bold.ttf');
+	src: url('../fonts/OpenSans/static/OpenSans-Bold.ttf');
 }
 
 .open-sans-22-bold {
@@ -118,7 +118,7 @@
 
 @font-face {
 	font-family: 'my-open-sans-36-reg';
-	src: url('fonts/OpenSans/static/OpenSans-Regular.ttf');
+	src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf');
 }
 
 .open-sans-36-reg {
@@ -130,7 +130,7 @@
 
 @font-face {
 	font-family: 'my-poppins-7-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-7-reg {
@@ -142,7 +142,7 @@
 
 @font-face {
 	font-family: 'my-poppins-11-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-11-reg {
@@ -154,7 +154,7 @@
 
 @font-face {
 	font-family: 'my-poppins-12-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-12-reg {
@@ -166,7 +166,7 @@
 
 @font-face {
 	font-family: 'my-poppins-13-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-13-reg {
@@ -178,7 +178,7 @@
 
 @font-face {
 	font-family: 'my-poppins-13-bold';
-	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 .poppins-13-bold {
@@ -190,7 +190,7 @@
 
 @font-face {
 	font-family: 'my-poppins-14-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-14-reg {
@@ -202,7 +202,7 @@
 
 @font-face {
 	font-family: 'my-poppins-14-bold';
-	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 .poppins-14-bold {
@@ -214,7 +214,7 @@
 
 @font-face {
 	font-family: 'my-poppins-15-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-15-reg {
@@ -226,7 +226,7 @@
 
 @font-face {
 	font-family: 'my-poppins-16-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-16-reg {
@@ -238,7 +238,7 @@
 
 @font-face {
 	font-family: 'my-poppins-16-bold';
-	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 .poppins-16-bold {
@@ -250,7 +250,7 @@
 
 @font-face {
 	font-family: 'my-poppins-20-bold';
-	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 .poppins-20-bold {
@@ -262,7 +262,7 @@
 
 @font-face {
 	font-family: 'my-poppins-25-bold';
-	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 .poppins-25-bold {
@@ -274,7 +274,7 @@
 
 @font-face {
 	font-family: 'my-poppins-27-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-27-reg {
@@ -286,7 +286,7 @@
 
 @font-face {
 	font-family: 'my-poppins-35-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-35-reg {
@@ -298,7 +298,7 @@
 
 @font-face {
 	font-family: 'my-poppins-36-reg';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 .poppins-36-reg {
