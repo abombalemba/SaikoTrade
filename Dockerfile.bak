@@ -8,12 +8,15 @@ LABEL maintainer="github.com/abombalemba"
 
 WORKDIR /src
 
-COPY requirements.txt requirements.txt
-RUN python -m venv venv && `
-    venv/bin/pip install -r requirements.txt
-
 COPY . .
+
+RUN python -m venv venv
+RUN source venv/bin/activate && pip install -r requirements.txt
 
 EXPOSE 5050
 
-CMD ["venv/bin/python", "src/server.py"]
+CMD [
+    "venv/bin/python3", "server.py"
+]
+
+RUN deactivate
