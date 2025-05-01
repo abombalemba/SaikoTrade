@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Здоровье",
+        "icon": "images/right-catalog/1.png",
+        "url": "https://saikotrade.com/katalog-tovarov/zdorove/"
+    },
+
+    {
+        "title": "Косметика",
+        "icon": "images/right-catalog/2.png",
+        "url": "https://saikotrade.com/katalog-tovarov/kosmetika/"
+    },
+
+    {
+        "title": "Японские продукты",
+        "icon": "images/right-catalog/3.png",
+        "url": "https://saikotrade.com/katalog-tovarov/yaponskie-produkty/"
+    },
+
+    {
+        "title": "Детские товары",
+        "icon": "images/right-catalog/4.png",
+        "url": "https://saikotrade.com/katalog-tovarov/detskie-tovary/"
+    },
+
+    {
+        "title": "Аппараты и массажеры",
+        "icon": "images/right-catalog/5.png",
+        "url": "https://saikotrade.com/katalog-tovarov/apparaty-i-massazhery/"
+    },
+
+    {
+        "title": "Товары для дома",
+        "icon": "images/right-catalog/6.png",
+        "url": "https://saikotrade.com/katalog-tovarov/tovary_dlya_doma/"
+    },
+
+    {
+        "title": "Подарочные сертификаты",
+        "icon": "images/right-catalog/7.png",
+        "url": "https://saikotrade.com/katalog-tovarov/podarochnye-sertifikaty/"
+    }
+]
