@@ -4,24 +4,30 @@
 	</div>
 
 	<div style="display: inline-block">
-		<div style="display: flex; align-items: center;">
-			<img src="images/symbols/heart/active.png" alt="heart">
-			<p class="poppins-14-reg" style="color: var(--color-RED);">Избранное (0)</p>
-		</div>
+		<a href="https://saikotrade.com/personal/wishlist/">
+			<div style="display: flex; align-items: center;">
+				<img src="images/symbols/heart/active.png" alt="heart">
+				<p class="poppins-14-reg" style="color: var(--color-RED);">Избранное (0)</p>
+			</div>
+		</a>
+	</div>
+
+	<div style="display: inline-block;">
+		<a href="https://saikotrade.com/auth/">
+			<div style="display: flex; align-items: center;" onmouseover="headerUpAccount(true)" onmouseout="headerUpAccount(false)">
+				<img id="header-up-account-icon" src="images/icons/account-normal.png" alt="account">
+				<p id="header-up-account-text" class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Личный кабинет</p>
+			</div>
+		</a>
 	</div>
 
 	<div style="display: inline-block">
-		<div style="display: flex; align-items: center;" onmouseover="headerUpAccount(true)" onmouseout="headerUpAccount(false)">
-			<img id="header-up-account-icon" src="images/icons/account-normal.png" alt="account">
-			<p id="header-up-account-text" class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Личный кабинет</p>
-		</div>
-	</div>
-
-	<div style="display: inline-block">
-		<div style="display: flex; align-items: center;" onmouseover="headerUpAccountAdd(true)" onmouseout="headerUpAccountAdd(false)">
-			<img id="header-up-account-add-icon" src="images/icons/account-add-normal.png" alt="account">
-			<p id="header-up-account-add-text" class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Создать аккаунт</p>
-		</div>
+		<a href="https://saikotrade.com/personal/private/?register=yes">
+			<div style="display: flex; align-items: center;" onmouseover="headerUpAccountAdd(true)" onmouseout="headerUpAccountAdd(false)">
+				<img id="header-up-account-add-icon" src="images/icons/account-add-normal.png" alt="account">
+				<p id="header-up-account-add-text" class="poppins-14-reg" style="color: var(--color-LIGHT-BLACK)">Создать аккаунт</p>
+			</div>
+		</a>
 	</div>
 
 	<a href="https://play.google.com/store/apps/details?id=com.saikotrade.app&hl=ru&gl=US">
@@ -63,42 +69,42 @@
 		</div>
 	</div>
 
-	<div id="header/center/4" style="display: inline-block; width: 324px; height: 150px; padding: 30px;">
-		<img src="images/icons/basket-normal.png" alt="basket-normal" width="50px" height="auto">
+	<div id="header/center/4" onmouseover="headerCenterBasket(true)" onmouseout="headerCenterBasket(false)" style="display: inline-block; width: 324px; height: 150px; padding: 30px;">
+		<img id="header-center-basket" src="images/icons/basket-normal.png" alt="basket-normal" width="50px" height="auto">
 		<div>
-			<p class="poppins-14-reg" style="color: var(--color-GRAY)">0 позиций</p>
-			<p class="poppins-14-bold" style="color: var(--color-GRAY)">0 руб.</p>
+			<p id="header-center-text1" class="poppins-14-reg" style="color: var(--color-GRAY)">0 позиций</p>
+			<p id="header-center-text2" class="poppins-14-bold" style="color: var(--color-GRAY)">0 руб.</p>
 		</div>
 	</div>
 </div>
 
 <div id="down" style="background-color: var(--color-BLACK); height: 56px;">
 	<div style="display: flex; justify-content: center; align-items: center;">
-		<a id="header-down-button1" href="https://saikotrade.com/" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-RED); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button1" href="https://saikotrade.com/" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-RED); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			ГЛАВНАЯ
 		</a>
-		<a id="header-down-button2" href="https://saikotrade.com/katalog-tovarov/" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button2" href="https://saikotrade.com/katalog-tovarov/" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			КАТАЛОГ
 		</a>
-		<a id="header-down-button3" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button3" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding-left: 18.5px; padding-right: 12px; text-decoration: none;">
 			ДОСТАВКА И ОПЛАТА
 		</a>
-		<a id="header-down-button4" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button4" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			КАК ЗАКАЗАТЬ
 		</a>
-		<a id="header-down-button5" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button5" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			ОТСЛЕЖИВАНИЕ
 		</a>
-		<a id="header-down-button6" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button6" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			О НАС
 		</a>
-		<a id="header-down-button7" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button7" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			ОТЗЫВЫ
 		</a>
-		<a id="header-down-button8" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button8" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			ПОЛЕЗНЫЕ СТАТЬИ
 		</a>
-		<a id="header-down-button9" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px">
+		<a id="header-down-button9" onmouseover="headerDownButton(this.id, true)" onmouseout="headerDownButton(this.id, false)" class="open-sans-14-bold" style="color: var(--color-WHITE); background-color: var(--color-BLACK); display: flex; justify-content: center; align-items: center; height: 56px; outline: none; border: none; padding: 18.5px 12px; text-decoration: none;">
 			КОНТАКТЫ
 		</a>
 	</div>

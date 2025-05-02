@@ -1,11 +1,11 @@
-function loadHTML(elementId, filePath) {
-    fetch(filePath)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-        })
-        .catch(error => console.error('Error:', error));
+export function loadHTML(elementId, filePath) {
+    return new Promise((resolve, reject) => {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+                resolve();
+            })
+            .catch(error => reject(error));
+    });
 }
-
-loadHTML('header', 'components/organisms/header.html');
-loadHTML('footer', 'components/organisms/footer.html');

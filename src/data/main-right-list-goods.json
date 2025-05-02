@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Аодзиру, зеленый сок из листьев молодого ячменя, YAMAMOTO",
+        "price": "1551 руб.",
+        "icon": "images/cards/6.png",
+        "url": "https://saikotrade.com/katalog-tovarov/zdorove/aktivnost/aodziru_zelenyy_sok_iz_listev_molodogo_yachmenya_yamamoto/"
+    },
+
+    {
+        "title": "Увлажняющий пилинг без кислот Amaranth  APP-C Moist Peeling,200ml",
+        "price": "4175 руб.",
+        "icon": "images/cards/1.png",
+        "url": "https://saikotrade.com/katalog-tovarov/kosmetika/osnovnoy-ukhod/pilling-skrab/uvlazhnyayushchiy-piling-bez-kislot-amaranth-app-c-moist-peeling-200ml/"
+    }, 
+
+    {
+        "title": "Хлорелла, 1000 таб., Orihiro",
+        "price": "1357 руб.",
+        "icon": "images/cards/2.png",
+        "url": "https://saikotrade.com/katalog-tovarov/zdorove/aktivnost/khlorella_1000_tab_orihiro/"
+    },
+
+    {
+        "title": "",
+        "price": "",
+        "icon": "images/cards/3.png",
+        "url": ""
+    },
+
+    {
+        "title": "",
+        "price": "",
+        "icon": "images/cards/4.png",
+        "url": ""
+    },
+
+    {
+        "title": "Аминоколлаген Премиум c Гиалуроновой кислотой и Коэнзимом Q10, Meiji, мягкая упаковка",
+        "price": "3015 руб.",
+        "icon": "images/cards/5.png",
+        "url": "https://saikotrade.com/katalog-tovarov/zdorove/kollagen/aminokollagen_premium_c_gialuronovoy_kislotoy_i_koenzimom_q10_meiji_myagkaya_upakovka/"
+    },
+
+    {
+        "title": "Сквален, Orihiro",
+        "price": "2520 руб.",
+        "icon": "images/cards/7.png",
+        "url": "https://saikotrade.com/katalog-tovarov/zdorove/antioksidanty/skvalen-orihiro/"
+    },
+
+    {
+        "title": "Лечебный шампунь Lux Luminique Botanical Pure Shampoo,450ml",
+        "price": "1044 руб.",
+        "icon": "images/cards/8.png",
+        "url": "https://saikotrade.com/katalog-tovarov/kosmetika/ukhod-za-volosami/lechebnyy-shampun-lux-luminique-botanical-pure-shampoo-450ml/"
+    }
+]
