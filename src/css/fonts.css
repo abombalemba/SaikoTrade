@@ -307,3 +307,12 @@
 	font-weight: normal;
 	font-style: normal;	
 }
+
+@font-face {
+	font-family: 'my-font-icons';
+	src: url('../fonts/Icons/icomoon.ttf') format('truetype');
+}
+
+.font-icons {
+	font-family: 'my-font-icons';
+}
