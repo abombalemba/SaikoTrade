@@ -1,4 +1,4 @@
-export async function fetchJSON(filepath) {
+export async function loadJSON(filepath) {
 	try {
 		const response = await fetch(filepath);
 		
@@ -14,7 +14,7 @@ export async function fetchJSON(filepath) {
 }
 
 
-export async function atomic(filepath) {
+export async function loadHTML(filepath) {
 	try {
 		const response = await fetch(filepath);
 
@@ -32,13 +32,29 @@ export async function atomic(filepath) {
 }
 
 
-export function filler(template, data) {
+export function filler1(template, data) {
 	const container = document.getElementById('block4');
 
 	data.forEach(element => {
 		const item = template.getElementById('main-left-good').cloneNode(true);
 
-		item.id = element.id;		
+		item.id = Math.random().toString(36).substr(2, 9);
+		item.querySelector('p').textContent = element.title;
+		item.querySelector('img').src = element.icon;
+		item.querySelector('a').href = element.url;
+
+		container.appendChild(item);
+	});
+}
+
+
+export function filler2(template, data) {
+	const container = document.getElementById('main-right-catalog');
+
+	data.forEach(element => {
+		const item = template.getElementById('main-right-catalog-block').cloneNode(true);
+
+		item.id = Math.random().toString(36).substr(2, 9);
 		item.querySelector('p').textContent = element.title;
 		item.querySelector('img').src = element.icon;
 		item.querySelector('a').href = element.url;

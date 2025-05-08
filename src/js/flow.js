@@ -26,12 +26,17 @@ function buttonToCart(isHovered) {
 
 function mainLeftListGood(_id, isHovered) {
     const good = document.getElementById(_id);
-    const text = good.getElementById('main-left-good-text');
+    const text = good.querySelector('#main-left-good-text');
     
     if (isHovered) {
+        good.style.border = '1px solid';
         good.style.borderRadius = '5px';
         text.style.color = 'var(--color-RED-ACTIVE)';
     } else {
+        
+        good.style.border = '0px solid';
+        good.style.borderRadius = '0px';
+        text.style.color = 'var(--color-PRICES)';
     }
 }
 
@@ -81,8 +86,8 @@ function headerCenterBasket(isHovered) {
 
     if (isHovered) {
         icon.src = 'images/icons/basket-hover.png';
-        text1.style.color = 'var(--color-RED)';
-        text2.style.color = 'var(--color-RED)';
+        text1.style.color = 'var(--color-RED-ACTIVE)';
+        text2.style.color = 'var(--color-RED-ACTIVE)';
     } else {
         icon.src = 'images/icons/basket-normal.png';
         text1.style.color = 'var(--color-GRAY)';
@@ -98,9 +103,46 @@ function headerDownButton(_id, isHovered) {
         button.style.backgroundColor = 'var(--color-YELLOW)';
     } else {
         if (_id === 'header-down-button1') {
-            button.style.backgroundColor = 'var(--color-RED)';
+            button.style.backgroundColor = 'var(--color-RED-ACTIVE)';
         } else {
         button.style.backgroundColor = 'var(--color-BLACK)';
         }
+    }
+}
+
+
+function footerDownDocs(_id, isHovered) {
+    const button = document.getElementById(_id);
+
+    if (isHovered) {
+        button.style.color = 'var(--color-RED-ACTIVE)';
+    } else {
+        button.style.color = 'var(--color-GRAY)';
+    }
+}
+
+
+function mainRightCatalogIcon(element, isHovered) {
+    const _id = element.parentNode.id;
+    const block = document.getElementById(_id);
+    const icon = block.querySelector('img');
+
+    if (isHovered) {
+        icon.style.color = 'var(--color-RED-ACTIVE)';
+    } else {
+        icon.style.color = 'var(--color-BLACK)';
+    }
+}
+
+
+function mainRightCatalogText(element, isHovered) {
+    const _id = element.parentNode.id;
+    const block = document.getElementById(_id);
+    const text = block.querySelector('p');
+
+    if (isHovered) {
+        text.style.color = 'var(--color-RED-ACTIVE)';
+    } else {
+        text.style.color = 'var(--color-GRAY)';
     }
 }

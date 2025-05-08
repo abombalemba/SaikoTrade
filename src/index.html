@@ -10,6 +10,8 @@
 	<link rel="icon" href="images/logo/favicon.ico">
 
 	<title>Главная - Интернет-магазин японской косметики Сайко</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,9 @@
 
 	<div class="body">
 		<div id="main-left" style="width: 250px; height: 1555px;"></div>
-		<div id="main-right"></div>
+		<div id="main-right">
+			<div id="main-right-catalog" style="display: flex; align-items: start; justify-content: space-between;"></div>
+		</div>
 	</div>
 
 	<div style="background: #999">
@@ -68,6 +72,29 @@
 	<button id="button-to-cart" class="button-to-cart-normal" onclick="location.href = 'buying.html'" onmouseover="buttonToCart(true)" onmouseout="buttonToCart(false)">
 		<p class="sans-serif-16-reg">buying</p>
 	</button>
+
+	<div id="md"></div>
+
+	<script>
+		const text = `
+# Заголовок первого уровня
+
+Это пример параграфа с **жирным текстом** и *курсивом*.
+
+## Заголовок второго уровня
+
+- Пункт 1
+- Пункт 2
+- Пункт 3
+
+[Ссылка на Google](https://www.google.com)
+
+\`\`\`javascript
+console.log('Hello, World!');
+\`\`\`
+`;
+		document.getElementById('md').innerHTML = marked(text);
+	</script>
 
 	<footer id="footer"></footer>
 
