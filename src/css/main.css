@@ -1,47 +1,98 @@
 .button-join, .button-join-hover, .button-join-normal {
-  width: 83px;
-  height: 41px;
-  padding: 20px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 83px;
+	height: 41px;
+	padding: 20px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .button-join-normal {
-  background-color: var(--color-RED);
+	background-color: var(--color-RED);
 }
 
 .button-join-hover {
-  background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
+	background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
 }
 
 .button-to-cart, .button-to-cart-hover, .button-to-cart-normal {
-  width: 110px;
-  height: 40px;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 110px;
+	height: 40px;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .button-to-cart-normal {
-  color: var(--color-WHITE);
-  background-color: var(--color-RED);
+	color: var(--color-WHITE);
+	background-color: var(--color-RED);
 }
 
 .button-to-cart-hover {
-  color: var(--color-WHITE);
-  background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
+	color: var(--color-WHITE);
+	background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
 }
 
 /*# sourceMappingURL=main.css.map */
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+}
+
+div.block {
+	transition: box-shadow 0.1s ease;
+	border-radius: 5px;
+}
+
+div.block:hover {
+	box-shadow: 0 0 0 1px var(--color-BLACK);
+}
+
+p.left-string {
+	color: var(--color-PRICES);
+	transition: color 0.3s ease;
+}
+
+p.left-string:hover {
+	color: var(--color-RED);
+}
+
+a {
+	text-decoration: none;
+}
+
+p.footerdocs,
+a.footerdocs {
+	color: var(--color-GRAY);
+	transition: color 0.3s ease;
+}
+
+p.footerdocs:hover,
+a.footerdocs:hover {
+	color: var(--color-RED);
+}
+
+p.main-right-catalog-block-text {
+	color: var(--color-GRAY);
+	transition: color 0.3s ease;
+}
+
+p.main-right-catalog-block-text:hover {
+	color: var(--color-RED);
+}
+
+img.main-right-catalog-block-icon {
+	color: var(--color-GRAY);
+	transition: color 0.3s ease;
+}
+
+img.main-right-catalog-block-icon:hover {
+	color: var(--color-RED);
 }

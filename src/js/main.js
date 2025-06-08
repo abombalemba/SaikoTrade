@@ -5,7 +5,7 @@ async function main() {
     await Promise.all(
         [
             loader.loadHTML('header', 'components/organisms/header.html'),
-            loader.loadHTML('main-left', 'components/organisms/main-left.html'),
+            loader.loadHTML('main-left', 'components/molecules/main-left.html'),
             //loader.loadHTML('main-right', 'components/organisms/main-right'),
             loader.loadHTML('footer', 'components/organisms/footer.html')
         ]

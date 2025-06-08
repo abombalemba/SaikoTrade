@@ -15,47 +15,14 @@
 </head>
 
 <body>
-	<header id="header"></header>
+	<header id="header" style="background-color: var(--color-BG-GRAY);"></header>
 
-	<div class="body">
+	<div class="body" style="display: flex">
 		<div id="main-left" style="width: 250px; height: 1555px;"></div>
 		<div id="main-right">
 			<div id="main-right-catalog" style="display: flex; align-items: start; justify-content: space-between;"></div>
 		</div>
 	</div>
-
-	<div style="background: #999">
-		<img src="images/icons/account-normal.png" alt="account-normal">
-		<img src="images/icons/account-hover.png" alt="account-hover">
-		<img src="images/icons/account-add-normal.png" alt="account-add">
-		<img src="images/icons/account-add-hover.png" alt="account-add">
-		<img src="images/icons/basket-normal.png" alt="basket-normal">
-		<img src="images/icons/basket-hover.png" alt="basket-hover">
-		<img src="images/icons/cart.png" alt="cart">
-		<img src="images/icons/chat.png" alt="chat">
-		<img src="images/icons/coins-normal.png" alt="coins-normal">
-		<img src="images/icons/coins-hover.png" alt="coins-hover">
-		<img src="images/icons/email.png" alt="email">
-		<img src="images/icons/geo.png" alt="geo">
-		<img src="images/icons/gift.png" alt="gift">
-		<img src="images/icons/note.png" alt="note">
-		<img src="images/icons/phone.png" alt="phone">
-		<img src="images/icons/search.png" alt="search">
-		<img src="images/icons/support-normal.png" alt="support-normal">
-		<img src="images/icons/support-hover.png" alt="support-hover">
-		<img src="images/icons/tea.png" alt="tea">
-		<img src="images/icons/turnover-normal.png" alt="turnover-normal">
-		<img src="images/icons/turnover-hover.png" alt="turnover-hover">
-		<img src="images/icons/van-normal.png" alt="van-normal">
-		<img src="images/icons/van-hover.png" alt="van-hover">
-		<img src="images/icons/whatsapp.png" alt="whatsapp">
-	</div>
-
-	<button id="button-join" class="button-join-normal" onmouseover="buttonJoin(true)" onmouseout="buttonJoin(false)">
-		<p class="sans-serif-16-reg">Войти</p>
-	</button>
-
-	<br>
 
 	<button id="button-to-cart" class="button-to-cart-normal" onclick="location.href = 'cart.html'" onmouseover="buttonToCart(true)" onmouseout="buttonToCart(false)">
 		<p class="sans-serif-16-reg">cart</p>
@@ -96,10 +63,9 @@ console.log('Hello, World!');
 		document.getElementById('md').innerHTML = marked(text);
 	</script>
 
-	<footer id="footer"></footer>
+	<footer id="footer" style="background-color: var(--color-BG-GRAY);"></footer>
 
-	<!--<script src="js/loader.js"></script>
-	<script src="js/parser.js"></script>
+	<!--<script src="js/loader.js"></script
 	<script src="js/fetcher.js"></script>-->
 	<script src="js/flow.js"></script>
 	<script type="module" src="js/main.js"></script>

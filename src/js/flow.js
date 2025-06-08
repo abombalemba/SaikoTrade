@@ -24,23 +24,6 @@ function buttonToCart(isHovered) {
 }
 
 
-function mainLeftListGood(_id, isHovered) {
-    const good = document.getElementById(_id);
-    const text = good.querySelector('#main-left-good-text');
-    
-    if (isHovered) {
-        good.style.border = '1px solid';
-        good.style.borderRadius = '5px';
-        text.style.color = 'var(--color-RED-ACTIVE)';
-    } else {
-        
-        good.style.border = '0px solid';
-        good.style.borderRadius = '0px';
-        text.style.color = 'var(--color-PRICES)';
-    }
-}
-
-
 function headerUpAccount(isHovered) {
     const text = document.getElementById('header-up-account-text');
     const icon = document.getElementById('header-up-account-icon');
@@ -107,42 +90,5 @@ function headerDownButton(_id, isHovered) {
         } else {
         button.style.backgroundColor = 'var(--color-BLACK)';
         }
-    }
-}
-
-
-function footerDownDocs(_id, isHovered) {
-    const button = document.getElementById(_id);
-
-    if (isHovered) {
-        button.style.color = 'var(--color-RED-ACTIVE)';
-    } else {
-        button.style.color = 'var(--color-GRAY)';
-    }
-}
-
-
-function mainRightCatalogIcon(element, isHovered) {
-    const _id = element.parentNode.id;
-    const block = document.getElementById(_id);
-    const icon = block.querySelector('img');
-
-    if (isHovered) {
-        icon.style.color = 'var(--color-RED-ACTIVE)';
-    } else {
-        icon.style.color = 'var(--color-BLACK)';
-    }
-}
-
-
-function mainRightCatalogText(element, isHovered) {
-    const _id = element.parentNode.id;
-    const block = document.getElementById(_id);
-    const text = block.querySelector('p');
-
-    if (isHovered) {
-        text.style.color = 'var(--color-RED-ACTIVE)';
-    } else {
-        text.style.color = 'var(--color-GRAY)';
     }
 }
