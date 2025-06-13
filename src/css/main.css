@@ -68,17 +68,6 @@ a {
 	text-decoration: none;
 }
 
-p.footerdocs,
-a.footerdocs {
-	color: var(--color-GRAY);
-	transition: color 0.3s ease;
-}
-
-p.footerdocs:hover,
-a.footerdocs:hover {
-	color: var(--color-RED);
-}
-
 p.main-right-catalog-block-text {
 	color: var(--color-GRAY);
 	transition: color 0.3s ease;
