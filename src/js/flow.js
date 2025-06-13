@@ -68,11 +68,11 @@ function headerCenterBasket(isHovered) {
     const text2 = document.getElementById('header-center-text2');
 
     if (isHovered) {
-        icon.src = 'images/icons/basket-hover.png';
+        icon.src = 'images/icons/basket-hover.svg';
         text1.style.color = 'var(--color-RED-ACTIVE)';
         text2.style.color = 'var(--color-RED-ACTIVE)';
     } else {
-        icon.src = 'images/icons/basket-normal.png';
+        icon.src = 'images/icons/basket-normal.svg';
         text1.style.color = 'var(--color-GRAY)';
         text2.style.color = 'var(--color-GRAY)';
     }
