@@ -97,6 +97,10 @@ img.main-right-catalog-block-icon:hover {
 	color: var(--color-RED);
 }
 
-header, main {
-	padding: 0% 10%
+div.button-akcii {
+	background-color: var(--color-YELLOW);
+}
+
+div.button-akcii:hover {
+	background-color: var(--color-RED-ACTIVE);
 }
