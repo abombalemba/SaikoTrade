@@ -96,3 +96,7 @@ img.main-right-catalog-block-icon {
 img.main-right-catalog-block-icon:hover {
 	color: var(--color-RED);
 }
+
+header, main {
+	padding: 0% 10%
+}
