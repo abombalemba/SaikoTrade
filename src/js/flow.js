@@ -25,8 +25,8 @@ function buttonToCart(isHovered) {
 
 
 function headerUpAccount(isHovered) {
-    const text = document.getElementById('header-up-account-text');
-    const icon = document.getElementById('header-up-account-icon');
+    const text = document.getElementById('header-up-block-account-text');
+    const icon = document.getElementById('header-up-block-account-icon');
 
     if (isHovered) {
         text.style.color = 'var(--color-RED-ACTIVE)';
@@ -37,9 +37,9 @@ function headerUpAccount(isHovered) {
     }
 }
 
-function headerUpAccountAdd(isHovered) {
-    const text = document.getElementById('header-up-account-add-text');
-    const icon = document.getElementById('header-up-account-add-icon');
+function headerUpAddAccount(isHovered) {
+    const text = document.getElementById('header-up-block-add-account-text');
+    const icon = document.getElementById('header-up-block-add-account-icon');
 
     if (isHovered) {
         text.style.color = 'var(--color-RED-ACTIVE)';
@@ -75,20 +75,5 @@ function headerCenterBasket(isHovered) {
         icon.src = 'images/icons/basket-normal.svg';
         text1.style.color = 'var(--color-GRAY)';
         text2.style.color = 'var(--color-GRAY)';
-    }
-}
-
-
-function headerDownButton(_id, isHovered) {
-    const button = document.getElementById(_id);
-
-    if (isHovered) {
-        button.style.backgroundColor = 'var(--color-YELLOW)';
-    } else {
-        if (_id === 'header-down-button1') {
-            button.style.backgroundColor = 'var(--color-RED-ACTIVE)';
-        } else {
-        button.style.backgroundColor = 'var(--color-BLACK)';
-        }
     }
 }

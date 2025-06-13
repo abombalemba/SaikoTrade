@@ -85,11 +85,3 @@ img.main-right-catalog-block-icon {
 img.main-right-catalog-block-icon:hover {
 	color: var(--color-RED);
 }
-
-div.button-akcii {
-	background-color: var(--color-YELLOW);
-}
-
-div.button-akcii:hover {
-	background-color: var(--color-RED-ACTIVE);
-}

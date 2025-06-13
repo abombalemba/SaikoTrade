@@ -1,0 +1,118 @@
+#header-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 10%;
+}
+
+div.header-up-block {
+    display: inline-block;
+}
+
+a.header-up-block {
+    display: flex;
+    align-items: center;
+}
+
+#header-up-block-welcome-text {
+    color: var(--color-LIGHT-BLACK);
+}
+
+#header-up-block-favourite-text {
+    color: var(--color-RED);
+}
+
+#header-up-block-account-text {
+    color: var(--color-LIGHT-BLACK);
+}
+
+#header-up-block-add-account-text {
+    color: var(--color-LIGHT-BLACK);
+}
+
+
+
+
+
+#header-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 10%;
+}
+
+#header-down {
+    background-color: var(--color-BLACK);
+    padding: 0 10%;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+div.header-center-block {
+
+}
+
+div.header-down-blocks {
+    display: flex;
+    justify-content: center;
+}
+
+a.header-down-block {
+    color: var(--color-WHITE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    padding: 0 12px;
+}
+
+a.header-down-block--first {
+    background-color: var(--color-RED);
+}
+
+a.header-down-block {
+	background-color: var(--color-BLACK);
+}
+
+a.header-down-block:hover {
+	background-color: var(--color-YELLOW);
+}
+
+a.header-down-block--first {
+	background-color: var(--color-RED);
+}
+
+a.header-down-block--first:hover {
+	background-color: var(--color-YELLOW);
+}
+
+div.button-offer {
+	background-color: var(--color-YELLOW);
+	height: 31px;
+	color: var(--color-WHITE);
+	border: 2px solid var(--color-YELLOW);
+	border-radius: 2px;
+	border-color: var(--color-YELLOW);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	padding: 0 10px;
+}
+
+div.button-offer:hover {
+	background-color: var(--color-RED-ACTIVE);
+}
+
+#button-offer-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#button-offer-text {
+    color: var(--color-WHITE);
+}
