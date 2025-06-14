@@ -77,3 +77,16 @@ function headerCenterBasket(isHovered) {
         text2.style.color = 'var(--color-GRAY)';
     }
 }
+
+function cardToFavourite(isHovered) {
+    const icon = document.getElementById('card-preview-right-block-block-button-to-favourite-icon');
+    const text = document.getElementById('card-preview-right-block-block-button-to-favourite-text');
+
+    if (isHovered) {
+        icon.src = 'images/symbols/heart/hover.png';
+        text.style.color = 'var(--color-RED-ACTIVE)';
+    } else {
+        icon.src = 'images/symbols/heart/normal.png';
+        text.style.color = 'var(--color-GRAY)';
+    }
+}

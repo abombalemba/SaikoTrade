@@ -26,15 +26,11 @@
                     Скидка 180 руб.
                 </p>
                 <div id="card-preview-right-block-block-choice">
-                    <img src="image/symbols/plus-minus/minus2.png" alt="">
-                    <button>
-                    </button>
+                    <img id="card-preview-right-block-block-choice-minus" src="images/symbols/plus-minus/minus2.png" alt="minus">
 
-                    <input type="text" max-width="2px">
+                    <input id="card-preview-right-block-block-choice-input" value="1" type="text" maxlength="3" style="width: 25px; text-align: center;">
 
-                    <button>
-                        <img src="image/symbols/plus-minus/plus2.png" alt="">
-                    </button>
+                    <img id="card-preview-right-block-block-choice-plus" src="images/symbols/plus-minus/plus2.png" alt="plus">
                 </div>
                 <p id="card-preview-right-block-block-count" class="arial-12-reg">
                    шт 
@@ -42,7 +38,7 @@
                 <button id="card-preview-right-block-block-button-to-basket" class="open-sans-14-bold">
                     В КОРЗИНУ
                 </button>
-                <div id="card-preview-right-block-block-button-to-favourite">
+                <div id="card-preview-right-block-block-button-to-favourite" onmouseover="cardToFavourite(true)" onmouseout="cardToFavourite(false)">
                     <img id="card-preview-right-block-block-button-to-favourite-icon" src="images/symbols/heart/normal.png" alt="heart">
                     <p id="card-preview-right-block-block-button-to-favourite-text" class="arial-15-bold">
                         В избранное
