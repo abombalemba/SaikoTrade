@@ -16,14 +16,47 @@
     <header id="header"></header>
 
 	<div class="body">
-		<div id="main-left"></div>
+		<div id="body-left"></div>
 
-		<div id="card-right"></div>
+		<div id="card"></div>
 	</div>
 
+	<span class="footer-horizontal-divider"></span>
+
     <footer id="footer"></footer>
-    
-    <script src="js/loader.js"></script>
+
+	<script src="js/flow.js"></script>
+	<script type="module" src="js/main.js"></script>
+			
+	<script>
+		function initTabs() {
+			const buttons = document.querySelectorAll('.card-info-button');
+			const tabs = document.querySelectorAll('.tab-content');
+			
+			if(buttons.length === 0 || tabs.length === 0) {
+				return;
+			}
+			
+			buttons.forEach(button => {
+				button.addEventListener('click', function() {
+					buttons.forEach(btn => btn.classList.remove('active'));
+					tabs.forEach(tab => tab.classList.remove('active'));
+					
+					this.classList.add('active');
+					const tabId = this.getAttribute('data-tab');
+					document.getElementById(tabId)?.classList.add('active');
+				});
+			});
+			
+			buttons[0]?.click();
+		}
+	
+		if (document.readyState === 'complete') {
+			initTabs();
+		} else {
+			window.addEventListener('load', initTabs);
+		}
+	</script>
 </body>
 
 </html>

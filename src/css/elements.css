@@ -20,3 +20,17 @@ span.red-horizontal-divider {
     height: 2px;
     background-color: var(--color-RED);
 }
+
+span.footer-horizontal-divider {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-RED);
+}
+
+span.card-horizontal-divider {
+    display: block;
+    width: 100%;
+    height: 0.1px;
+    background-color: var(--color-LIGHT-GRAY);
+}

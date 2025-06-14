@@ -1,3 +1,8 @@
+#footer {
+    background-color: var(--color-BG-GRAY);
+    padding: 3% 10% 1%;
+}
+
 #footer-up {
     width: 100%;
     display: flex;

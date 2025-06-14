@@ -1,3 +1,7 @@
+#header {
+    background-color: var(--color-BG-GRAY);
+}
+
 #header-up {
     display: flex;
     justify-content: center;

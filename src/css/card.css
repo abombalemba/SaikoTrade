@@ -1,0 +1,166 @@
+#card {
+    width: 100%;
+    padding-left: 5%;
+}
+
+#card-title {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#card-title-text {
+    margin: 0;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------*/
+
+#card-preview {
+    display: flex;
+}
+
+#card-preview-icon {
+    width: 300px;
+    height: 300px;
+}
+
+#card-preview-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#card-preview-right {
+
+}
+
+#card-preview-right-block {
+}
+
+#card-preview-right-block-text {
+    color: var(--color-RED);
+}
+
+#card-preview-right-block-block {
+    border: 1px solid var(--color-GRAY);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#card-preview-right-block-block-old-price {
+    color: var(--color-BLACK);
+}
+
+#card-preview-right-block-block-new-price {
+    color: var(--color-RED);
+}
+
+#card-preview-right-block-block-discount {
+    color: var(--color-YELLOW);
+}
+
+#card-preview-right-block-block-choice {
+
+}
+
+#card-preview-right-block-block-count {
+    color: var(--color-GRAY);
+}
+
+#card-preview-right-block-block-button-to-basket {
+    background-color: var(--color-RED);
+    border: none;
+    color: var(--color-WHITE);
+    padding: 5% 10%;
+    border-radius: 5px;
+}
+
+#card-preview-right-block-block-button-to-favourite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+#card-preview-right-block-block-button-to-favourite-icon {
+
+}
+
+#card-preview-right-block-block-button-to-favourite-text {
+    color: var(--color-GRAY);
+}
+
+/*----------------------------------------------------------------*/
+
+#card-info {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#card-info-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+button.card-info-button {
+    position: relative;
+    overflow: hidden;
+    color: var(--color-BLACK);
+    padding: 1% 5%;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    outline: none;
+    background: transparent;
+    transition: color 0.3s ease;
+}
+
+button.card-info-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--color-RED);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+button.card-info-button:hover::after {
+    transform: translateY(0);
+}
+
+button.card-info-button.active {
+    color: var(--color-RED);
+}
+
+#card-info-desc {
+    color: var(--color-GRAY);
+}
+
+#card-info-params {
+    color: var(--color-BLACK);
+}
+
+#card-inf-reviews {
+    color: var(--color-BLACK);
+}
+
+.tab-content {
+    display: none;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+}
+
+.tab-content.active {
+    display: block;
+}

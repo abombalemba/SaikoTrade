@@ -53,6 +53,7 @@ export function filler2(template, data) {
 
 	data.forEach(element => {
 		const item = template.getElementById('main-right-catalog-block').cloneNode(true);
+		console.log(item);
 
 		item.id = Math.random().toString(36).substr(2, 9);
 		item.querySelector('p').textContent = element.title;

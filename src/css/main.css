@@ -85,3 +85,13 @@ img.main-right-catalog-block-icon {
 img.main-right-catalog-block-icon:hover {
 	color: var(--color-RED);
 }
+
+div.body {
+	display: flex;
+	padding: 0 10%;
+	justify-content: stretch;
+}
+
+body {
+	margin: 0;
+}
