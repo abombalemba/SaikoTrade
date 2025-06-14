@@ -54,6 +54,13 @@
 	font-style: normal;	
 }
 
+.arial-27-bold {
+	font-family: 'Arial', sans-serif;
+	font-size: 27px;
+	font-weight: bold;
+	font-style: normal;	
+}
+
 .sans-serif-14-reg {
 	font-family: sans-serif;
 	font-size: 14px;
