@@ -52,7 +52,7 @@ function headerUpAddAccount(isHovered) {
 
 
 function headerCenterSearch(isHovered) {
-    const block = document.getElementById('header-center-search');
+    const block = document.getElementById('header-center-search-button');
 
     if (isHovered) {
         block.style.backgroundColor = 'var(--color-RED-ACTIVE)';
@@ -63,9 +63,9 @@ function headerCenterSearch(isHovered) {
 
 
 function headerCenterBasket(isHovered) {
-    const icon = document.getElementById('header-center-basket');
-    const text1 = document.getElementById('header-center-text1');
-    const text2 = document.getElementById('header-center-text2');
+    const icon = document.getElementById('header-center-basket-icon');
+    const text1 = document.getElementById('header-center-basket-text1');
+    const text2 = document.getElementById('header-center-basket-text2');
 
     if (isHovered) {
         icon.src = 'images/icons/basket-hover.svg';

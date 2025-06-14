@@ -53,36 +53,34 @@
 <div id="header-center">
 	<div id="header-center-logo">
 		<a href="index.html">
-			<div style="display: inline-block">
-				<img src="images/logo/logo.png" alt="logo">
-			</div>
+			<img src="images/logo/logo.png" alt="logo">
 		</a>
 	</div>
 
-	<div id="header-center-" style="display: inline-block; margin: 0; padding: 0;">
-		<div style="display: flex; align-items: center;">
+	<div id="header-center-contacts">
+		<div id="header-center-contact">
 			<img src="images/icons/phone-black.png" alt="phone">
-			<p class="poppins-25-bold" style="color: var(--color-BLACK); margin: 0">+8180-58-53-55-25</p>
+			<p id="header-center-contact-number" class="poppins-25-bold">+8180-58-53-55-25</p>
 		</div>
 
-		<div style="display: flex; align-items: center;">
+		<div id="header-center-contact">
 			<img src="images/icons/email.png" alt="email">
-			<p class="poppins-25-bold" style="color: var(--color-RED); margin: 0">info@saikotrade.com</p>
+			<p id="header-center-contact-email" class="poppins-25-bold">info@saikotrade.com</p>
 		</div>
 	</div>
 
-	<div id="header/center/3" style="display: flex">
-		<input type="text" placeholder="Поиск по сайту..." style="width: 220px; height: 35px">
-		<div id="header-center-search" onmouseover="headerCenterSearch(true)" onmouseout="headerCenterSearch(false)" style="background-color: var(--color-RED); width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+	<div id="header-center-search">
+		<input id="header-center-search-field" type="text" placeholder="Поиск по сайту...">
+		<div id="header-center-search-button" onmouseover="headerCenterSearch(true)" onmouseout="headerCenterSearch(false)">
 			<img src="images/icons/search.png" alt="search">
 		</div>
 	</div>
 
-	<div id="header/center/4" onmouseover="headerCenterBasket(true)" onmouseout="headerCenterBasket(false)" style="display: flex; justify-content: center; align-items: center; gap: 10px">
-		<img id="header-center-basket" src="images/icons/basket-normal.svg" alt="basket-normal" width="50" height="50">
-		<div style="">
-			<p id="header-center-text1" class="poppins-14-reg" style="color: var(--color-GRAY)">0 позиций</p>
-			<p id="header-center-text2" class="poppins-14-bold" style="color: var(--color-GRAY)">0 руб.</p>
+	<div id="header-center-basket" onmouseover="headerCenterBasket(true)" onmouseout="headerCenterBasket(false)">
+		<img id="header-center-basket-icon" src="images/icons/basket-normal.svg" alt="basket-normal">
+		<div>
+			<p id="header-center-basket-text1" class="poppins-14-reg">0 позиций</p>
+			<p id="header-center-basket-text2" class="poppins-14-bold">0 руб.</p>
 		</div>
 	</div>
 </div>
