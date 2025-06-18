@@ -90,3 +90,51 @@ function cardToFavourite(isHovered) {
         text.style.color = 'var(--color-GRAY)';
     }
 }
+
+function mainAdvantagesFirst(isHovered) {
+    const icon = document.getElementById('main-advantages-first-icon');
+    const large = document.getElementById('main-advantages-first-large');
+    const small = document.getElementById('main-advantages-first-small');
+
+    if (isHovered) {
+        icon.src = 'images/icons/support-hover.png';
+        large.style.color = 'var(--color-RED)';
+        small.style.color = 'var(--color-RED)';
+    } else {
+        icon.src = 'images/icons/support-normal.png';
+        large.style.color = 'var(--color-RED-BLACK)';
+        small.style.color = 'var(--color-RED-BLACK)';
+    }
+}
+
+function mainAdvantagesSecond(isHovered) {
+    const icon = document.getElementById('main-advantages-second-icon');
+    const large = document.getElementById('main-advantages-second-large');
+    const small = document.getElementById('main-advantages-second-small');
+
+    if (isHovered) {
+        icon.src = 'images/icons/turnover-hover.png';
+        large.style.color = 'var(--color-RED)';
+        small.style.color = 'var(--color-RED)';
+    } else {
+        icon.src = 'images/icons/turnover-normal.png';
+        large.style.color = 'var(--color-RED-BLACK)';
+        small.style.color = 'var(--color-RED-BLACK)';
+    }
+}
+
+function mainAdvantagesThird(isHovered) {
+    const icon = document.getElementById('main-advantages-third-icon');
+    const large = document.getElementById('main-advantages-third-large');
+    const small = document.getElementById('main-advantages-third-small');
+
+    if (isHovered) {
+        icon.src = 'images/icons/coins-hover.png';
+        large.style.color = 'var(--color-RED)';
+        small.style.color = 'var(--color-RED)';
+    } else {
+        icon.src = 'images/icons/coins-normal.png';
+        large.style.color = 'var(--color-RED-BLACK)';
+        small.style.color = 'var(--color-RED-BLACK)';
+    }
+}

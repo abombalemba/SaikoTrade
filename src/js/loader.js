@@ -6,6 +6,9 @@ export function loadHTML(elementId, filePath) {
                 document.getElementById(elementId).innerHTML = data;
                 resolve();
             })
-            .catch(error => {console.log(elementId, filePath); reject(error)});
+            .catch(error => {
+                console.log(elementId, filePath);
+                reject(error);
+            });
     });
 }

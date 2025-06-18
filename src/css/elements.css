@@ -34,3 +34,11 @@ span.card-horizontal-divider {
     height: 0.1px;
     background-color: var(--color-LIGHT-GRAY);
 }
+
+span.gray-horizontal-divider {
+    display: inline-block;
+    width: 1px;
+    height: 100px;
+    margin-top: 3%;
+    background-color: var(--color-GRAY);
+}

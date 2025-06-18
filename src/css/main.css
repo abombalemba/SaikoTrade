@@ -95,3 +95,120 @@ div.body {
 body {
 	margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+#main {
+
+}
+
+#main-ad {
+
+}
+
+#main-catalog {
+
+}
+
+#main-set-discounts {
+
+}
+
+#main-set-popular {
+
+}
+
+#main-set-news {
+
+}
+
+#main-advantages {
+	margin: 0% 2%;
+}
+
+#main-advantages-text {
+	color: var(--color-BLACK);
+}
+
+#main-advantages-blocks {
+	background-color: var(--color-LIGHT-GRAY);
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+div.main-advantages-block {
+	flex: 1;
+	text-align: center;
+	padding-top: 2%;
+}
+
+img.main-advantages-block-icon {
+	width: 50px;
+	height: 50px;
+}
+
+p.main-advantages-block-large {
+	color: var(--color-BLACK);
+}
+
+p.main-advantages-block-small {
+	color: var(--color-GRAY);
+}
+
+#main-info {
+	margin: 0% 2%;
+}
+
+#main-info-text {
+	color: var(--color-BLACK);
+}
+
+#main-info-blocks {
+	background-color: var(--color-LIGHT-GRAY);
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+div.main-info-block {
+	flex: 1;
+	text-align: center;
+	padding-top: 2%;
+}
+
+img.main-info-block-icon {
+	width: 50px;
+	height: 50px;
+}
+
+p.main-info-block-large {
+	color: var(--color-BLACK);
+}
+
+p.main-info-block-large:hover {
+	color: var(--color-RED);
+}
+
+p.main-info-block-small {
+	color: var(--color-GRAY);
+}
+
+#main-info {
+
+}
+
+#main-comments {
+
+}
