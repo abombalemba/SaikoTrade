@@ -11,6 +11,11 @@
     width: 30px;
     height: 30px;
     align-self: flex-start;
+    content: url('../images/symbols/heart/gray-normal.svg');
+}
+
+#card-v1-heart:hover {
+    content: url('../images/symbols/heart/red-normal.svg');
 }
 
 #card-v1-image {

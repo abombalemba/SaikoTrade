@@ -30,10 +30,10 @@ function headerUpAccount(isHovered) {
 
     if (isHovered) {
         text.style.color = 'var(--color-RED-ACTIVE)';
-        icon.src = 'images/icons/account-hover.png';
+        icon.src = 'images/icons/account-hover.svg';
     } else {
         text.style.color = 'var(--color-LIGHT-BLACK)';
-        icon.src = 'images/icons/account-normal.png';
+        icon.src = 'images/icons/account-normal.svg';
     }
 }
 
@@ -43,10 +43,10 @@ function headerUpAddAccount(isHovered) {
 
     if (isHovered) {
         text.style.color = 'var(--color-RED-ACTIVE)';
-        icon.src = 'images/icons/account-add-hover.png';
+        icon.src = 'images/icons/account-add-hover.svg';
     } else {
         text.style.color = 'var(--color-LIGHT-BLACK)';
-        icon.src = 'images/icons/account-add-normal.png';
+        icon.src = 'images/icons/account-add-normal.svg';
     }
 }
 
@@ -97,11 +97,11 @@ function mainAdvantagesFirst(isHovered) {
     const small = document.getElementById('main-advantages-first-small');
 
     if (isHovered) {
-        icon.src = 'images/icons/support-hover.png';
+        icon.src = 'images/icons/support-hover.svg';
         large.style.color = 'var(--color-RED)';
         small.style.color = 'var(--color-RED)';
     } else {
-        icon.src = 'images/icons/support-normal.png';
+        icon.src = 'images/icons/support-normal.svg';
         large.style.color = 'var(--color-RED-BLACK)';
         small.style.color = 'var(--color-RED-BLACK)';
     }
@@ -113,11 +113,11 @@ function mainAdvantagesSecond(isHovered) {
     const small = document.getElementById('main-advantages-second-small');
 
     if (isHovered) {
-        icon.src = 'images/icons/turnover-hover.png';
+        icon.src = 'images/icons/turnover-hover.svg';
         large.style.color = 'var(--color-RED)';
         small.style.color = 'var(--color-RED)';
     } else {
-        icon.src = 'images/icons/turnover-normal.png';
+        icon.src = 'images/icons/turnover-normal.svg';
         large.style.color = 'var(--color-RED-BLACK)';
         small.style.color = 'var(--color-RED-BLACK)';
     }
@@ -129,11 +129,11 @@ function mainAdvantagesThird(isHovered) {
     const small = document.getElementById('main-advantages-third-small');
 
     if (isHovered) {
-        icon.src = 'images/icons/coins-hover.png';
+        icon.src = 'images/icons/coins-hover.svg';
         large.style.color = 'var(--color-RED)';
         small.style.color = 'var(--color-RED)';
     } else {
-        icon.src = 'images/icons/coins-normal.png';
+        icon.src = 'images/icons/coins-normal.svg';
         large.style.color = 'var(--color-RED-BLACK)';
         small.style.color = 'var(--color-RED-BLACK)';
     }
