@@ -35,10 +35,27 @@ span.card-horizontal-divider {
     background-color: var(--color-LIGHT-GRAY);
 }
 
-span.gray-horizontal-divider {
+span.main-advantages-vertical-divider {
     display: inline-block;
     width: 1px;
-    height: 100px;
+    height: 120px;
     margin-top: 3%;
     background-color: var(--color-GRAY);
+}
+
+span.main-info-vertical-divider {
+    display: inline-block;
+    width: 0.5px;
+    height: 150px;
+    margin-top: 3%;
+    background-color: var(--color-GRAY);
+}
+
+span.body-left-horizontal-divider {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-LIGHT-GRAY);
 }

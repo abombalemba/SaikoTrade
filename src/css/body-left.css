@@ -1,0 +1,32 @@
+#body-left {
+    width: 250px;
+}
+
+#body-left-categories {
+    background-color: var(--color-BLACK);
+    padding-left: 5%;
+}
+
+#body-left-categories-text {
+    padding: 1%;
+    color: var(--color-WHITE);
+}
+
+div.body-left-categories-list-item {
+    padding: 1%;
+}
+
+#body-left-hits {
+    background-color: var(--color-BLACK);
+    padding-left: 5%;
+}
+
+#body-left-hits-text {
+    padding: 1%;
+    color: var(--color-WHITE);
+}
+
+#body-left-hits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

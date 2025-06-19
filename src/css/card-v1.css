@@ -1,0 +1,62 @@
+#card-v1 {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px; /* Добавим отступы для красоты */
+    box-sizing: border-box; /* Чтобы padding не влиял на общую ширину */
+}
+
+#card-v1-heart {
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+    margin-bottom: 5px; /* Отступ от следующего элемента */
+    content: url('../images/symbols/heart/gray-normal.svg');
+}
+
+#card-v1-heart:hover {
+    content: url('../images/symbols/heart/red-hover.svg');
+}
+
+#card-v1-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; /* Отступ от следующего элемента */
+}
+
+#card-v1-title {
+    color: var(--color-GRAY-DESC);
+    height: 50px;
+    text-align: center;
+    margin-bottom: 10px; /* Отступ от следующего элемента */
+    width: 100%; /* Чтобы текст занимал всю ширину */
+}
+
+#card-v1-title:hover {
+    color: var(--color-RED);
+}
+
+#card-v1-price {
+    color: var(--color-PRICES);
+    text-align: center;
+    margin-bottom: 10px; /* Отступ от кнопки */
+    width: 100%; /* Чтобы текст занимал всю ширину */
+}
+
+#card-v1-button {
+    background-color: var(--color-RED);
+    border: none;
+    color: var(--color-WHITE);
+    padding: 8px 15px; /* Фиксированные отступы вместо процентов */
+    border-radius: 5px;
+    width: auto; /* Ширина по содержимому */
+    margin: 0 auto; /* Центрирование кнопки */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+#card-v1-button:hover {
+    background-color: var(--color-LIGHT-RED);
+}

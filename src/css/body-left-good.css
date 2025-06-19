@@ -1,0 +1,30 @@
+div.body-left-good {
+    width: 125px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#body-left-good-icon {
+    margin-bottom: 10px;
+}
+
+#body-left-good-url {
+    
+}
+
+#body-left-good-text {
+    color: var(--color-PRICES);
+}
+
+div.body-left-good {
+	transition: box-shadow 0.1s ease;
+	border-radius: 5px;
+}
+
+div.body-left-good:hover {
+	box-shadow: 0 0 0 1px var(--color-BLACK);
+}

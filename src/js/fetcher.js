@@ -32,11 +32,11 @@ export async function loadHTML(filepath) {
 }
 
 
-export function filler1(template, data) {
-	const container = document.getElementById('block4');
+export function fillerBodyGoods(template, data) {
+	const container = document.getElementById('body-left-hits-list');
 
 	data.forEach(element => {
-		const item = template.getElementById('main-left-good').cloneNode(true);
+		const item = template.getElementById('body-left-good').cloneNode(true);
 
 		item.id = Math.random().toString(36).substring(2, 9);
 		item.querySelector('p').textContent = element.title;
@@ -48,11 +48,11 @@ export function filler1(template, data) {
 }
 
 
-export function filler2(template, data) {
-	const container = document.getElementById('main-right-catalog');
+export function fillerMainCatalog(template, data) {
+	const container = document.getElementById('main-catalog');
 
 	data.forEach(element => {
-		const item = template.getElementById('main-right-catalog-block').cloneNode(true);
+		const item = template.getElementById('main-catalog-block').cloneNode(true);
 
 		item.id = Math.random().toString(36).substring(2, 9);
 		item.querySelector('p').textContent = element.title;
@@ -64,24 +64,20 @@ export function filler2(template, data) {
 }
 
 
-export function filler3(elementID, template, data) {
+export function fillerMainCards(elementID, template, data) {
 	const container = document.getElementById(elementID);
 
 	data.forEach(element => {
 		const item = template.getElementById('card-v1').cloneNode(true);
 
-		console.log(3, item);
-		console.log(element);
-
 		item.id = Math.random().toString(36).substring(2, 9);
+		item.setAttribute('data-id', element.id);
 		item.querySelector('#card-v1-image').src = element.icons[0];
 		item.querySelector('#card-v1-title').textContent = element.title;
-		item.querySelector('#card-v1-price').textContent = element.price - (element.price * (element.discount / 100));
+		item.querySelector('#card-v1-price').textContent = element.price - (element.price * (element.discount / 100)) + ' руб.';
 		item.querySelector('#card-v1-image-a').href = element.url;
 		item.querySelector('#card-v1-title-a').href = element.url;
 		
-
-		console.log(4, item);
 		container.appendChild(item);
 	});
 }

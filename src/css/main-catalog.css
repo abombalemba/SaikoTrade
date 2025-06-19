@@ -1,0 +1,17 @@
+p.main-catalog-block-text {
+	color: var(--color-GRAY);
+	transition: color 0.3s ease;
+}
+
+p.main-catalog-block-text:hover {
+	color: var(--color-RED);
+}
+
+img.main-catalog-block-icon {
+	color: var(--color-GRAY);
+	transition: color 0.3s ease;
+}
+
+img.main-catalog-block-icon:hover {
+	color: var(--color-RED);
+}

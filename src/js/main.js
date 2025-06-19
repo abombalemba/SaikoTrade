@@ -21,22 +21,19 @@ async function main() {
     }
 
     try {
-        const data = await fetcher.loadJSON('data/main-left-list-goods.json');
-        const template = await fetcher.loadHTML('components/atoms/main-left-good.html');
+        const data = await fetcher.loadJSON('data/body-left-goods.json');
+        const template = await fetcher.loadHTML('components/atoms/body-left-good.html');
 
-        fetcher.filler1(template, data);
+        fetcher.fillerBodyGoods(template, data);
     } catch (error) {
         console.error(error);
     };
 
     try {
-        const data = await fetcher.loadJSON('data/main-right-catalog.json');
-        const template = await fetcher.loadHTML('components/atoms/main-right-catalog-block.html');
+        const data = await fetcher.loadJSON('data/main-catalog.json');
+        const template = await fetcher.loadHTML('components/atoms/main-catalog-block.html');
 
-        console.log(data);
-        console.log(template);
-
-        fetcher.filler2(template, data);
+        fetcher.fillerMainCatalog(template, data);
     } catch (error) {
         console.error(error);
     };
@@ -45,12 +42,9 @@ async function main() {
         const data = await fetcher.loadJSON('data/goods.json');
         const template = await fetcher.loadHTML('components/atoms/card-v1.html');
 
-        console.log(44, data);
-        console.log(45, template);
-
-        fetcher.filler3('main-set-discounts', template, data);
-        fetcher.filler3('main-set-popular', template, data);
-        fetcher.filler3('main-set-news', template, data);
+        fetcher.fillerMainCards('main-set-discounts-down', template, data);
+        fetcher.fillerMainCards('main-set-popular-down', template, data);
+        fetcher.fillerMainCards('main-set-news-down', template, data);
     } catch (error) {
         console.error(error);
     };

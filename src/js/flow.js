@@ -102,8 +102,8 @@ function mainAdvantagesFirst(isHovered) {
         small.style.color = 'var(--color-RED)';
     } else {
         icon.src = 'images/icons/support-normal.svg';
-        large.style.color = 'var(--color-RED-BLACK)';
-        small.style.color = 'var(--color-RED-BLACK)';
+        large.style.color = 'var(--color-BLACK)';
+        small.style.color = 'var(--color-GRAY)';
     }
 }
 
@@ -118,8 +118,8 @@ function mainAdvantagesSecond(isHovered) {
         small.style.color = 'var(--color-RED)';
     } else {
         icon.src = 'images/icons/turnover-normal.svg';
-        large.style.color = 'var(--color-RED-BLACK)';
-        small.style.color = 'var(--color-RED-BLACK)';
+        large.style.color = 'var(--color-BLACK)';
+        small.style.color = 'var(--color-GRAY)';
     }
 }
 
@@ -134,7 +134,45 @@ function mainAdvantagesThird(isHovered) {
         small.style.color = 'var(--color-RED)';
     } else {
         icon.src = 'images/icons/coins-normal.svg';
-        large.style.color = 'var(--color-RED-BLACK)';
-        small.style.color = 'var(--color-RED-BLACK)';
+        large.style.color = 'var(--color-BLACK)';
+        small.style.color = 'var(--color-GRAY)';
+    }
+}
+
+function mainContainerButtons(buttonID, isHovered, direct) {
+    const button = document.getElementById(buttonID);
+
+    if (isHovered) {
+        switch (direct) {
+            case 'left': {
+                button.src = 'images/symbols/arrow/left_hover.svg';
+                break;
+            };
+
+            case 'right': {
+                button.src = 'images/symbols/arrow/right_hover.svg';
+                break;
+            };
+
+            default: {
+                break;
+            }
+        }
+    } else {
+        switch (direct) {
+            case 'left': {
+                button.src = 'images/symbols/arrow/left_normal.svg';
+                break;
+            };
+
+            case 'right': {
+                button.src = 'images/symbols/arrow/right_normal.svg';
+                break;
+            };
+
+            default: {
+                break;
+            }
+        }
     }
 }
