@@ -152,22 +152,43 @@ a.header-down-block--first:hover {
 	background-color: var(--color-YELLOW);
 }
 
+/*      B   U   T   T   O   N   -   O   F   F   E   R   */
+
 div.button-offer {
-	background-color: var(--color-YELLOW);
-	height: 31px;
-	color: var(--color-WHITE);
-	border: 2px solid var(--color-YELLOW);
-	border-radius: 2px;
-	border-color: var(--color-YELLOW);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-	padding: 0 10px;
+    background-color: var(--color-YELLOW);
+    height: 31px;
+    color: var(--color-WHITE);
+    border: 2px solid var(--color-YELLOW);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+    }
+}
+
+div.button-offer:not(:hover) {
+    animation: pulse 1s infinite;
 }
 
 div.button-offer:hover {
-	background-color: var(--color-RED-ACTIVE);
+    background-color: var(--color-RED-ACTIVE);
+    animation: none;
 }
 
 #button-offer-icon {
@@ -177,4 +198,5 @@ div.button-offer:hover {
 
 #button-offer-text {
     color: var(--color-WHITE);
+    text-decoration: none;
 }
