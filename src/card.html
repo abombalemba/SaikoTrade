@@ -27,7 +27,7 @@
 
 	<script src="js/flow.js"></script>
 	<script type="module" src="js/main.js"></script>
-			
+	
 	<script>
 		function initTabs() {
 			const buttons = document.querySelectorAll('.card-info-button');
@@ -60,11 +60,11 @@
 
 	<script>
 		function initQuantityControls() {
-			const minusBtn = document.getElementById('card-preview-right-block-block-choice-minus');
-			const plusBtn = document.getElementById('card-preview-right-block-block-choice-plus');
+			const buttonMinus = document.getElementById('card-preview-right-block-block-choice-minus');
+			const buttonPlus = document.getElementById('card-preview-right-block-block-choice-plus');
 			const input = document.getElementById('card-preview-right-block-block-choice-input');
 
-			if (!minusBtn || !plusBtn || !input) {
+			if (!buttonMinus || !buttonPlus || !input) {
 				setTimeout(initQuantityControls, 100);
 				return;
 			}
@@ -77,12 +77,12 @@
 				input.value = value;
 			}
 
-			minusBtn.addEventListener('click', (e) => {
+			buttonMinus.addEventListener('click', (e) => {
 				e.preventDefault();
 				updateValue(-1);
 			});
 
-			plusBtn.addEventListener('click', (e) => {
+			buttonPlus.addEventListener('click', (e) => {
 				e.preventDefault();
 				updateValue(1);
 			});

@@ -81,3 +81,28 @@ export function fillerMainCards(elementID, template, data) {
 		container.appendChild(item);
 	});
 }
+
+export function fillerCartCards(elementID, template, data) {
+    const container = document.getElementById(elementID);
+
+    for (let index = 0; index < 3; index++) {
+        const element = data[index];
+        const item = template.getElementById('card-v3').cloneNode(true);
+        
+        item.setAttribute('data-id', element.id);
+        item.querySelector('#card-v3-image').src = element.icons[0];
+        item.querySelector('#card-v3-info-title').textContent = element.title;
+        item.querySelector('#card-v3-info-desc-weight').textContent = element.weight;
+        item.querySelector('#card-v3-info-desc-maker').textContent = element.maker;
+        item.querySelector('#card-v3-price-price').textContent = element.price;
+
+        container.appendChild(item);
+
+        console.log(index, data.length);
+        if (index < data.length - 1) {
+            const divider = document.createElement('span');
+            divider.className = 'cart-goods-list-horizontal-divider';
+            container.appendChild(divider);
+        }
+    }
+}
