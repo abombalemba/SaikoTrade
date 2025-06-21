@@ -68,3 +68,12 @@ span.cart-goods-list-horizontal-divider {
     padding: 0;
     background-color: var(--color-LIGHT-GRAY);
 }
+
+span.buying-summary-horizontal-divider {
+    display: inline-block;
+    width: 100%;
+    height: 0.5px;
+    margin: 0 3%;
+    padding: 0;
+    background-color: var(--color-LIGHT-GRAY);
+}

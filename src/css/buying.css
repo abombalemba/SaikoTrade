@@ -1,6 +1,250 @@
 #buying {    
-    width: 100%;
+    width: 70%;
 	padding-top: 1%;
     padding-left: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
 }
 
+
+#buying-blocks {
+
+}
+
+#buying-blocks-auth {
+    border: 1px solid var(--color-LIGHT-GRAY);
+}
+
+#buying-blocks-auth-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1%;
+
+    background-color: var(--color-LIGHT-BLUE);
+}
+
+#buying-blocks-auth-header-symbol {
+    color: var(--color-BLACK);
+}
+
+#buying-blocks-auth-header-text {
+    color: var(--color-BLACK);
+}
+
+#buying-blocks-auth-body {
+    display: flex;
+    width: 100%;
+}
+
+#buying-blocks-auth-left {
+    flex: 1;
+    box-sizing: border-box;
+    background-color: aqua;
+
+    padding: 0 5%;
+}
+
+#buying-blocks-auth-left-title {
+    color: var(--color-BLACK);
+}
+
+#buying-blocks-auth-left-login {
+    text-align: left;
+}
+
+#buying-blocks-auth-left-login-text {
+    margin: 0;
+    padding: 0;
+    
+    color: var(--color-GRAY);
+}
+
+#buying-blocks-auth-left-login-input {
+    width: 300px;
+    height: 30px;
+
+    border: 1px solid var(--color-GRAY);
+    border-radius: 3px;
+    background-color: var(--color-BG-GRAY);
+}
+
+#buying-blocks-auth-left-password {
+
+}
+
+#buying-blocks-auth-left-password-text {
+    margin: 0;
+    padding: 0;
+
+    color: var(--color-GRAY);
+}
+
+#buying-blocks-auth-left-password-input {
+    width: 300px;
+    height: 30px;
+
+    border: 1px solid var(--color-GRAY);
+    border-radius: 3px;
+    background-color: var(--color-BG-GRAY);
+}
+
+#buying-blocks-auth-left-rememberme {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+#buying-blocks-auth-left-rememberme-input {
+    width: 15px;
+    height: 15px;
+
+    border-radius: 20px;
+}
+
+#buying-blocks-auth-left-rememberme-text {
+    color: var(--color-GRAY);
+}
+
+#buying-blocks-auth-left-button {
+
+}
+
+#buying-blocks-auth-left-forgot {
+
+}
+
+#buying-blocks-auth-right {
+    flex: 1;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+#buying-blocks-auth-right-up {
+    background-color: var(--color-BG-GRAY);
+}
+
+#buying-blocks-auth-right-up-text {
+    color: var(--color-GRAY);
+}
+
+#buying-blocks-auth-right-up-button {
+    color: var(--color-WHITE);
+    background-color: var(--color-RED);
+}
+
+#buying-blocks-auth-right-text {
+    color: var(--color-GRAY);
+}
+
+
+#buying-blocks-info {
+    
+}
+
+p.buying-blocks-info-text {
+    margin: 0;
+    padding: 0;
+
+    color: var(--color-GRAY);
+}
+
+
+
+#buying-summary {
+    width: 170px;
+
+    margin: 0;
+    padding: 0 3%;
+
+    border: 1px solid var(--color-LIGHT-GRAY);
+    border-radius: 3px;
+}
+
+#buying-summary-text {
+    color: var(--color-GRAY);
+}
+
+#buying-summary-new-price {
+    text-align: right;
+
+    color: var(--color-GRAY);
+}
+
+#buying-summary-old-price {
+    text-align: right;
+    text-decoration: line-through;
+    text-decoration-color: var(--color-LIGHT-GRAY);
+    text-decoration-thickness: 1px;
+
+    color: var(--color-LIGHT-GRAY);
+}
+
+#buying-summary-weight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 0 5%;
+}
+
+#buying-summary-weight-text {
+    color: var(--color-GRAY);
+}
+
+#buying-summary-weight-weight {
+    color: var(--color-GRAY);
+}
+
+#buying-summary-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 5%;
+}
+
+#buying-summary-delivery-text {
+    color: var(--color-GRAY);
+}
+
+#buying-summary-delivery-delivery {
+    color: var(--color-GRAY);
+}
+
+#buying-summary-discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    background-color: var(--color-LIGHT-GREEN);
+}
+
+#buying-summary-discount-text {
+    color: var(--color-GRAY);
+}
+
+#buying-summary-discount-discount {
+    color: var(--color-GRAY);
+}
+
+#buying-summary-total-text {
+    margin: 0;
+    padding: 0;
+    padding-top: 10%;
+
+    color: var(--color-GRAY);
+}
+
+#buying-summary-total {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5%;
+
+    color: var(--color-GRAY);
+}

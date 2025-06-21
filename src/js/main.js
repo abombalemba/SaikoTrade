@@ -14,7 +14,7 @@ async function main() {
                 //loader.loadHTML('main', 'components/organisms/main.html'),
                 //loader.loadHTML('card', 'components/organisms/card.html'),
                 loader.loadHTML('cart', 'components/organisms/cart.html'),
-                //loader.loadHTML('buying', 'components/organisms/buying.html')
+                loader.loadHTML('buying', 'components/organisms/buying.html')
             ]
         );
     } catch (error) {
