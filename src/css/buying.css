@@ -1,5 +1,5 @@
 #buying {    
-    width: 70%;
+    width: 100%;
 	padding-top: 1%;
     padding-left: 5%;
 
@@ -11,7 +11,7 @@
 
 
 #buying-blocks {
-
+    width: 70%;
 }
 
 #buying-blocks-auth {
@@ -24,14 +24,25 @@
     justify-content: left;
     gap: 1%;
 
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+
     background-color: var(--color-LIGHT-BLUE);
 }
 
 #buying-blocks-auth-header-symbol {
-    color: var(--color-BLACK);
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    color: var(--color-GRAY);
 }
 
 #buying-blocks-auth-header-text {
+    margin: 0;
+    padding: 0;
+
     color: var(--color-BLACK);
 }
 
@@ -41,14 +52,19 @@
 }
 
 #buying-blocks-auth-left {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     box-sizing: border-box;
-    background-color: aqua;
+    gap: 3%;
 
     padding: 0 5%;
 }
 
 #buying-blocks-auth-left-title {
+    margin: 3% 0;
+    padding: 0;
+
     color: var(--color-BLACK);
 }
 
@@ -73,7 +89,7 @@
 }
 
 #buying-blocks-auth-left-password {
-
+    text-align: left;
 }
 
 #buying-blocks-auth-left-password-text {
@@ -106,25 +122,42 @@
 }
 
 #buying-blocks-auth-left-rememberme-text {
+    margin: 1% 0;
+    padding: 0;
+
     color: var(--color-GRAY);
+    cursor: pointer;
 }
 
 #buying-blocks-auth-left-button {
+    width: 80px;
+    height: 40px;
 
+    border: none;
+    border-radius: 3px;
+
+    color: var(--color-WHITE);
+    background-color: var(--color-RED);
 }
 
 #buying-blocks-auth-left-forgot {
+    color: var(--color-GRAY);
+}
 
+#buying-blocks-auth-left-forgot:hover {
+    color: var(--color-RED);
+    transition: color 0.5s ease;
 }
 
 #buying-blocks-auth-right {
     flex: 1;
     box-sizing: border-box;
-    background-color: blue;
 }
 
 #buying-blocks-auth-right-up {
     background-color: var(--color-BG-GRAY);
+    margin: 3% 3%;
+    padding: 3% 3%;
 }
 
 #buying-blocks-auth-right-up-text {
@@ -132,11 +165,19 @@
 }
 
 #buying-blocks-auth-right-up-button {
+    width: 200px;
+    height: 40px;
+
+    border: none;
+    border-radius: 3px;
+
     color: var(--color-WHITE);
     background-color: var(--color-RED);
 }
 
 #buying-blocks-auth-right-text {
+    padding: 3% 3%;
+    
     color: var(--color-GRAY);
 }
 
@@ -155,7 +196,7 @@ p.buying-blocks-info-text {
 
 
 #buying-summary {
-    width: 170px;
+    width: 20%;
 
     margin: 0;
     padding: 0 3%;

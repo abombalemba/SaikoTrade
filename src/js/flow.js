@@ -83,10 +83,10 @@ function cardToFavourite(isHovered) {
     const text = document.getElementById('card-preview-right-block-block-button-to-favourite-text');
 
     if (isHovered) {
-        icon.src = 'images/symbols/heart/hover.png';
+        icon.src = 'images/symbols/heart/red-normal.svg';
         text.style.color = 'var(--color-RED-ACTIVE)';
     } else {
-        icon.src = 'images/symbols/heart/normal.png';
+        icon.src = 'images/symbols/heart/gray-normal.svg';
         text.style.color = 'var(--color-GRAY)';
     }
 }
