@@ -18,7 +18,7 @@
 }
 
 #card-v1-heart:hover {
-    content: url('../images/symbols/heart/red-hover.svg');
+    content: url('../images/symbols/heart/red-normal.svg');
 }
 
 #card-v1-image {

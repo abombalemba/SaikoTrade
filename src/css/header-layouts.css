@@ -16,6 +16,7 @@ div.header-up-block {
 a.header-up-block {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 #header-up-block-welcome-text {

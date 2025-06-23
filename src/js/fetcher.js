@@ -70,7 +70,6 @@ export function fillerMainCards(elementID, template, data) {
 	data.forEach(element => {
 		const item = template.getElementById('card-v1').cloneNode(true);
 
-		item.id = Math.random().toString(36).substring(2, 9);
 		item.setAttribute('data-id', element.id);
 		item.querySelector('#card-v1-image').src = element.icons[0];
 		item.querySelector('#card-v1-title').textContent = element.title;

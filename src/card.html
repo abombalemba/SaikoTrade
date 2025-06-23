@@ -26,86 +26,10 @@
     <footer id="footer"></footer>
 
 	<script src="js/flow.js"></script>
+	<script src="js/card.js"></script>
 	<script type="module" src="js/main.js"></script>
 	
-	<script>
-		function initTabs() {
-			const buttons = document.querySelectorAll('.card-info-button');
-			const tabs = document.querySelectorAll('.tab-content');
-			
-			if(buttons.length === 0 || tabs.length === 0) {
-				return;
-			}
-			
-			buttons.forEach(button => {
-				button.addEventListener('click', function() {
-					buttons.forEach(btn => btn.classList.remove('active'));
-					tabs.forEach(tab => tab.classList.remove('active'));
-					
-					this.classList.add('active');
-					const tabId = this.getAttribute('data-tab');
-					document.getElementById(tabId)?.classList.add('active');
-				});
-			});
-			
-			buttons[0]?.click();
-		}
-	
-		if (document.readyState === 'complete') {
-			initTabs();
-		} else {
-			window.addEventListener('load', initTabs);
-		}
-	</script>
-
-	<script>
-		function initQuantityControls() {
-			const buttonMinus = document.getElementById('card-preview-right-block-block-choice-minus');
-			const buttonPlus = document.getElementById('card-preview-right-block-block-choice-plus');
-			const input = document.getElementById('card-preview-right-block-block-choice-input');
-
-			if (!buttonMinus || !buttonPlus || !input) {
-				setTimeout(initQuantityControls, 100);
-				return;
-			}
-			
-			function updateValue(change) {
-				let value = parseInt(input.value) || 0;
-				value += change;
-				if (value < 1) value = 1;
-				if (value > 999) value = 999;
-				input.value = value;
-			}
-
-			buttonMinus.addEventListener('click', (e) => {
-				e.preventDefault();
-				updateValue(-1);
-			});
-
-			buttonPlus.addEventListener('click', (e) => {
-				e.preventDefault();
-				updateValue(1);
-			});
-
-			input.addEventListener('input', () => {
-				let value = parseInt(input.value) || 1;
-				if (isNaN(value) || value < 1) value = 1;
-				if (value > 999) value = 999;
-				input.value = value;
-			});
-
-			input.addEventListener('change', () => {
-				if (!input.value) input.value = 1;
-			});
-		}
-
-		if (document.readyState === 'complete') {
-			initQuantityControls();
-		} else {
-			window.addEventListener('load', initQuantityControls);
-			document.addEventListener('DOMContentLoaded', initQuantityControls);
-		}
-	</script>
+	<script></script>
 </body>
 
 </html>
