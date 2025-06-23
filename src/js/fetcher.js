@@ -98,11 +98,33 @@ export function fillerCartCards(elementID, template, data) {
 
         container.appendChild(item);
 
-        console.log(index, data.length);
         if (index < data.length - 1) {
             const divider = document.createElement('span');
             divider.className = 'cart-goods-list-horizontal-divider';
             container.appendChild(divider);
         }
     }
+}
+
+
+export function fillerBuyingCards(elementID, template, data) {
+	const container = document.getElementById(elementID);
+
+	for (let index = 0; index < 3; index++) {
+		const element = data[index];
+		const item = template.getElementById('card-v4').cloneNode(true);
+
+		item.setAttribute('data-id', element.id);
+		item.querySelector('#card-v4-image').src = element.icons[0];
+		item.querySelector('#card-v4-url').href = element.url;
+		item.querySelector('#card-v4-title').textContent = element.title;
+		item.querySelector('#card-v4-prices-new').textContent = element.price + ' руб.';
+		item.querySelector('#card-v4-prices-old').textContent = element.price - (element.price * (element.discount / 100)) + ' руб.';
+
+		container.appendChild(item);
+		
+		const divider = document.createElement('span');
+		divider.className = 'buying-goods-list-horizontal-divider';
+		container.appendChild(divider);
+	}
 }

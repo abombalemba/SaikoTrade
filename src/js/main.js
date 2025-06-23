@@ -19,7 +19,6 @@ async function main() {
         );
     } catch (error) {
         console.error(error);
-        return;
     };
 
     try {
@@ -56,6 +55,15 @@ async function main() {
         const template = await fetcher.loadHTML('components/atoms/card-v3.html');
         
         fetcher.fillerCartCards('cart-goods-list', template, data);
+    } catch (error) {
+        console.error(error);
+    };
+
+    try {
+        const data = await fetcher.loadJSON('data/goods.json');
+        const template = await fetcher.loadHTML('components/atoms/card-v4.html');
+
+        fetcher.fillerBuyingCards('buying-blocks-goods-list', template, data);
     } catch (error) {
         console.error(error);
     };

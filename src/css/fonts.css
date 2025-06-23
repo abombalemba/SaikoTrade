@@ -136,6 +136,18 @@
 }
 
 @font-face {
+	font-family: 'my-open-semi-22-bold';
+	src: url('../fonts/OpenSans/static/OpenSans-SemiBold.ttf');
+}
+
+.open-sans-22-semi {
+	font-family: 'my-open-semi-22-bold', sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;	
+}
+
+@font-face {
 	font-family: 'my-open-sans-36-reg';
 	src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf');
 }

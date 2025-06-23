@@ -1,0 +1,56 @@
+#card-v4 {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    padding: 3% 3%;
+}
+
+#card-v4-image {
+    width: 15%;
+    height: 100%;
+    max-height: 100px;
+
+    border: 1px solid var(--color-LIGHT-GRAY);
+    border-radius: 3px;
+}
+
+#card-v4-url {
+    width: 50%;
+    height: min-content;
+}
+
+#card-v4-title {
+    color: var(--color-GRAY);
+}
+
+#card-v4-title:hover {
+    color: var(--color-RED);
+    transition: color 0.5s ease;
+}
+
+#card-v4-count {
+    width: 7%;
+    color: var(--color-GRAY);
+}
+
+#card-v4-prices {
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+#card-v4-prices-new {
+    margin-top: 0;
+
+    color: var(--color-GRAY);
+}
+
+#card-v4-prices-old {
+    margin-top: 0;
+    
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+
+    color: var(--color-LIGHT-GRAY);
+}
