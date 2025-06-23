@@ -86,3 +86,11 @@ span.buying-goods-list-horizontal-divider {
     padding: 0;
     background-color: var(--color-LIGHT-GRAY);
 }
+
+span.card-reviews-horizontal-divider {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-LIGHT-GRAY);
+    margin-top: auto;
+}

@@ -40,6 +40,7 @@
 }
 
 #card-preview-right-block {
+
 }
 
 #card-preview-right-block-text {
@@ -103,7 +104,7 @@
 /*----------------------------------------------------------------*/
 
 #card-info {
-    width: 100%;
+    width: 60%;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -150,12 +151,67 @@ button.card-info-button.active {
     color: var(--color-GRAY);
 }
 
-#card-info-params {
+#card-info-params-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     color: var(--color-BLACK);
 }
 
-#card-inf-reviews {
+#card-info-params-left {
+    color: var(--color-GRAY);
+}
+
+#card-info-params-right {
     color: var(--color-BLACK);
+}
+
+#card-info-reviews-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    margin: 5% 5%;
+    color: var(--color-BLACK);
+}
+
+#card-info-reviews-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+}
+
+#card-info-reviews-header-button {
+    width: 150px;
+    height: 40px;
+
+    text-align: center;
+    align-items: center;
+
+    border: 1px solid var(--color-LIGHT-GRAY);
+    border-radius: 5px;
+
+    color: var(--color-GRAY );
+    background-color: #0000;
+}
+
+#card-info-reviews-button {
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: var(--color-WHITE);
+    background: linear-gradient(to bottom, var(--color-RED), var(--color-VINOUS));
+}
+
+#card-info-reviews-button:hover {
+    background: linear-gradient(to bottom, var(--color-VINOUS), var(--color-VINOUS));
 }
 
 .tab-content {
