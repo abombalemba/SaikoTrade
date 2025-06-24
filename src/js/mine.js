@@ -2,22 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPosition = 0;
     const cardsPerPage = 4;
 
-    
-    const cardsData = fetcher.loadJSON('data/goods.json');
-
-    // Функция для отображения карточек
     function renderCards() {
         const container = document.getElementById('main-set-popular-down');
         container.innerHTML = '';
         
         const cardsToShow = cardsData.slice(currentPosition, currentPosition + cardsPerPage);
         
-        // Создаем HTML для каждой карточки
         cardsToShow.forEach(card => {
             const cardElement = document.createElement('div');
             cardElement.className = 'card';
             
-            // Секция с процентами и цифрами (если есть)
             let discountHtml = '';
             if (card.discount || card.prices.length > 0) {
                 discountHtml = `
@@ -42,24 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
             container.appendChild(cardElement);
         });
         
-        // Обновляем состояние кнопок
         updateButtons();
     }
 
-    // Функция для перелистывания карточек
     function slideCards(direction) {
         if (direction === 'left') {
             if (currentPosition > 0) {
                 currentPosition--;
             } else {
-                // Если достигли начала, переходим к концу
                 currentPosition = Math.max(0, cardsData.length - cardsPerPage);
             }
         } else if (direction === 'right') {
             if (currentPosition + cardsPerPage < cardsData.length) {
                 currentPosition++;
             } else {
-                // Если достигли конца, возвращаемся в начало
                 currentPosition = 0;
             }
         }
@@ -67,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
         renderCards();
     }
 
-    // Функция для обновления состояния кнопок
     function updateButtons() {
         const leftButton = document.getElementById('main-set-popular-up-right-left');
         const rightButton = document.getElementById('main-set-popular-up-right-right');
@@ -76,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
         rightButton.style.opacity = currentPosition + cardsPerPage >= cardsData.length ? 0.5 : 1;
     }
 
-    // Функция для hover эффектов на кнопках
     function mainContainerButtons(id, isHover, direction) {
         const button = document.getElementById(id);
         if (isHover) {
@@ -86,3 +74,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+async function loadJSON(filepath) {
+    try {
+      console.log(filepath);
+      const response = await fetch(filepath);
+      console.log(response);
+      
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+  

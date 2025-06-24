@@ -1,0 +1,292 @@
+<div id="main-set-popular">
+    <div id="main-set-popular-up">
+        <div id="main-set-popular-up-left">
+            <p id="main-set-popular-up-left-title" class="poppins-25-bold">
+                САМЫЕ ПОПУЛЯРНЫЕ
+            </p>
+            <span class="red-horizontal-divider"></span>
+        </div>
+        <div id="main-set-popular-up-right">
+            <img id="main-set-popular-up-right-left" class="main-set-popular-up-right-button" src="images/symbols/arrow/left_normal.svg" alt=""
+            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')"
+            onclick="slideCards('left')">
+
+            <img id="main-set-popular-up-right-right" class="main-set-popular-up-right-button" src="images/symbols/arrow/right_normal.svg" alt=""
+            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')"
+            onclick="slideCards('right')">
+        </div>
+    </div>
+
+    <div id="main-set-popular-down" class="main-set-container">
+        <!-- Карточки будут добавляться здесь через JavaScript -->
+    </div>
+</div>
+
+<script>
+    // Данные карточек товаров
+    const cardsData = [
+        {
+            discount: "10%",
+            prices: ["7.5m", "7.2m", "7.3m"],
+            title: "Рatekara Premium",
+            description: "Тренажер для тренировки мышц",
+            price: "10 644 руб.",
+            button: "В корзину"
+        },
+        {
+            discount: "10%",
+            prices: ["7.2m", "7.3m"],
+            title: "Фукоидан, Orihiro",
+            description: "",
+            price: "3 330 руб.",
+            button: "В корзину"
+        },
+        {
+            discount: "10%",
+            prices: ["7.2m", "7.3m"],
+            title: "Плазмалоген из морского гребешка",
+            description: "B&S Plasmalogen S",
+            price: "9 889 руб.",
+            button: "В корзину"
+        },
+        {
+            discount: "10%",
+            prices: ["7.2m", "7.3m"],
+            title: "Коллаген + гиалуроновая кислота + плацента",
+            description: "",
+            price: "1 395 руб.",
+            button: "В корзину"
+        },
+        {
+            discount: "",
+            prices: [],
+            title: "Orihiro Harro",
+            description: "Кинадза",
+            price: "1 800 руб.",
+            button: "В корзину"
+        },
+        {
+            discount: "",
+            prices: [],
+            title: "Лактис экстракт кисломолочных бактерий",
+            description: "LACTIS 5ml",
+            price: "5 220 руб.",
+            button: "В корзину"
+        }
+    ];
+
+    let currentPosition = 0;
+    const cardsPerPage = 4;
+
+    // Инициализация - отображаем первые карточки
+    document.addEventListener('DOMContentLoaded', function() {
+        renderCards();
+    });
+
+    // Функция для отображения карточек
+    function renderCards() {
+        const container = document.getElementById('main-set-popular-down');
+        container.innerHTML = '';
+        
+        // Определяем, какие карточки нужно показать
+        const cardsToShow = cardsData.slice(currentPosition, currentPosition + cardsPerPage);
+        
+        // Создаем HTML для каждой карточки
+        cardsToShow.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.className = 'card';
+            
+            // Секция с процентами и цифрами (если есть)
+            let discountHtml = '';
+            if (card.discount || card.prices.length > 0) {
+                discountHtml = `
+                    <div class="card-discount-section">
+                        <div class="card-discount">${card.discount}</div>
+                        <div class="card-prices">
+                            ${card.prices.map(price => `<div>${price}</div>`).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            cardElement.innerHTML = `
+                ${discountHtml}
+                <div class="card-content">
+                    <h3 class="card-title">${card.title}</h3>
+                    ${card.description ? `<p class="card-description">${card.description}</p>` : ''}
+                    <div class="card-price">${card.price}</div>
+                    <button class="card-button">${card.button}</button>
+                </div>
+            `;
+            container.appendChild(cardElement);
+        });
+        
+        // Обновляем состояние кнопок
+        updateButtons();
+    }
+
+    // Функция для перелистывания карточек
+    function slideCards(direction) {
+        if (direction === 'left') {
+            if (currentPosition > 0) {
+                currentPosition--;
+            } else {
+                // Если достигли начала, переходим к концу
+                currentPosition = Math.max(0, cardsData.length - cardsPerPage);
+            }
+        } else if (direction === 'right') {
+            if (currentPosition + cardsPerPage < cardsData.length) {
+                currentPosition++;
+            } else {
+                // Если достигли конца, возвращаемся в начало
+                currentPosition = 0;
+            }
+        }
+        
+        renderCards();
+    }
+
+    // Функция для обновления состояния кнопок
+    function updateButtons() {
+        const leftButton = document.getElementById('main-set-popular-up-right-left');
+        const rightButton = document.getElementById('main-set-popular-up-right-right');
+        
+        leftButton.style.opacity = currentPosition === 0 ? 0.5 : 1;
+        rightButton.style.opacity = currentPosition + cardsPerPage >= cardsData.length ? 0.5 : 1;
+    }
+
+    // Функция для hover эффектов на кнопках
+    function mainContainerButtons(id, isHover, direction) {
+        const button = document.getElementById(id);
+        if (isHover) {
+            button.src = `images/symbols/arrow/${direction}_hover.svg`;
+        } else {
+            button.src = `images/symbols/arrow/${direction}_normal.svg`;
+        }
+    }
+</script>
+
+<style>
+    /* Основные стили контейнера */
+    #main-set-popular {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    
+    #main-set-popular-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .red-horizontal-divider {
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: red;
+        margin-top: 10px;
+    }
+    
+    #main-set-popular-up-right {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .main-set-popular-up-right-button {
+        cursor: pointer;
+        transition: opacity 0.2s;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .main-set-popular-up-right-button:hover {
+        opacity: 0.8;
+    }
+    
+    /* Стили для контейнера с карточками */
+    .main-set-container {
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+    }
+    
+    /* Стили карточек */
+    .card {
+        flex: 0 0 calc(25% - 15px);
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+        background: white;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .card-discount-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .card-discount {
+        font-weight: bold;
+        font-size: 18px;
+        color: red;
+        margin-right: 10px;
+    }
+    
+    .card-prices {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-title {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        color: #333;
+    }
+    
+    .card-description {
+        font-size: 14px;
+        color: #666;
+        margin: 0 0 15px 0;
+    }
+    
+    .card-price {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 10px 0;
+        color: #333;
+    }
+    
+    .card-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-top: auto;
+    }
+    
+    .card-button:hover {
+        background-color: #ff5252;
+    }
+</style>
