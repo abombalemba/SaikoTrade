@@ -1,0 +1,106 @@
+<div id="card-title">
+    <p id="card-title-text" class="poppins-35-reg">
+        {{ data.title }}
+    </p>
+</div>
+
+<span class="card-horizontal-divider"></span>
+
+<div id="card-preview">
+    <img id="card-preview-icon" src="{{ data.icons[0] }}" alt="icon">
+
+    <div id="card-preview-right">
+        <div id="card-preview-right-empty"></div>
+
+        <div id="card-preview-right-block">
+            <div id="card-preview-right-block-block">
+                <p id="card-preview-right-block-block-old-price" class="arial-16-bold">
+                    <del>
+                        {{ data.price }} руб.
+                    </del>
+                </p>
+                <p id="card-preview-right-block-block-new-price" class="arial-27-bold">
+                    {{ data.price - (data.price * (data.discount / 100)) }} руб.
+                </p>
+                <p id="card-preview-right-block-block-discount" class="arial-14-bold">
+                    Скидка {{ data.price * (data.discount / 100) }} руб.
+                </p>
+                <div id="card-preview-right-block-block-choice">
+                    <img id="card-preview-right-block-block-choice-minus" src="images/symbols/plus-minus/minus2.png" alt="minus">
+
+                    <input id="card-preview-right-block-block-choice-input" value="1" type="text" maxlength="3" style="width: 25px; text-align: center;">
+
+                    <img id="card-preview-right-block-block-choice-plus" src="images/symbols/plus-minus/plus2.png" alt="plus">
+                </div>
+                <p id="card-preview-right-block-block-count" class="arial-12-reg">
+                   шт 
+                </p>
+                <button id="card-preview-right-block-block-button-to-basket" class="open-sans-14-bold">
+                    В КОРЗИНУ
+                </button>
+                <div id="card-preview-right-block-block-button-to-favourite" onmouseover="cardToFavourite(true)" onmouseout="cardToFavourite(false)">
+                    <img id="card-preview-right-block-block-button-to-favourite-icon" src="images/symbols/heart/gray-normal.svg" alt="heart">
+                    <p id="card-preview-right-block-block-button-to-favourite-text" class="arial-15-bold">
+                        В избранное
+                    </p>
+                </div>
+            </div>
+
+            <p id="card-preview-right-block-text" class="poppins-14-bold">
+                Стоимость и срок доставки зависит от страны и службы доставки, рассчитывается на этапе оформления заказа
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="card-info">
+    <div id="card-info-buttons">
+        <button id="card-info-button-desc" data-tab="card-info-desc" class="card-info-button poppins-13-bold">
+            ОПИСАНИЕ
+        </button>
+
+        <button id="card-info-button-params" data-tab="card-info-params" class="card-info-button poppins-13-bold">
+            ХАРАКТЕРИСТИКИ
+        </button>
+
+        <button id="card-info-button-reviews" data-tab="card-info-reviews" class="card-info-button poppins-13-bold">
+            ОТЗЫВЫ
+        </button>
+    </div>
+
+    <div id="card-info-container">
+        <div id="card-info-desc" class="tab-content active">
+            <p class="poppins-14-reg">
+                {{ data.desc }}
+            </p>
+        </div>
+    
+        <div id="card-info-params" class="tab-content">
+            <div id="card-info-params-block">
+                <p id="card-info-params-left" class="poppins-14-reg">
+                    Производитель
+                </p>
+
+                <p id="card-info-params-right" class="poppins-16-reg">
+                    {{ data.maker }}
+                </p>
+            </div>
+        </div>
+    
+        <div id="card-info-reviews" class="tab-content poppins-14-reg">
+            <div id="card-info-reviews-block">
+                <div id="card-info-reviews-header">
+                    <button id="card-info-reviews-header-button" class="poppins-14-reg">
+                        Комментарии
+                    </button>
+
+                    <span class="card-reviews-horizontal-divider"></span>
+                </div>
+    
+                <button id="card-info-reviews-button" class="poppins-14-bold">
+                    Добавить комментарий
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

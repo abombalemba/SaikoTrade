@@ -13,17 +13,19 @@
 </head>
 
 <body>
-    <header id="header"></header>
+	{% include "components/organisms/header.html" %}
 
 	<div class="body">
-		<div id="body-left"></div>
+		{% include "components/molecules/body-left.html" %}
 
-		<div id="cart"></div>
+		<div id="cart">
+			{% include "components/organisms/cart.html" %}
+		</div>
 	</div>
 
 	<span class="inter-horizontal-divider"></span>
-	
-    <footer id="footer"></footer>
+
+	{% include "components/organisms/footer.html" %}
     
 	<script src="js/flow.js"></script>
 	<script type="module" src="js/main.js"></script>

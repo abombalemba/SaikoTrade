@@ -9,21 +9,23 @@
 
 	<link rel="icon" href="images/logo/favicon.ico">
 
-	<title>Сыворотка с антиоксидантами Amaranth APP-С Fulla Serum,30ml|купить в интернет-магазине японских товаров SaikoTrade - Интернет-магазин японской косметики Сайко</title>
+	<title>{{ data.title }} | купить в интернет-магазине японских товаров SaikoTrade - Интернет-магазин японской косметики Сайко</title>
 </head>
 
 <body>
-    <header id="header"></header>
+	{% include "components/organisms/header.html" %}
 
 	<div class="body">
-		<div id="body-left"></div>
+		{% include "components/molecules/body-left.html" %}
 
-		<div id="card"></div>
+		<div id="card">
+			{% include "components/organisms/card.html" %}
+		</div>
 	</div>
 
 	<span class="inter-horizontal-divider"></span>
 
-    <footer id="footer"></footer>
+	{% include "components/organisms/footer.html" %}
 
 	<script src="js/flow.js"></script>
 	<script src="js/card.js"></script>

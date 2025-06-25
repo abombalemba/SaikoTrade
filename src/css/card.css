@@ -40,7 +40,8 @@
 }
 
 #card-preview-right-block {
-
+    max-width: 350px;
+    min-width: 350px;
 }
 
 #card-preview-right-block-text {

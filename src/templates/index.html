@@ -15,17 +15,19 @@
 </head>
 
 <body>
-	<header id="header"></header>
+	{% include "components/organisms/header.html" %}
 
 	<div class="body">
-		<div id="body-left"></div>
-		
-		<div id="main"></div>
+		{% include "components/molecules/body-left.html" %}
+
+		<div id="main">
+			{% include "components/organisms/main.html" %}
+		</div>
 	</div>
 
 	<span class="inter-horizontal-divider"></span>
 
-	<footer id="footer"></footer>
+	{% include "components/organisms/footer.html" %}
 
 	<script src="js/flow.js"></script>
 	<script src="js/mine.js"></script>
