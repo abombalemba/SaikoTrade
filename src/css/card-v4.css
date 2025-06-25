@@ -4,14 +4,20 @@
     gap: 3%;
     /*padding: 3% 3%;*/
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     width: 100%;
+    min-height: 100px;
     box-sizing: border-box;
 }
 
 #card-v4-image {
     width: 15%;
-    height: 100%;
-    max-height: 100px;
+    max-width: 70px;
+    max-height: 70px;
 
     border: 1px solid var(--color-LIGHT-GRAY);
     border-radius: 3px;

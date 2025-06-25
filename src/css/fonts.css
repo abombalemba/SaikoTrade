@@ -19,6 +19,13 @@
 	font-style: italic;
 }
 
+.arial-14-reg {
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+}
+
 .arial-14-bold {
 	font-family: 'Arial', sans-serif;
 	font-size: 14px;
@@ -85,6 +92,18 @@
 	font-size: 14px;
 	font-weight: bold;
 	font-style: normal;	
+}
+
+@font-face {
+	font-family: 'my-open-sans-16-reg';
+	src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf');
+}
+
+.open-sans-16-reg {
+	font-family: 'my-open-sans-16-reg', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {

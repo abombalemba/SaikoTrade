@@ -1,11 +1,13 @@
 {% for good in goods %}
-    <div id="card-v3">
+    <div id="card-v3" class="card-v3">
         <img id="card-v3-image" src="{{ good.icons[0] }}" alt="image">
 
         <div id="card-v3-info">
-            <p id="card-v3-info-title" class="open-sans-16-reg">
-                {{ good.title }}
-            </p>
+            <a href="/card?id={{ good.id }}">
+                <p id="card-v3-info-title" class="open-sans-16-reg">
+                    {{ good.title }}
+                </p>
+            </a>
 
             <div id="card-v3-info-desc">
                 <p id="card-v3-info-desc-weight-text" class="arial-12-reg">
@@ -24,21 +26,45 @@
         </div>
 
         <div id="card-v3-price">
-            <p id="card-v3-price-price">
-                {{ good.price }}
+            <p id="card-v3-price-old-price" class="arial-14-reg">
+                {{ good.price }} руб.
             </p>
 
-            <p id="card-v3-price-text">
+            <p id="card-v3-price-new-price" class="arial-20-reg">
+                {{ good.price - (good.price * (good.discount / 100)) }} руб.
+            </p>
+
+            <p id="card-v3-price-text" class="arial-12-reg">
                 цена за 1 шт
             </p>
         </div>
 
         <div id="card-v3-actions">
+            <div id="card-v3-actions-up">
+                <img class="card-v3-actions-up-left" src="images/symbols/plus-minus/minus1.svg" alt="minus">
 
+                <input class="card-v3-actions-up-input" type="number" placeholder="1">
+
+                <img class="card-v3-actions-up-right" src="images/symbols/plus-minus/plus1.svg" alt="plus">
+            </div>
+
+            <p id="card-v3-actions-text" class="arial-12-italic">
+                шт
+            </p>
         </div>
 
         <div id="card-v3-summary">
+            <p id="card-v3-summary-old-price" class="arial-14-reg">
+                {{ good.price }} руб.
+            </p>
 
+            <p id="card-v3-summary-new-price" class="arial-20-reg">
+                {{ good.price - (good.price * (good.discount / 100)) }} руб.
+            </p>
+
+            <p id="card-v3-summary-text" class="arial-12-reg">
+                Экономия {{ good.price * (good.discount / 100) }}
+            </p>
         </div>
 
         <img id="card-v3-button" src="images/symbols/cross/normal.svg" alt="">
