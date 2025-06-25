@@ -1,11 +1,11 @@
 @import 'colors.css';
 @import 'fonts.css';
-@import 'header-layouts.css';
+@import 'header.css';
 @import 'main.css';
 @import 'card.css';
 @import 'cart.css';
 @import 'buying.css';
-@import 'footer-layouts.css';
+@import 'footer.css';
 @import 'elements.css';
 @import 'card-v1.css';
 @import 'card-v3.css';

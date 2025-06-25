@@ -19,12 +19,15 @@
                         {{ data.price }} руб.
                     </del>
                 </p>
+
                 <p id="card-preview-right-block-block-new-price" class="arial-27-bold">
                     {{ data.price - (data.price * (data.discount / 100)) }} руб.
                 </p>
+
                 <p id="card-preview-right-block-block-discount" class="arial-14-bold">
                     Скидка {{ data.price * (data.discount / 100) }} руб.
                 </p>
+
                 <div id="card-preview-right-block-block-choice">
                     <img id="card-preview-right-block-block-choice-minus" src="images/symbols/plus-minus/minus2.png" alt="minus">
 
@@ -32,14 +35,18 @@
 
                     <img id="card-preview-right-block-block-choice-plus" src="images/symbols/plus-minus/plus2.png" alt="plus">
                 </div>
+
                 <p id="card-preview-right-block-block-count" class="arial-12-reg">
-                   шт 
+                   шт
                 </p>
+
                 <button id="card-preview-right-block-block-button-to-basket" class="open-sans-14-bold">
                     В КОРЗИНУ
                 </button>
+
                 <div id="card-preview-right-block-block-button-to-favourite" onmouseover="cardToFavourite(true)" onmouseout="cardToFavourite(false)">
                     <img id="card-preview-right-block-block-button-to-favourite-icon" src="images/symbols/heart/gray-normal.svg" alt="heart">
+                    
                     <p id="card-preview-right-block-block-button-to-favourite-text" class="arial-15-bold">
                         В избранное
                     </p>
@@ -71,7 +78,7 @@
     <div id="card-info-container">
         <div id="card-info-desc" class="tab-content active">
             <p class="poppins-14-reg">
-                {{ data.desc }}
+                {{ data.desc|safe }}
             </p>
         </div>
     

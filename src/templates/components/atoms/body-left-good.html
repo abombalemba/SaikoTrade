@@ -1,7 +1,11 @@
-<div id="body-left-good" class="body-left-good">
-    <img id="body-left-good-icon" src="" alt="icon">
+{% for good in body_left_goods %}
+    <div id="body-left-good" class="body-left-good">
+        <img id="body-left-good-icon" src="{{ good.icon }}" alt="icon">
 
-    <a id="body-left-good-url" href="">
-        <p id="body-left-good-text" class="poppins-14-reg"></p>
-    </a>
-</div>
+        <a id="body-left-good-url" href="/card?id={{ good.id }}">
+            <p id="body-left-good-text" class="poppins-14-reg">
+                {{ good.title }}
+            </p>
+        </a>
+    </div>
+{% endfor %}

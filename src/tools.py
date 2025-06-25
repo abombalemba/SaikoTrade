@@ -11,7 +11,6 @@ def get_good(DB: list[dict], ID: int) -> dict:
         raise Exception('DB is empty')
 
     for good in DB:
-        print(good)
         if good['id'] == ID:
             return good
     

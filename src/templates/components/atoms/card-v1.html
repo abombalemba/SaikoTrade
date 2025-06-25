@@ -1,15 +1,19 @@
 <div id="card-v1">
     <img id="card-v1-heart" src="images/symbols/heart/gray-normal.svg" alt="heart" onmouseover="" onmouseout="">
 
-    <a id="card-v1-image-a" href="">
-        <img id="card-v1-image" src="" alt="image">
+    <a id="card-v1-image-a" href="/card?id={{ good.id }}">
+        <img id="card-v1-image" src="{{ good.icons[0] }}" alt="image">
     </a>
 
-    <a id="card-v1-title-a" href="">
-        <p id="card-v1-title" class="poppins-11-reg"></p>
+    <a id="card-v1-title-a" href="/card?id={{ good.id }}">
+        <p id="card-v1-title" class="poppins-11-reg">
+            {{ good.title }}
+        </p>
     </a>
     
-    <p id="card-v1-price" class="poppins-13-bold"></p>
+    <p id="card-v1-price" class="poppins-13-bold">
+        {{ good.price }} руб.
+    </p>
 
     <button id="card-v1-button" class="open-sans-14-reg">
         В корзину

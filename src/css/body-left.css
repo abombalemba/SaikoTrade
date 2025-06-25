@@ -29,4 +29,5 @@ div.body-left-categories-list-item {
 #body-left-hits-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1%;
 }

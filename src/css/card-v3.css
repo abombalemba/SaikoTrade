@@ -198,10 +198,6 @@ img.card-v3-actions-up-right:hover {
 }
 
 #card-v3-button {
-
-}
-
-#card-v3-button {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }

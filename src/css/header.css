@@ -171,9 +171,9 @@ div.button-offer {
     transition: background-color 0.3s;
 }
 
-@keyframes pulse {
+@keyframes button_offer_pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+        box-shadow: 0 0 0 0 rgba(255, 193, 5, 0.7);
     }
     70% {
         box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
@@ -184,7 +184,7 @@ div.button-offer {
 }
 
 div.button-offer:not(:hover) {
-    animation: pulse 1s infinite;
+    animation: button_offer_pulse 1s infinite;
 }
 
 div.button-offer:hover {

@@ -15,6 +15,7 @@ from tools import *
 app = FastAPI()
 
 db = load_db('data/goods.json')
+body_left_goods = load_db('data/body-left-goods.json')
 
 templates = Jinja2Templates('templates')
 
@@ -41,7 +42,9 @@ async def path_index(request: Request):
     return templates.TemplateResponse(
         'index.html',
         {
-            'request': request
+            'request': request,
+            'goods': db,
+            'body_left_goods': body_left_goods
         }
     )
 
@@ -54,7 +57,8 @@ async def path_card(request: Request, id: int = Query(..., description='ID то�
         'card.html',
         {
             'request': request,
-            'data': good
+            'data': good,
+            'body_left_goods': body_left_goods
         }
     )
 
@@ -89,6 +93,7 @@ async def path_cart(request: Request):
         {
             'request': request,
             'goods': goods,
+            'body_left_goods': body_left_goods,
             'summary': summary
         }
     )
@@ -122,6 +127,7 @@ async def path_buying(request: Request):
         {
             'request': request,
             'goods': goods,
+            'body_left_goods': body_left_goods,
             'summary': summary
         }
     )
