@@ -73,11 +73,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-self: flex-start;
 }
 
 #card-v3-price-old-price {
-    vertical-align: top;
     
     margin-bottom: 0;
 
@@ -88,7 +86,6 @@
 }
 
 #card-v3-price-new-price {
-    vertical-align: top;
 
     color: var(--color-BLACK);
     margin-top: 0;
@@ -96,7 +93,6 @@
 }
 
 #card-v3-price-text {
-    vertical-align: top;
 
     color: var(--color-GRAY);
     margin-top: 0;
@@ -178,7 +174,6 @@ img.card-v3-actions-up-right:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-self: flex-start;
 }
 
 #card-v3-summary-old-price {
