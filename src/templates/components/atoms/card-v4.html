@@ -1,23 +1,25 @@
-<div id="card-v4">
-    <img id="card-v4-image" src="" alt="image">
+{% for good in goods %}
+    <div id="card-v4">
+        <img id="card-v4-image" src="{{ good.icons[0] }}" alt="image">
 
-    <a id="card-v4-url" href="">
-        <p id="card-v4-title" class="poppins-14-bold">
+        <a id="card-v4-url" href="/card?id={{ good.id }}">
+            <p id="card-v4-title" class="poppins-14-bold">
+                {{ good.title }}
+            </p>
+        </a>
 
-        </p>
-    </a>
-
-    <p id="card-v4-count" class="poppins-14-reg">
-        1 шт
-    </p>
-
-    <div id="card-v4-prices">
-        <p id="card-v4-prices-new" class="poppins-14-bold">
-
+        <p id="card-v4-count" class="poppins-14-reg">
+            1 шт
         </p>
 
-        <p id="card-v4-prices-old" class="poppins-13-bold">
+        <div id="card-v4-prices">
+            <p id="card-v4-prices-new" class="poppins-14-bold">
+                {{ good.price - (good.price * (good.discount / 100)) }} руб.
+            </p>
 
-        </p>
+            <p id="card-v4-prices-old" class="poppins-13-bold">
+                {{ good.price }} руб.
+            </p>
+        </div>
     </div>
-</div>
+{% endfor %}

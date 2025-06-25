@@ -15,5 +15,4 @@ def get_good(DB: list[dict], ID: int) -> dict:
         if good['id'] == ID:
             return good
     
-    print(DB)
-    #raise Exception('The good is not found')
+    raise Exception('The good is not found')

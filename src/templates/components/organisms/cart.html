@@ -13,33 +13,33 @@
         </p>
 
         <p id="cart-summary-result-small" class="arial-12-reg">
-            Общий вес: 1.05 кг
+            Общий вес: {{ summary.weight }} кг
         </p>
     </div>
 
     <div id="cart-summary-billing">
         <p id="cart-summary-billing-pre" class="open-sans-22-reg">
-            8 101 руб.
+            {{ summary.old_price }} руб.
         </p>
 
         <p id="cart-summary-billing-total" class="open-sans-36-reg">
-            7 683 руб.
+            {{ summary.new_price }} руб.
         </p>
 
         <p id="cart-summary-billing-discount" class="poppins-14-reg">
-            Экономия 418 руб.
+            Экономия {{ summary.discount }} руб.
         </p>
     </div>
 
     <div id="cart-summary-buttons">
         <button id="cart-summary-buttons-continue" class="poppins-16-reg">
-            <a href="index.html">
+            <a href="/">
                 Продолжить покупки
             </a>
         </button>
 
         <button id="cart-summary-buttons-order" class="poppins-16-reg">
-            <a href="buying.html">
+            <a href="/buying">
                 Оформить заказ
             </a>
         </button>
@@ -51,11 +51,11 @@
         <input id="cart-goods-header-input" class="poppins-14-reg" type="text" placeholder="Фильтр">
 
         <p id="cart-goods-header-count" class="poppins-14-bold">
-            В корзине 3 товара
+            В корзине {{ summary.length }} товара
         </p>
     </div>
 
     <div id="cart-goods-list">
-
+        {% include "components/atoms/card-v3.html" %}
     </div>
 </div>

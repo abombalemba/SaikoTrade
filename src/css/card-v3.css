@@ -3,10 +3,11 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 
     width: 100%;
     height: 190px;
+    box-sizing: border-box;
 }
 
 #card-v3-image {

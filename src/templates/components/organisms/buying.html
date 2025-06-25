@@ -82,7 +82,7 @@
         </div>
 
         <div id="buying-blocks-goods-list">
-
+            {% include "components/atoms/card-v4.html" %}
         </div>
     </div>
 
@@ -126,11 +126,11 @@
     </p>
 
     <p id="buying-summary-new-price" class="poppins-13-reg">
-        10 026 руб.
+        {{ summary.new_price }} руб.
     </p>
 
     <p id="buying-summary-old-price" class="poppins-13-reg">
-        10 644 руб.
+        {{ summary.old_price }} руб.
     </p>
 
     <span class="buying-summary-horizontal-divider"></span>
@@ -141,7 +141,7 @@
         </p>
 
         <p id="buying-summary-weight-weight" class="poppins-13-reg">
-            0.55 кг
+            {{ summary.weight }} кг
         </p>
     </div>
 
@@ -172,6 +172,6 @@
     </p>
 
     <p id="buying-summary-total" class="poppins-27-reg">
-        10 916 руб.
+        {{ summary.new_price + 890 - 618 }} руб.
     </p>
 </div>

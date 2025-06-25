@@ -95,6 +95,10 @@
     background-color: var(--color-RED-ACTIVE);
 }
 
+#cart-summary-buttons-continue a{
+    color: var(--color-WHITE);
+}
+
 #cart-summary-buttons-order {
     color: var(--color-WHITE);
     background-color: var(--color-BLUE);
@@ -107,6 +111,10 @@
 
 #cart-summary-buttons-order:hover {
     background-color: var(--color-BLUE-ACTIVE);
+}
+
+#cart-summary-buttons-order a {
+    color: var(--color-WHITE);
 }
 
 #cart-goods {
@@ -143,5 +151,5 @@
 }
 
 #cart-goods-list {
-
+    width: 100%;
 }

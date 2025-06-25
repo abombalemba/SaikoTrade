@@ -271,7 +271,9 @@
 }
 
 #buying-blocks-info {
-    
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
 }
 
 p.buying-blocks-info-text {

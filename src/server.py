@@ -6,6 +6,7 @@ from fastapi.staticfiles import StaticFiles
 
 from uvicorn import run
 
+import random
 import os
 
 from tools import *
@@ -28,7 +29,6 @@ app.mount('/images', StaticFiles(directory='images'), name='images')
 @app.get('/favicon.ico', include_in_schema=False)
 @app.get('/images/logo/favicon.ico', include_in_schema=False)
 async def path_favicon():
-    print(124)
     return FileResponse(
         'images/logo/favicon.ico',
         media_type='image/x-icon',
@@ -61,20 +61,68 @@ async def path_card(request: Request, id: int = Query(..., description='ID то�
 
 @app.get('/cart', response_class=HTMLResponse)
 async def path_cart(request: Request):
+    goods = list()
+
+    summary = {
+        'old_price': 0,
+        'new_price': 0,
+        'weight': 0
+    }
+
+    for i in range(1, len(db)):
+        good = random.choice(db)
+
+        summary['old_price'] += good['price']
+        summary['new_price'] += good['price'] - (good['price'] * round(good['discount'] / 100, 2))
+        summary['weight'] += good['weight']
+
+        goods.append(good)
+
+    summary['old_price'] = round(summary['old_price'], 2)
+    summary['new_price'] = round(summary['new_price'], 2)
+    summary['weight'] = round(summary['weight'], 2)
+    summary['length'] = len(goods)
+    summary['discount'] = round(summary['old_price'] - summary['new_price'], 2)
+
     return templates.TemplateResponse(
         'cart.html',
         {
-            'request': request
+            'request': request,
+            'goods': goods,
+            'summary': summary
         }
     )
 
 
 @app.get('/buying', response_class=HTMLResponse)
 async def path_buying(request: Request):
+    goods = list()
+
+    summary = {
+        'old_price': 0,
+        'new_price': 0,
+        'weight': 0
+    }
+
+    for i in range(1, len(db)):
+        good = random.choice(db)
+
+        summary['old_price'] += good['price']
+        summary['new_price'] += good['price'] - (good['price'] * round(good['discount'] / 100, 2))
+        summary['weight'] += good['weight']
+
+        goods.append(good)
+
+    summary['old_price'] = round(summary['old_price'], 2)
+    summary['new_price'] = round(summary['new_price'], 2)
+    summary['weight'] = round(summary['weight'], 2)
+
     return templates.TemplateResponse(
         'buying.html',
         {
-            'request': request
+            'request': request,
+            'goods': goods,
+            'summary': summary
         }
     )
 
