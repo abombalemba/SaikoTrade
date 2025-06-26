@@ -63,13 +63,14 @@ a {
 
 div.body {
 	display: flex;
+	height: 100%;
+	min-height: 100vh;
 	padding: 0 10%;
 	justify-content: stretch;
 }
 
 body {
 	margin: 0;
-	height: auto;
 }
 
 
@@ -89,6 +90,7 @@ body {
     width: 80%;
 	padding-top: 1%;
     padding-left: 5%;
+	padding-bottom: 1%;
 }
 
 #main-ad {
