@@ -104,9 +104,20 @@ body {
 	justify-content: space-between;
 }
 
+.main-set-container {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+    gap: 15px;
+    width: max-content;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
 #main-set-discounts {
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 
 #main-set-discounts-up {
@@ -136,16 +147,10 @@ img.main-set-discounts-up-right-button {
 	height: 30px;
 }
 
-.main-set-container {
-    display: flex;
-	flex-wrap: wrap;
-    transition: transform 0.5s ease;
-    gap: 15px;
-    width: max-content;
-}
-
 #main-set-popular {
-
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 #main-set-popular-up {
@@ -160,7 +165,7 @@ img.main-set-discounts-up-right-button {
 
 #main-set-popular-up-left-title {
 	margin-bottom: 0;
-	
+
 	color: var(--color-BLACK);
 }
 
@@ -175,9 +180,10 @@ img.main-set-popular-up-right-button {
 	height: 30px;
 }
 
-
 #main-set-news {
-
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 #main-set-news-up {
@@ -192,7 +198,7 @@ img.main-set-popular-up-right-button {
 
 #main-set-news-up-left-title {
 	margin-bottom: 0;
-	
+
 	color: var(--color-BLACK);
 }
 
@@ -205,13 +211,6 @@ img.main-set-popular-up-right-button {
 img.main-set-news-up-right-button {
 	width: 30px;
 	height: 30px;
-}
-
-
-
-
-div.main-set-container {
-	display: flex;
 }
 
 #main-advantages {

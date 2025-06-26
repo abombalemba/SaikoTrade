@@ -139,41 +139,11 @@ function mainAdvantagesThird(isHovered) {
     }
 }
 
-function mainContainerButtons(buttonID, isHovered, direct) {
-    const button = document.getElementById(buttonID);
-    console.log(buttonID, isHovered, direct);
-
-    if (isHovered) {
-        switch (direct) {
-            case 'left': {
-                button.src = 'images/symbols/arrow/left_hover.svg';
-                break;
-            };
-
-            case 'right': {
-                button.src = 'images/symbols/arrow/right_hover.svg';
-                break;
-            };
-
-            default: {
-                break;
-            }
-        }
+function mainContainerButtons(id, isHover, direction) {
+    const button = document.getElementById(id);
+    if (isHover) {
+        button.src = `images/symbols/arrow/${direction}_hover.svg`;
     } else {
-        switch (direct) {
-            case 'left': {
-                button.src = 'images/symbols/arrow/left_normal.svg';
-                break;
-            };
-
-            case 'right': {
-                button.src = 'images/symbols/arrow/right_normal.svg';
-                break;
-            };
-
-            default: {
-                break;
-            }
-        }
+        button.src = `images/symbols/arrow/${direction}_normal.svg`;
     }
 }

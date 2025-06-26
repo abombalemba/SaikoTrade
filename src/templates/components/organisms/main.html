@@ -61,9 +61,13 @@
         </div>
     </div>
 
-    {% include "components/molecules/container.html" %}
+    <div id="main-set-discounts-down" class="main-set-container">
+        {% for good in goods %}
+            {% include "components/atoms/card-v1.html" %}
+        {% endfor %}
+    </div>
 </div>
-<!--
+
 <div id="main-set-popular">
     <div id="main-set-popular-up">
         <div id="main-set-popular-up-left">
@@ -75,18 +79,18 @@
         </div>
 
         <div id="main-set-popular-up-right">
-            <img id="main-set-popular-up-right-left" class="main-set-popular-up-right-button" src="images/symbols/arrow/left_normal.svg" alt=""
-            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')"
-            onclick="mainSlideCards('left')">
+            <img id="main-set-popular-up-right-left" class="main-set-popular-up-right-button" src="images/symbols/arrow/left_normal.svg" alt="left"
+            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')">
 
-            <img id="main-set-popular-up-right-right" class="main-set-popular-up-right-button" src="images/symbols/arrow/right_normal.svg" alt=""
-            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')"
-            onclick="mainSlideCards('right')">
+            <img id="main-set-popular-up-right-right" class="main-set-popular-up-right-button" src="images/symbols/arrow/right_normal.svg" alt="right"
+            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')">
         </div>
     </div>
 
-    <div id="main-set-popular-down">
-        {% include "components/molecules/container.html" %}
+    <div id="main-set-popular-down" class="main-set-container">
+        {% for good in goods %}
+            {% include "components/atoms/card-v1.html" %}
+        {% endfor %}
     </div>
 </div>
 
@@ -101,19 +105,21 @@
         </div>
 
         <div id="main-set-news-up-right">
-            <img id="main-set-news-up-right-left" class="main-set-news-up-right-button" src="images/symbols/arrow/left_normal.svg" alt=""
-            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')" onclick="moveCarousel(-1)">
+            <img id="main-set-news-up-right-left" class="main-set-news-up-right-button" src="images/symbols/arrow/left_normal.svg" alt="left"
+            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')">
 
-            <img id="main-set-news-up-right-right" class="main-set-news-up-right-button" src="images/symbols/arrow/right_normal.svg" alt=""
-            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')" onclick="moveCarousel(1)">
+            <img id="main-set-news-up-right-right" class="main-set-news-up-right-button" src="images/symbols/arrow/right_normal.svg" alt="right"
+            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')">
         </div>
     </div>
 
-    <div id="main-set-news-down">
-        {% include "components/molecules/container.html" %}
+    <div id="main-set-news-down" class="main-set-container">
+        {% for good in goods %}
+            {% include "components/atoms/card-v1.html" %}
+        {% endfor %}
     </div>
 </div>
--->
+
 <div id="main-advantages">
     <p id="main-advantages-text" class="poppins-25-bold">
         НАШИ ПРЕИМУЩЕСТВА
