@@ -1,5 +1,9 @@
-<div id="main-set-popular-down" class="main-set-container">
-    {% for good in goods %}
-        {% include "components/atoms/card-v1.html" %}
-    {% endfor %}
+<div class="carousel-container">
+    <div id="main-set-popular-down" class="main-set-container">
+        {% for good in goods %}
+            {% include "components/atoms/card-v1.html" %}
+        {% endfor %}
+    </div>
+    <button class="carousel-button prev" onclick="moveCarousel(-1)">‹</button>
+    <button class="carousel-button next" onclick="moveCarousel(1)">›</button>
 </div>

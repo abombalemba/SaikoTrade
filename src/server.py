@@ -16,6 +16,7 @@ app = FastAPI()
 
 db = load_db('data/goods.json')
 body_left_goods = load_db('data/body-left-goods.json')
+main_catalog_blocks = load_db('data/main-catalog.json')
 
 templates = Jinja2Templates('templates')
 
@@ -24,7 +25,6 @@ app.mount('/css', StaticFiles(directory='css'), name='css')
 app.mount('/data', StaticFiles(directory='data'), name='data')
 app.mount('/fonts', StaticFiles(directory='fonts'), name='fonts')
 app.mount('/images', StaticFiles(directory='images'), name='images')
-#app.mount('/components', StaticFiles(directory='components'), name='components')
 
 
 @app.get('/favicon.ico', include_in_schema=False)
@@ -44,7 +44,8 @@ async def path_index(request: Request):
         {
             'request': request,
             'goods': db,
-            'body_left_goods': body_left_goods
+            'body_left_goods': body_left_goods,
+            'catalog_blocks': main_catalog_blocks
         }
     )
 

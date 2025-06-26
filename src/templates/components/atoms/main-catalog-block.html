@@ -1,7 +1,11 @@
-<div id="main-catalog-block" style="width: 120px; height: auto">
-    <img id="main-catalog-block-icon" src="" class="main-catalog-block-icon" alt="main-catalog-block" style="background-color: var(--color-LIGHT-BEIGE); border: 2px solid; border-radius: 5px; width: 120px; height: 120px;">
+{% for block in catalog_blocks %}
+    <div id="main-catalog-block" style="width: 120px; height: auto">
+        <img id="main-catalog-block-icon" src="{{ block.icon }}" class="main-catalog-block-icon" alt="main-catalog-block" style="background-color: var(--color-LIGHT-BEIGE); border: 2px solid; border-radius: 5px; width: 120px; height: 120px;">
 
-    <a href="">
-        <p id="main-catalog-block-text" class="poppins-14-bold main-catalog-block-text"></p>
-    </a>
-</div>
+        <a href="{{ block.url }}">
+            <p id="main-catalog-block-text" class="poppins-14-bold main-catalog-block-text">
+                {{ block.title }}
+            </p>
+        </a>
+    </div>
+{% endfor %}
