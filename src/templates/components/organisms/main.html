@@ -49,22 +49,21 @@
             <p id="main-set-discounts-up-left-title" class="poppins-25-bold">
                 АКЦИИ
             </p>
-
             <span class="red-horizontal-divider"></span>
         </div>
 
         <div id="main-set-discounts-up-right">
-            <img id="main-set-discounts-up-right-left" class="main-set-discounts-up-right-button" src="images/symbols/arrow/left_normal.svg" alt=""
+            <img id="main-set-discounts-up-right-left" class="main-set-discounts-up-right-button" src="images/symbols/arrow/left_normal.svg" alt="left"
             onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')">
 
-            <img id="main-set-discounts-up-right-right" class="main-set-discounts-up-right-button" src="images/symbols/arrow/right_normal.svg" alt=""
+            <img id="main-set-discounts-up-right-right" class="main-set-discounts-up-right-button" src="images/symbols/arrow/right_normal.svg" alt="right"
             onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')">
         </div>
     </div>
 
     {% include "components/molecules/container.html" %}
 </div>
-
+<!--
 <div id="main-set-popular">
     <div id="main-set-popular-up">
         <div id="main-set-popular-up-left">
@@ -86,7 +85,9 @@
         </div>
     </div>
 
-    {% include "components/molecules/container.html" %}
+    <div id="main-set-popular-down">
+        {% include "components/molecules/container.html" %}
+    </div>
 </div>
 
 <div id="main-set-news">
@@ -108,72 +109,11 @@
         </div>
     </div>
 
-    {% include "components/molecules/container.html" %}
+    <div id="main-set-news-down">
+        {% include "components/molecules/container.html" %}
+    </div>
 </div>
-
-<script>
-    let currentIndex = 0;
-const container = document.querySelector('.main-set-container');
-const cards = document.querySelectorAll('#card-v1');
-const cardCount = cards.length;
-const visibleCards = 4;
-
-function moveCarousel(direction) {
-    currentIndex += direction;
-    
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    } else if (currentIndex > cardCount - visibleCards) {
-        currentIndex = cardCount - visibleCards;
-    }
-    
-    const cardWidth = cards[0].offsetWidth + 15;
-    const offset = -currentIndex * cardWidth;
-    container.style.transform = `translateX(${offset}px)`;
-}
-</script>
-
-<style>
-    .carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.main-set-container {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 15px; /* расстояние между карточками */
-}
-
-#card-v1 {
-    flex: 0 0 calc(25% - 15px); /* 4 карточки в ряду */
-    box-sizing: border-box;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-</style>
-
+-->
 <div id="main-advantages">
     <p id="main-advantages-text" class="poppins-25-bold">
         НАШИ ПРЕИМУЩЕСТВА

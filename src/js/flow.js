@@ -141,6 +141,7 @@ function mainAdvantagesThird(isHovered) {
 
 function mainContainerButtons(buttonID, isHovered, direct) {
     const button = document.getElementById(buttonID);
+    console.log(buttonID, isHovered, direct);
 
     if (isHovered) {
         switch (direct) {

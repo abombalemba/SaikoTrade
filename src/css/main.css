@@ -105,7 +105,8 @@ body {
 }
 
 #main-set-discounts {
-
+    overflow: hidden;
+    position: relative;
 }
 
 #main-set-discounts-up {
@@ -136,10 +137,12 @@ img.main-set-discounts-up-right-button {
 }
 
 .main-set-container {
-	display: flex;
+    display: flex;
 	flex-wrap: wrap;
+    transition: transform 0.5s ease;
+    gap: 15px;
+    width: max-content;
 }
-
 
 #main-set-popular {
 

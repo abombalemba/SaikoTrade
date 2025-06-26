@@ -44,6 +44,9 @@ async def path_index(request: Request):
         {
             'request': request,
             'goods': db,
+            #'discount_goods': db,
+            #'popular_goods': db,
+            #'new_goods': db,
             'body_left_goods': body_left_goods,
             'catalog_blocks': main_catalog_blocks
         }

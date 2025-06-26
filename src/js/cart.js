@@ -1,7 +1,5 @@
 function initQuantityControls() {
-    const cards = document.querySelectorAll('.card-v3'); 
-    console.log(cards.length);
-
+    const cards = document.querySelectorAll('.card-v3');
     cards.forEach(card => {
         const buttonMinus = card.querySelector('.card-v3-actions-up-left');
         const buttonPlus = card.querySelector('.card-v3-actions-up-right');
