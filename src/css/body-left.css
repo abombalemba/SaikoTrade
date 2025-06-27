@@ -1,34 +1,73 @@
-#body-left {
-    width: 20%;
+@media (min-width: 1025px) {
+    #body-left {
+        width: 20%;
+    }
+    
+    #body-left-categories {
+        background-color: var(--color-BLACK);
+        padding-left: 5%;
+    }
+    
+    #body-left-categories-text {
+        padding: 1%;
+        color: var(--color-WHITE);
+    }
+    
+    div.body-left-categories-list-item {
+        padding: 1%;
+    }
+    
+    #body-left-hits {
+        background-color: var(--color-BLACK);
+        padding-left: 5%;
+    }
+    
+    #body-left-hits-text {
+        padding: 1%;
+        color: var(--color-WHITE);
+    }
+    
+    #body-left-hits-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding-bottom: 20px;
+    }
 }
 
-#body-left-categories {
-    background-color: var(--color-BLACK);
-    padding-left: 5%;
-}
-
-#body-left-categories-text {
-    padding: 1%;
-    color: var(--color-WHITE);
-}
-
-div.body-left-categories-list-item {
-    padding: 1%;
-}
-
-#body-left-hits {
-    background-color: var(--color-BLACK);
-    padding-left: 5%;
-}
-
-#body-left-hits-text {
-    padding: 1%;
-    color: var(--color-WHITE);
-}
-
-#body-left-hits-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    padding-bottom: 20px;
+@media (min-width: 768px) and (max-width: 1024px) {
+    #body-left {
+        width: 20%;
+    }
+    
+    #body-left-categories {
+        background-color: var(--color-BLACK);
+        padding-left: 5%;
+    }
+    
+    #body-left-categories-text {
+        padding: 1%;
+        color: var(--color-WHITE);
+    }
+    
+    div.body-left-categories-list-item {
+        padding: 1%;
+    }
+    
+    #body-left-hits {
+        background-color: var(--color-BLACK);
+        padding-left: 5%;
+    }
+    
+    #body-left-hits-text {
+        padding: 1%;
+        color: var(--color-WHITE);
+    }
+    
+    #body-left-hits-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        padding-bottom: 20px;
+    }
 }

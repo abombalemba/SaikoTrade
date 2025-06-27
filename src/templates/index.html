@@ -18,13 +18,13 @@
 	{% include "components/organisms/" + device_type + "/header.html" %}
 
 	<div class="body">
-		{% if device_type == 'desktop' %}
+		{% if device_type != 'mobile' %}
 			{% include "components/molecules/body-left.html" %}
 		{% endif %}
-		<!--
+		
 		<div id="main">
 			{% include "components/organisms/" + device_type + "/main.html" %}
-		</div>-->
+		</div>
 	</div>
 
 	<span class="inter-horizontal-divider"></span>
