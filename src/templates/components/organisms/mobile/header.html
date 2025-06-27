@@ -26,5 +26,72 @@
 				<img src="images/icons/search.svg" alt="search">
 			</div>
 		</div>
+
+		<div class="mobile-menu">
+			<button class="burger-button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			
+			<div class="header-down-blocks-mobile">
+				<a class="header-down-block header-down-block--first open-sans-14-bold" href="https://saikotrade.com/">
+					ГЛАВНАЯ
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/katalog-tovarov/">
+					КАТАЛОГ
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/dostavka-i-oplata/">
+					ДОСТАВКА И ОПЛАТА
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/kak-zakazat/">
+					КАК ЗАКАЗАТЬ
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/otsledit-posylku/">
+					ОТСЛЕЖИВАНИЕ
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/o-nas/">
+					О НАС
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/otzyvy/">
+					ОТЗЫВЫ
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/blog/">
+					ПОЛЕЗНЫЕ СТАТЬИ
+				</a>
+				<a class="header-down-block open-sans-14-bold" href="https://saikotrade.com/kontakty/">
+					КОНТАКТЫ
+				</a>
+			</div>
+
+			<div class="menu-overlay"></div>
+		</div>
+
+		<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerButton = document.querySelector('.burger-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    
+    // Открытие/закрытие по кнопке
+    burgerButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('active');
+    });
+    
+    // Закрытие по клику на overlay
+    menuOverlay.addEventListener('click', function() {
+        mobileMenu.classList.remove('active');
+    });
+    
+    // Закрытие по клику в любом месте документа
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.header-down-blocks-mobile') && 
+            !e.target.closest('.burger-button')) {
+            mobileMenu.classList.remove('active');
+        }
+    });
+});
+		</script>
 	</div>
 </header>
