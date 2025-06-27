@@ -21,43 +21,36 @@ main_catalog_blocks = load_db('data/main-catalog.json')
 templates = Jinja2Templates('templates')
 
 app.mount('/js', StaticFiles(directory='js'), name='js')
+app.mount('/ts', StaticFiles(directory='ts'), name='ts')
 app.mount('/css', StaticFiles(directory='css'), name='css')
 app.mount('/data', StaticFiles(directory='data'), name='data')
 app.mount('/fonts', StaticFiles(directory='fonts'), name='fonts')
 app.mount('/images', StaticFiles(directory='images'), name='images')
 
 
-@app.middleware("http")
+@app.middleware('http')
 async def add_device_type(request: Request, call_next):
-    user_agent = request.headers.get("user-agent", "").lower()
-    width = int(request.query_params.get("width", 0))
-
-    print(width, user_agent)
+    user_agent = request.headers.get('user-agent', '').lower()
+    width = int(request.query_params.get('width', 0))
     
-    if width > 0:  # Если передана ширина экрана
+    if width > 0:
         if width <= 768:
-            device_type = "mobile"
+            device_type = 'mobile'
         elif width <= 1024:
-            device_type = "tablet"
+            device_type = 'tablet'
         else:
-            device_type = "desktop"
-    else:  # Определение по User-Agent
+            device_type = 'desktop'
+    else:
         user_agent_lower = user_agent.lower()
         
-        # Сначала проверяем iPad (все модели)
-        if "ipad" in user_agent_lower or 'macintosh' in user_agent_lower:
-            device_type = "tablet"
-        # Затем проверяем другие планшеты (Android)
-        elif "tablet" in user_agent_lower or "tab" in user_agent_lower:
-            device_type = "tablet"
-        # Проверяем мобильные (но исключаем iPad)
-        elif ("mobile" in user_agent_lower or "android" in user_agent_lower) and "ipad" not in user_agent_lower:
-            device_type = "mobile"
-        # Все остальное - десктоп
+        if 'ipad' in user_agent_lower or 'macintosh' in user_agent_lower:
+            device_type = 'tablet'
+        elif 'tablet' in user_agent_lower or 'tab' in user_agent_lower:
+            device_type = 'tablet'
+        elif ('mobile' in user_agent_lower or 'android' in user_agent_lower) and 'ipad' not in user_agent_lower:
+            device_type = 'mobile'
         else:
-            device_type = "desktop"
-
-    print(device_type)
+            device_type = 'desktop'
     
     request.state.device_type = device_type
     response = await call_next(request)
