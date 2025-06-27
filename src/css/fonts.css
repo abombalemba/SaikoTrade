@@ -83,6 +83,30 @@
 }
 
 @font-face {
+	font-family: 'my-open-sans-12-reg';
+	src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf');
+}
+
+.open-sans-12-reg {
+	font-family: 'my-open-sans-12-reg', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'my-open-sans-14-reg';
+	src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf');
+}
+
+.open-sans-14-reg {
+	font-family: 'my-open-sans-14-reg', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'my-open-sans-14-bold';
 	src: url('../fonts/OpenSans/static/OpenSans-Bold.ttf');
 }
