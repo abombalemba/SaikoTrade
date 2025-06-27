@@ -13,20 +13,23 @@
 </head>
 
 <body>
-	{% include "components/organisms/header.html" %}
+	{% include "components/organisms/" + device_type + "/header.html" %}
 
 	<div class="body">
-		{% include "components/molecules/body-left.html" %}
+		{% if device_type == 'desktop' %}
+			{% include "components/molecules/body-left.html" %}
+		{% endif %}
 
 		<div id="buying">
-			{% include "components/organisms/buying.html" %}
+			{% include "components/organisms/" + device_type + "/buying.html" %}
 		</div>
 	</div>
 
 	<span class="inter-horizontal-divider"></span>
 
-	{% include "components/organisms/footer.html" %}
+	{% include "components/organisms/" + device_type + "/footer.html" %}
     
+	<script src="js/device-detector.js"></script>
 	<script src="js/flow.js"></script>
 	<script type="module" src="js/main.js"></script>
 </body>

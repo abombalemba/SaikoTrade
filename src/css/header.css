@@ -1,203 +1,628 @@
-#header {
-    background-color: var(--color-BG-GRAY);
-}
-
-#header-up {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0% 10%;
-}
-
-div.header-up-block {
-    display: inline-block;
-}
-
-a.header-up-block {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-#header-up-block-welcome-text {
-    color: var(--color-LIGHT-BLACK);
-}
-
-#header-up-block-favourite-text {
-    color: var(--color-RED);
-}
-
-#header-up-block-account-text {
-    color: var(--color-LIGHT-BLACK);
-}
-
-#header-up-block-add-account-text {
-    color: var(--color-LIGHT-BLACK);
-}
-
-
-
-
-
-#header-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 10%;
-}
-
-#header-center-contacts {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-#header-center-contact {
-    display: flex;
-    align-items: center;
-}
-
-#header-center-contact-number {
-    color: var(--color-BLACK);
-    margin: 0;
-}
-
-#header-center-contact-email {
-    color: var(--color-RED);
-    margin: 0;
-}
-
-#header-center-search {
-    display: flex;
-}
-
-#header-center-search-field {
-    width: 220px;
-    height: 35px;
-}
-
-#header-center-search-button {
-    background-color: var(--color-RED);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-#header-center-basket {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#header-center-basket-icon {
-    width: 50px;
-    height: 50px;
-}
-
-#header-center-basket-text1 {
-    color: var(--color-GRAY);
-}
-
-#header-center-basket-text2 {
-    color: var(--color-GRAY);
-}
-
-
-
-#header-down {
-    background-color: var(--color-BLACK);
-    padding: 0 10%;
-    width: 100%;
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-div.header-down-blocks {
-    display: flex;
-    justify-content: center;
-}
-
-a.header-down-block {
-    color: var(--color-WHITE);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 56px;
-    padding: 0 12px;
-}
-
-a.header-down-block--first {
-    background-color: var(--color-RED);
-}
-
-a.header-down-block {
-	background-color: var(--color-BLACK);
-}
-
-a.header-down-block:hover {
-	background-color: var(--color-YELLOW);
-}
-
-a.header-down-block--first {
-	background-color: var(--color-RED);
-}
-
-a.header-down-block--first:hover {
-	background-color: var(--color-YELLOW);
-}
-
-/*      B   U   T   T   O   N   -   O   F   F   E   R   */
-
-div.button-offer {
-    background-color: var(--color-YELLOW);
-    height: 31px;
-    color: var(--color-WHITE);
-    border: 2px solid var(--color-YELLOW);
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 0 10px;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s;
-}
-
-@keyframes button_offer_pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 193, 5, 0.7);
+@media (min-width: 1025px) {
+    #header {
+        background-color: var(--color-BG-GRAY);
     }
-    70% {
-        box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+    
+    #header-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 10%;
     }
-    100% {
-        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+    
+    div.header-up-block {
+        display: inline-block;
+    }
+    
+    a.header-up-block {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #header-up-block-welcome-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    #header-up-block-favourite-text {
+        color: var(--color-RED);
+    }
+    
+    #header-up-block-account-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    #header-up-block-add-account-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    
+    
+    
+    
+    #header-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 10%;
+    }
+    
+    #header-center-contacts {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #header-center-contact {
+        display: flex;
+        align-items: center;
+    }
+    
+    #header-center-contact-number {
+        color: var(--color-BLACK);
+        margin: 0;
+    }
+    
+    #header-center-contact-email {
+        color: var(--color-RED);
+        margin: 0;
+    }
+    
+    #header-center-search {
+        display: flex;
+    }
+    
+    #header-center-search-field {
+        width: 220px;
+        height: 35px;
+    }
+    
+    #header-center-search-button {
+        background-color: var(--color-RED);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    #header-center-basket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #header-center-basket-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #header-center-basket-text1 {
+        color: var(--color-GRAY);
+    }
+    
+    #header-center-basket-text2 {
+        color: var(--color-GRAY);
+    }
+    
+    
+    
+    #header-down {
+        background-color: var(--color-BLACK);
+        padding: 0 10%;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    div.header-down-blocks {
+        display: flex;
+        justify-content: center;
+    }
+    
+    a.header-down-block {
+        color: var(--color-WHITE);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        padding: 0 12px;
+    }
+    
+    a.header-down-block--first {
+        background-color: var(--color-RED);
+    }
+    
+    a.header-down-block {
+        background-color: var(--color-BLACK);
+    }
+    
+    a.header-down-block:hover {
+        background-color: var(--color-YELLOW);
+    }
+    
+    a.header-down-block--first {
+        background-color: var(--color-RED);
+    }
+    
+    a.header-down-block--first:hover {
+        background-color: var(--color-YELLOW);
+    }
+    
+    /*      B   U   T   T   O   N   -   O   F   F   E   R   */
+    
+    div.button-offer {
+        background-color: var(--color-YELLOW);
+        height: 31px;
+        color: var(--color-WHITE);
+        border: 2px solid var(--color-YELLOW);
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 0 10px;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s;
+    }
+    
+    @keyframes button_offer_pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 5, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+        }
+    }
+    
+    div.button-offer:not(:hover) {
+        animation: button_offer_pulse 1s infinite;
+    }
+    
+    div.button-offer:hover {
+        background-color: var(--color-RED-ACTIVE);
+        animation: none;
+    }
+    
+    #button-offer-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #button-offer-text {
+        color: var(--color-WHITE);
+        text-decoration: none;
     }
 }
 
-div.button-offer:not(:hover) {
-    animation: button_offer_pulse 1s infinite;
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #header-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 10%;
+    }
+    
+    div.header-up-block {
+        display: inline-block;
+    }
+    
+    a.header-up-block {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #header-up-block-welcome-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    #header-up-block-favourite-text {
+        color: var(--color-RED);
+    }
+    
+    #header-up-block-account-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    #header-up-block-add-account-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    
+    
+    
+    
+    #header-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 10%;
+    }
+    
+    #header-center-contacts {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #header-center-contact {
+        display: flex;
+        align-items: center;
+    }
+    
+    #header-center-contact-number {
+        color: var(--color-BLACK);
+        margin: 0;
+    }
+    
+    #header-center-contact-email {
+        color: var(--color-RED);
+        margin: 0;
+    }
+    
+    #header-center-search {
+        display: flex;
+    }
+    
+    #header-center-search-field {
+        width: 220px;
+        height: 35px;
+    }
+    
+    #header-center-search-button {
+        background-color: var(--color-RED);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    #header-center-basket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #header-center-basket-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #header-center-basket-text1 {
+        color: var(--color-GRAY);
+    }
+    
+    #header-center-basket-text2 {
+        color: var(--color-GRAY);
+    }
+    
+    
+    
+    #header-down {
+        background-color: var(--color-BLACK);
+        padding: 0 10%;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    div.header-down-blocks {
+        display: flex;
+        justify-content: center;
+    }
+    
+    a.header-down-block {
+        color: var(--color-WHITE);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        padding: 0 12px;
+    }
+    
+    a.header-down-block--first {
+        background-color: var(--color-RED);
+    }
+    
+    a.header-down-block {
+        background-color: var(--color-BLACK);
+    }
+    
+    a.header-down-block:hover {
+        background-color: var(--color-YELLOW);
+    }
+    
+    a.header-down-block--first {
+        background-color: var(--color-RED);
+    }
+    
+    a.header-down-block--first:hover {
+        background-color: var(--color-YELLOW);
+    }
+    
+    /*      B   U   T   T   O   N   -   O   F   F   E   R   */
+    
+    div.button-offer {
+        background-color: var(--color-YELLOW);
+        height: 31px;
+        color: var(--color-WHITE);
+        border: 2px solid var(--color-YELLOW);
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 0 10px;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s;
+    }
+    
+    @keyframes button_offer_pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 5, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+        }
+    }
+    
+    div.button-offer:not(:hover) {
+        animation: button_offer_pulse 1s infinite;
+    }
+    
+    div.button-offer:hover {
+        background-color: var(--color-RED-ACTIVE);
+        animation: none;
+    }
+    
+    #button-offer-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #button-offer-text {
+        color: var(--color-WHITE);
+        text-decoration: none;
+    }
 }
 
-div.button-offer:hover {
-    background-color: var(--color-RED-ACTIVE);
-    animation: none;
-}
+@media (max-width: 767px) {
+    #header {
+        width: 100%;
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #header-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 10%;
+    }
+    
+    div.header-up-block {
+        display: inline-block;
+    }
+    
+    a.header-up-block {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #header-up-block-welcome-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    #header-up-block-favourite-text {
+        color: var(--color-RED);
+    }
+    
+    #header-up-block-account-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    #header-up-block-add-account-text {
+        color: var(--color-LIGHT-BLACK);
+    }
+    
+    
+    
+    
+    
+    #header-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 10%;
+    }
 
-#button-offer-icon {
-    width: 20px;
-    height: 20px;
-}
+    #header-center-logo {
+        width: 100px;
+        height: 50px;
+    }
 
-#button-offer-text {
-    color: var(--color-WHITE);
-    text-decoration: none;
+    #header-center-logo-image {
+        width: 100px;
+        height: 50px;
+    }
+    
+    #header-center-contacts {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #header-center-contact {
+        display: flex;
+        align-items: center;
+    }
+    
+    #header-center-contact-number {
+        color: var(--color-BLACK);
+        margin: 0;
+    }
+    
+    #header-center-contact-email {
+        color: var(--color-RED);
+        margin: 0;
+    }
+    
+    #header-center-search {
+        display: flex;
+    }
+    
+    #header-center-search-field {
+        width: 220px;
+        height: 35px;
+    }
+    
+    #header-center-search-button {
+        background-color: var(--color-RED);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    #header-center-basket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #header-center-basket-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #header-center-basket-text1 {
+        color: var(--color-GRAY);
+    }
+    
+    #header-center-basket-text2 {
+        color: var(--color-GRAY);
+    }
+    
+    
+    
+    #header-down {
+        background-color: var(--color-BLACK);
+        padding: 0 10%;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    div.header-down-blocks {
+        display: flex;
+        justify-content: center;
+    }
+    
+    a.header-down-block {
+        color: var(--color-WHITE);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        padding: 0 12px;
+    }
+    
+    a.header-down-block--first {
+        background-color: var(--color-RED);
+    }
+    
+    a.header-down-block {
+        background-color: var(--color-BLACK);
+    }
+    
+    a.header-down-block:hover {
+        background-color: var(--color-YELLOW);
+    }
+    
+    a.header-down-block--first {
+        background-color: var(--color-RED);
+    }
+    
+    a.header-down-block--first:hover {
+        background-color: var(--color-YELLOW);
+    }
+    
+    /*      B   U   T   T   O   N   -   O   F   F   E   R   */
+    
+    div.button-offer {
+        background-color: var(--color-YELLOW);
+        height: 31px;
+        color: var(--color-WHITE);
+        border: 2px solid var(--color-YELLOW);
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 0 10px;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s;
+    }
+    
+    @keyframes button_offer_pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 5, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+        }
+    }
+    
+    div.button-offer:not(:hover) {
+        animation: button_offer_pulse 1s infinite;
+    }
+    
+    div.button-offer:hover {
+        background-color: var(--color-RED-ACTIVE);
+        animation: none;
+    }
+    
+    #button-offer-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #button-offer-text {
+        color: var(--color-WHITE);
+        text-decoration: none;
+    }
 }

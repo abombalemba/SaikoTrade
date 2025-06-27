@@ -1,0 +1,61 @@
+<div id="cart-summary">
+    <div id="cart-summary-promocode">
+        <p id="cart-summary-promocode-text" class="arial-12-reg">
+            Введите код купона для скидки:
+        </p>
+
+        <input id="cart-summary-promocode-input" type="text">
+    </div>
+
+    <div id="cart-summary-result">
+        <p id="cart-summary-result-large" class="arial-20-reg">
+            Итого:
+        </p>
+
+        <p id="cart-summary-result-small" class="arial-12-reg">
+            Общий вес: {{ summary.weight }} кг
+        </p>
+    </div>
+
+    <div id="cart-summary-billing">
+        <p id="cart-summary-billing-pre" class="open-sans-22-reg">
+            {{ summary.old_price }} руб.
+        </p>
+
+        <p id="cart-summary-billing-total" class="open-sans-36-reg">
+            {{ summary.new_price }} руб.
+        </p>
+
+        <p id="cart-summary-billing-discount" class="poppins-14-reg">
+            Экономия {{ summary.discount }} руб.
+        </p>
+    </div>
+
+    <div id="cart-summary-buttons">
+        <button id="cart-summary-buttons-continue" class="poppins-16-reg">
+            <a href="/">
+                Продолжить покупки
+            </a>
+        </button>
+
+        <button id="cart-summary-buttons-order" class="poppins-16-reg">
+            <a href="/buying">
+                Оформить заказ
+            </a>
+        </button>
+    </div>
+</div>
+
+<div id="cart-goods">
+    <div id="cart-goods-header">
+        <input id="cart-goods-header-input" class="poppins-14-reg" type="text" placeholder="Фильтр">
+
+        <p id="cart-goods-header-count" class="poppins-14-bold">
+            В корзине {{ summary.length }} товара
+        </p>
+    </div>
+
+    <div id="cart-goods-list">
+        {% include "components/atoms/card-v3.html" %}
+    </div>
+</div>

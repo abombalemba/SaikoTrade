@@ -1,0 +1,209 @@
+<div id="main-ad" style="display: none;">
+    <div class="container mt-5">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/ads/ad1.png" class="d-block w-100" alt="ad1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ads/ad2.png" class="d-block w-100" alt="ad2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ads/ad3.png" class="d-block w-100" alt="ad3">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+
+<div id="main-catalog">
+    {% include "components/atoms/main-catalog-block.html" %}
+</div>
+
+<div id="main-set-discounts">
+    <div id="main-set-discounts-up">
+        <div id="main-set-discounts-up-left">
+            <p id="main-set-discounts-up-left-title" class="poppins-25-bold">
+                АКЦИИ
+            </p>
+            <span class="red-horizontal-divider"></span>
+        </div>
+
+        <div id="main-set-discounts-up-right">
+            <img id="main-set-discounts-up-right-left" class="main-set-discounts-up-right-button" src="images/symbols/arrow/left_normal.svg" alt="left"
+            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')">
+
+            <img id="main-set-discounts-up-right-right" class="main-set-discounts-up-right-button" src="images/symbols/arrow/right_normal.svg" alt="right"
+            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')">
+        </div>
+    </div>
+
+    <div id="main-set-discounts-down" class="main-set-container">
+        {% for good in goods %}
+            {% include "components/atoms/card-v1.html" %}
+        {% endfor %}
+    </div>
+</div>
+
+<div id="main-set-popular">
+    <div id="main-set-popular-up">
+        <div id="main-set-popular-up-left">
+            <p id="main-set-popular-up-left-title" class="poppins-25-bold">
+                САМЫЕ ПОПУЛЯРНЫЕ
+            </p>
+
+            <span class="red-horizontal-divider"></span>
+        </div>
+
+        <div id="main-set-popular-up-right">
+            <img id="main-set-popular-up-right-left" class="main-set-popular-up-right-button" src="images/symbols/arrow/left_normal.svg" alt="left"
+            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')">
+
+            <img id="main-set-popular-up-right-right" class="main-set-popular-up-right-button" src="images/symbols/arrow/right_normal.svg" alt="right"
+            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')">
+        </div>
+    </div>
+
+    <div id="main-set-popular-down" class="main-set-container">
+        {% for good in goods %}
+            {% include "components/atoms/card-v1.html" %}
+        {% endfor %}
+    </div>
+</div>
+
+<div id="main-set-news">
+    <div id="main-set-news-up">
+        <div id="main-set-news-up-left">
+            <p id="main-set-news-up-left-title" class="poppins-25-bold">
+                НОВИНКИ
+            </p>
+
+            <span class="red-horizontal-divider"></span>
+        </div>
+
+        <div id="main-set-news-up-right">
+            <img id="main-set-news-up-right-left" class="main-set-news-up-right-button" src="images/symbols/arrow/left_normal.svg" alt="left"
+            onmouseover="mainContainerButtons(this.id, true, 'left')" onmouseout="mainContainerButtons(this.id, false, 'left')">
+
+            <img id="main-set-news-up-right-right" class="main-set-news-up-right-button" src="images/symbols/arrow/right_normal.svg" alt="right"
+            onmouseover="mainContainerButtons(this.id, true, 'right')" onmouseout="mainContainerButtons(this.id, false, 'right')">
+        </div>
+    </div>
+
+    <div id="main-set-news-down" class="main-set-container">
+        {% for good in goods %}
+            {% include "components/atoms/card-v1.html" %}
+        {% endfor %}
+    </div>
+</div>
+
+<div id="main-advantages">
+    <p id="main-advantages-text" class="poppins-25-bold">
+        НАШИ ПРЕИМУЩЕСТВА
+    </p>
+
+    <div id="main-advantages-blocks">
+        <div id="main-advantages-first" class="main-advantages-block" onmouseover="mainAdvantagesFirst(true)" onmouseout="mainAdvantagesFirst(false)">
+            <img id="main-advantages-first-icon" class="main-advantages-block-icon" src="../images/icons/support-normal.svg" alt="support">
+            <p id="main-advantages-first-large" class="main-advantages-block-large poppins-20-bold">
+                КОНСУЛЬТАНЦИИ
+            </p>
+            <p id="main-advantages-first-small" class="main-advantages-block-small poppins-14-reg">
+                Онлайн
+            </p>
+        </div>
+
+        <span class="main-advantages-vertical-divider"></span>
+
+        <div id="main-advantages-second" class="main-advantages-block" onmouseover="mainAdvantagesSecond(true)" onmouseout="mainAdvantagesSecond(false)">
+            <img id="main-advantages-second-icon" class="main-advantages-block-icon" src="../images/icons/turnover-normal.svg" alt="turnover">
+            <p id="main-advantages-second-large" class="main-advantages-block-large poppins-20-bold">
+                БЫСТРАЯ ОПЛАТА
+            </p>
+            <p id="main-advantages-second-small" class="main-advantages-block-small poppins-14-reg">
+                Прямо на сайте
+            </p>
+        </div>
+
+        <span class="main-advantages-vertical-divider"></span>
+
+        <div id="main-advantages-third" class="main-advantages-block" onmouseover="mainAdvantagesThird(true)" onmouseout="mainAdvantagesThird(false)">
+            <img id="main-advantages-third-icon" class="main-advantages-block-icon" src="../images/icons/coins-normal.svg" alt="coins">
+            <p id="main-advantages-third-large" class="main-advantages-block-large poppins-20-bold">
+                ВЫГОДНЫЕ ЦЕНЫ
+            </p>
+            <p id="main-advantages-third-small" class="main-advantages-block-small poppins-14-reg">
+                Ваша экономия
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="main-info">
+    <p id="main-info-text" class="poppins-25-bold">
+        КАК МЫ РАБОТАЕМ
+    </p>
+
+    <div id="main-info-blocks">
+        <div id="main-info-first" class="main-info-block">
+            <img id="main-info-first-icon" class="main-info-block-icon" src="../images/icons/cart.svg" alt="cart">
+            <p id="main-info-first-large" class="main-info-block-large poppins-20-bold">
+                ВЫ ОФОРМЛЯЕТЕ ЗАКАЗ НА САЙТЕ
+            </p>
+        </div>
+
+        <span class="main-info-vertical-divider"></span>
+
+        <div id="main-info-second" class="main-info-block">
+            <img id="main-info-second-icon" class="main-info-block-icon" src="../images/icons/note.svg" alt="note">
+            <p id="main-info-second-large" class="main-info-block-large poppins-20-bold">
+                ВЫ ОПЛАЧИВАЕТЕ СВОЙ ЗАКАЗ
+            </p>
+        </div>
+
+        <span class="main-info-vertical-divider"></span>
+
+        <div id="main-info-third" class="main-info-block">
+            <img id="main-info-third-icon" class="main-info-block-icon" src="../images/icons/van-normal.svg" alt="van">
+            <p id="main-info-third-large" class="main-info-block-large poppins-20-bold">
+                МЫ ОТПРАВЛЯЕМ ВАШ ЗАКАЗ ИЗ ЯПОНИИ
+            </p>
+        </div>
+        
+        <span class="main-info-vertical-divider"></span>
+
+        <div id="main-info-third" class="main-info-block">
+            <img id="main-info-third-icon" class="main-info-block-icon" src="../images/icons/gift-normal.svg" alt="gift">
+            <p id="main-info-third-large" class="main-info-block-large poppins-20-bold">
+                УРА! ВЫ ПОЛУЧАЕТЕ СВОЙ ЗАКАЗ! =)
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="main-comments" style="display: none;">
+    comments
+</div>

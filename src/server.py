@@ -27,6 +27,43 @@ app.mount('/fonts', StaticFiles(directory='fonts'), name='fonts')
 app.mount('/images', StaticFiles(directory='images'), name='images')
 
 
+@app.middleware("http")
+async def add_device_type(request: Request, call_next):
+    user_agent = request.headers.get("user-agent", "").lower()
+    width = int(request.query_params.get("width", 0))
+
+    print(width, user_agent)
+    
+    if width > 0:  # Если передана ширина экрана
+        if width <= 768:
+            device_type = "mobile"
+        elif width <= 1024:
+            device_type = "tablet"
+        else:
+            device_type = "desktop"
+    else:  # Определение по User-Agent
+        user_agent_lower = user_agent.lower()
+        
+        # Сначала проверяем iPad (все модели)
+        if "ipad" in user_agent_lower or 'macintosh' in user_agent_lower:
+            device_type = "tablet"
+        # Затем проверяем другие планшеты (Android)
+        elif "tablet" in user_agent_lower or "tab" in user_agent_lower:
+            device_type = "tablet"
+        # Проверяем мобильные (но исключаем iPad)
+        elif ("mobile" in user_agent_lower or "android" in user_agent_lower) and "ipad" not in user_agent_lower:
+            device_type = "mobile"
+        # Все остальное - десктоп
+        else:
+            device_type = "desktop"
+
+    print(device_type)
+    
+    request.state.device_type = device_type
+    response = await call_next(request)
+    return response
+
+
 @app.get('/favicon.ico', include_in_schema=False)
 @app.get('/images/logo/favicon.ico', include_in_schema=False)
 async def path_favicon():
@@ -39,10 +76,13 @@ async def path_favicon():
 
 @app.get('/', response_class=HTMLResponse)
 async def path_index(request: Request):
+    device_type = request.state.device_type
+
     return templates.TemplateResponse(
         'index.html',
         {
             'request': request,
+            'device_type': device_type,
             'goods': db,
             'body_left_goods': body_left_goods,
             'catalog_blocks': main_catalog_blocks
@@ -52,12 +92,14 @@ async def path_index(request: Request):
 
 @app.get('/card', response_class=HTMLResponse)
 async def path_card(request: Request, id: int = Query(..., description='ID товара')):
+    device_type = request.state.device_type
     good = get_good(db, id)
 
     return templates.TemplateResponse(
         'card.html',
         {
             'request': request,
+            'device_type': device_type,
             'data': good,
             'body_left_goods': body_left_goods
         }
@@ -66,6 +108,7 @@ async def path_card(request: Request, id: int = Query(..., description='ID то�
 
 @app.get('/cart', response_class=HTMLResponse)
 async def path_cart(request: Request):
+    device_type = request.state.device_type
     goods = list()
 
     summary = {
@@ -93,6 +136,7 @@ async def path_cart(request: Request):
         'cart.html',
         {
             'request': request,
+            'device_type': device_type,
             'goods': goods,
             'body_left_goods': body_left_goods,
             'summary': summary
@@ -102,6 +146,7 @@ async def path_cart(request: Request):
 
 @app.get('/buying', response_class=HTMLResponse)
 async def path_buying(request: Request):
+    device_type = request.state.device_type
     goods = list()
 
     summary = {
@@ -127,6 +172,7 @@ async def path_buying(request: Request):
         'buying.html',
         {
             'request': request,
+            'device_type': device_type,
             'goods': goods,
             'body_left_goods': body_left_goods,
             'summary': summary
