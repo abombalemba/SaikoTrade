@@ -1,383 +1,1293 @@
-#buying {    
-    width: 80%;
-	padding-top: 1%;
-    padding-left: 5%;
-	padding-bottom: 1%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5%;
-}
-
-
-#buying-blocks {
-    width: 70%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1%;
-}
-
-#buying-blocks-auth {
-    border: 1px solid var(--color-LIGHT-GRAY);
-}
-
-#buying-blocks-auth-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 1%;
-
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-
-    background-color: var(--color-LIGHT-BLUE);
-}
-
-#buying-blocks-auth-header-symbol {
-    display: none;
-    margin: 0;
-    padding: 0;
-
-    color: var(--color-GRAY);
-}
-
-#buying-blocks-auth-header-text {
-    margin: 0;
-    padding: 0;
-
-    color: var(--color-BLACK);
-}
-
-#buying-blocks-auth-body {
-    display: flex;
-    width: 100%;
-}
-
-#buying-blocks-auth-left {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    box-sizing: border-box;
-    gap: 3%;
-
-    padding: 0 5%;
-}
-
-#buying-blocks-auth-left-title {
-    margin: 3% 0;
-    padding: 0;
-
-    color: var(--color-BLACK);
-}
-
-#buying-blocks-auth-left-login {
-    text-align: left;
-}
-
-#buying-blocks-auth-left-login-text {
-    margin: 0;
-    padding: 0;
+@media (min-width: 1025px) {
+    #buying {    
+        width: 80%;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-bottom: 1%;
     
-    color: var(--color-GRAY);
-}
-
-#buying-blocks-auth-left-login-input {
-    width: 300px;
-    height: 30px;
-
-    border: 1px solid var(--color-GRAY);
-    border-radius: 3px;
-
-    color: var(--color-GRAY);
-    background-color: var(--color-BG-GRAY);
-}
-
-#buying-blocks-auth-left-password {
-    text-align: left;
-}
-
-#buying-blocks-auth-left-password-text {
-    margin: 0;
-    padding: 0;
-
-    color: var(--color-GRAY);
-}
-
-#buying-blocks-auth-left-password-input {
-    width: 300px;
-    height: 30px;
-
-    border: 1px solid var(--color-GRAY);
-    border-radius: 3px;
-
-    color: var(--color-GRAY);
-    background-color: var(--color-BG-GRAY);
-}
-
-#buying-blocks-auth-left-rememberme {
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
-}
-
-#buying-blocks-auth-left-rememberme-input {
-    width: 15px;
-    height: 15px;
-
-    border-radius: 20px;
-}
-
-#buying-blocks-auth-left-rememberme-text {
-    margin: 1% 0;
-    padding: 0;
-
-    color: var(--color-GRAY);
-    cursor: pointer;
-}
-
-#buying-blocks-auth-left-button {
-    width: 80px;
-    height: 40px;
-
-    border: none;
-    border-radius: 3px;
-
-    color: var(--color-WHITE);
-    background-color: var(--color-RED);
-}
-
-#buying-blocks-auth-left-forgot {
-    color: var(--color-GRAY);
-}
-
-#buying-blocks-auth-left-forgot:hover {
-    color: var(--color-RED);
-    transition: color 0.5s ease;
-}
-
-#buying-blocks-auth-right {
-    flex: 1;
-    box-sizing: border-box;
-}
-
-#buying-blocks-auth-right-up {
-    background-color: var(--color-BG-GRAY);
-    margin: 3% 3%;
-    padding: 3% 3%;
-}
-
-#buying-blocks-auth-right-up-text {
-    color: var(--color-GRAY);
-}
-
-#buying-blocks-auth-right-up-button {
-    width: 200px;
-    height: 40px;
-
-    border: none;
-    border-radius: 3px;
-
-    color: var(--color-WHITE);
-    background-color: var(--color-RED);
-}
-
-#buying-blocks-auth-right-up-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-
-    width: 200px;
-    height: 40px;
-    
-    padding: 0 10px;
-
-    border: 2px solid var(--color-RED);
-    border-radius: 2px;
-
-    color: var(--color-WHITE);
-    background-color: var(--color-RED);
-    
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 7, 7, 0.7);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
     }
-    70% {
-        box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
-    }
-}
-
-#buying-blocks-auth-right-up-button:not(:hover) {
-    animation: pulse 1s infinite;
-}
-
-#buying-blocks-auth-right-up-button:hover {
-    animation: none;
-}
-
-#buying-blocks-auth-right-text {
-    padding: 3% 3%;
     
-    color: var(--color-GRAY);
-}
-
-#buying-blocks-goods {
-    display: flex;
-    flex-direction: column;
-
-    border: 1px solid var(--color-LIGHT-GRAY);
-}
-
-#buying-blocks-goods-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 1%;
-
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-
-    background-color: var(--color-LIGHT-BLUE);
-}
-
-#buying-blocks-goods-header-symbol {
-    margin: 0;
-    padding: 0;
-
-    display: none;
-}
-
-#buying-blocks-goods-header-text {
-    margin: 0;
-    padding: 0;
-
-    color: var(--color-BLACK);
-}
-
-#buying-blocks-goods-list {
-    display: flex;
-    flex-direction: column;
-}
-
-#buying-blocks-info {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10%;
-}
-
-p.buying-blocks-info-text {
-    margin: 0;
-    padding: 0;
-
-    color: var(--color-GRAY);
-}
-
-
-
-#buying-summary {
-    width: 20%;
-    height: min-content;
-
-    margin: 0;
-    padding: 0 3%;
-
-    border: 1px solid var(--color-LIGHT-GRAY);
-    border-radius: 3px;
-}
-
-#buying-summary-text {
-    color: var(--color-GRAY);
-}
-
-#buying-summary-new-price {
-    text-align: right;
-
-    color: var(--color-GRAY);
-}
-
-#buying-summary-old-price {
-    text-align: right;
-    text-decoration: line-through;
-    text-decoration-color: var(--color-LIGHT-GRAY);
-    text-decoration-thickness: 1px;
-
-    color: var(--color-LIGHT-GRAY);
-}
-
-#buying-summary-weight {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     
-    padding: 0 5%;
+    #buying-blocks {
+        width: 70%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    
+    #buying-blocks-auth {
+        border: 1px solid var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-blocks-auth-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1%;
+    
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+    
+        background-color: var(--color-LIGHT-BLUE);
+    }
+    
+    #buying-blocks-auth-header-symbol {
+        display: none;
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-header-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-auth-body {
+        display: flex;
+        width: 100%;
+    }
+    
+    #buying-blocks-auth-left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        box-sizing: border-box;
+        gap: 3%;
+    
+        padding: 0 5%;
+    }
+    
+    #buying-blocks-auth-left-title {
+        margin: 3% 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-auth-left-login {
+        text-align: left;
+    }
+    
+    #buying-blocks-auth-left-login-text {
+        margin: 0;
+        padding: 0;
+        
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-login-input {
+        width: 300px;
+        height: 30px;
+    
+        border: 1px solid var(--color-GRAY);
+        border-radius: 3px;
+    
+        color: var(--color-GRAY);
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #buying-blocks-auth-left-password {
+        text-align: left;
+    }
+    
+    #buying-blocks-auth-left-password-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-password-input {
+        width: 300px;
+        height: 30px;
+    
+        border: 1px solid var(--color-GRAY);
+        border-radius: 3px;
+    
+        color: var(--color-GRAY);
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #buying-blocks-auth-left-rememberme {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    }
+    
+    #buying-blocks-auth-left-rememberme-input {
+        width: 15px;
+        height: 15px;
+    
+        border-radius: 20px;
+    }
+    
+    #buying-blocks-auth-left-rememberme-text {
+        margin: 1% 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+        cursor: pointer;
+    }
+    
+    #buying-blocks-auth-left-button {
+        width: 80px;
+        height: 40px;
+    
+        border: none;
+        border-radius: 3px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+    }
+    
+    #buying-blocks-auth-left-forgot {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-forgot:hover {
+        color: var(--color-RED);
+        transition: color 0.5s ease;
+    }
+    
+    #buying-blocks-auth-right {
+        flex: 1;
+        box-sizing: border-box;
+    }
+    
+    #buying-blocks-auth-right-up {
+        background-color: var(--color-BG-GRAY);
+        margin: 3% 3%;
+        padding: 3% 3%;
+    }
+    
+    #buying-blocks-auth-right-up-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-right-up-button {
+        width: 200px;
+        height: 40px;
+    
+        border: none;
+        border-radius: 3px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+    }
+    
+    #buying-blocks-auth-right-up-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    
+        width: 200px;
+        height: 40px;
+        
+        padding: 0 10px;
+    
+        border: 2px solid var(--color-RED);
+        border-radius: 2px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+        
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 7, 7, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+        }
+    }
+    
+    #buying-blocks-auth-right-up-button:not(:hover) {
+        animation: pulse 1s infinite;
+    }
+    
+    #buying-blocks-auth-right-up-button:hover {
+        animation: none;
+    }
+    
+    #buying-blocks-auth-right-text {
+        padding: 3% 3%;
+        
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-goods {
+        display: flex;
+        flex-direction: column;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-blocks-goods-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1%;
+    
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+    
+        background-color: var(--color-LIGHT-BLUE);
+    }
+    
+    #buying-blocks-goods-header-symbol {
+        margin: 0;
+        padding: 0;
+    
+        display: none;
+    }
+    
+    #buying-blocks-goods-header-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-goods-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #buying-blocks-info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    
+    p.buying-blocks-info-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    
+    
+    #buying-summary {
+        width: 20%;
+        height: min-content;
+    
+        margin: 0;
+        padding: 0 3%;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+        border-radius: 3px;
+    }
+    
+    #buying-summary-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-new-price {
+        text-align: right;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-old-price {
+        text-align: right;
+        text-decoration: line-through;
+        text-decoration-color: var(--color-LIGHT-GRAY);
+        text-decoration-thickness: 1px;
+    
+        color: var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-summary-weight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 0 5%;
+    }
+    
+    #buying-summary-weight-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-weight-weight {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0 5%;
+    }
+    
+    #buying-summary-delivery-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-delivery-delivery {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-discount {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0 5%;
+    
+        background-color: var(--color-LIGHT-GREEN);
+    }
+    
+    #buying-summary-discount-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-discount-discount {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-total-text {
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-total {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5%;
+    
+        color: var(--color-GRAY);
+    }
 }
 
-#buying-summary-weight-text {
-    color: var(--color-GRAY);
+@media (min-width: 768px) and (max-width: 1024px) {
+    #buying {    
+        width: 100%;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+    }
+    
+    
+    #buying-blocks {
+        width: 70%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    
+    #buying-blocks-auth {
+        border: 1px solid var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-blocks-auth-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1%;
+    
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+    
+        background-color: var(--color-LIGHT-BLUE);
+    }
+    
+    #buying-blocks-auth-header-symbol {
+        display: none;
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-header-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-auth-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #buying-blocks-auth-left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        box-sizing: border-box;
+        gap: 3%;
+    
+        padding: 0 5%;
+    }
+    
+    #buying-blocks-auth-left-title {
+        margin: 3% 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-auth-left-login {
+        text-align: left;
+    }
+    
+    #buying-blocks-auth-left-login-text {
+        margin: 0;
+        padding: 0;
+        
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-login-input {
+        width: 300px;
+        height: 30px;
+    
+        border: 1px solid var(--color-GRAY);
+        border-radius: 3px;
+    
+        color: var(--color-GRAY);
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #buying-blocks-auth-left-password {
+        text-align: left;
+    }
+    
+    #buying-blocks-auth-left-password-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-password-input {
+        width: 300px;
+        height: 30px;
+    
+        border: 1px solid var(--color-GRAY);
+        border-radius: 3px;
+    
+        color: var(--color-GRAY);
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #buying-blocks-auth-left-rememberme {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    }
+    
+    #buying-blocks-auth-left-rememberme-input {
+        width: 15px;
+        height: 15px;
+    
+        border-radius: 20px;
+    }
+    
+    #buying-blocks-auth-left-rememberme-text {
+        margin: 1% 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+        cursor: pointer;
+    }
+    
+    #buying-blocks-auth-left-button {
+        width: 80px;
+        height: 40px;
+    
+        border: none;
+        border-radius: 3px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+    }
+    
+    #buying-blocks-auth-left-forgot {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-forgot:hover {
+        color: var(--color-RED);
+        transition: color 0.5s ease;
+    }
+    
+    #buying-blocks-auth-right {
+        flex: 1;
+        box-sizing: border-box;
+    }
+    
+    #buying-blocks-auth-right-up {
+        background-color: var(--color-BG-GRAY);
+        margin: 3% 3%;
+        padding: 3% 3%;
+    }
+    
+    #buying-blocks-auth-right-up-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-right-up-button {
+        width: 200px;
+        height: 40px;
+    
+        border: none;
+        border-radius: 3px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+    }
+    
+    #buying-blocks-auth-right-up-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    
+        width: 200px;
+        height: 40px;
+        
+        padding: 0 10px;
+    
+        border: 2px solid var(--color-RED);
+        border-radius: 2px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+        
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 7, 7, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+        }
+    }
+    
+    #buying-blocks-auth-right-up-button:not(:hover) {
+        animation: pulse 1s infinite;
+    }
+    
+    #buying-blocks-auth-right-up-button:hover {
+        animation: none;
+    }
+    
+    #buying-blocks-auth-right-text {
+        padding: 3% 3%;
+        
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-goods {
+        display: flex;
+        flex-direction: column;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-blocks-goods-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1%;
+    
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+    
+        background-color: var(--color-LIGHT-BLUE);
+    }
+    
+    #buying-blocks-goods-header-symbol {
+        margin: 0;
+        padding: 0;
+    
+        display: none;
+    }
+    
+    #buying-blocks-goods-header-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-goods-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #buying-blocks-info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    
+    p.buying-blocks-info-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    
+    
+    #buying-summary {
+        width: 20%;
+        height: min-content;
+    
+        margin: 0;
+        padding: 0 3%;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+        border-radius: 3px;
+    }
+    
+    #buying-summary-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-new-price {
+        text-align: right;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-old-price {
+        text-align: right;
+        text-decoration: line-through;
+        text-decoration-color: var(--color-LIGHT-GRAY);
+        text-decoration-thickness: 1px;
+    
+        color: var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-summary-weight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 0 5%;
+    }
+    
+    #buying-summary-weight-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-weight-weight {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0 5%;
+    }
+    
+    #buying-summary-delivery-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-delivery-delivery {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-discount {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0 5%;
+    
+        background-color: var(--color-LIGHT-GREEN);
+    }
+    
+    #buying-summary-discount-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-discount-discount {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-total-text {
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-total {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5%;
+    
+        color: var(--color-GRAY);
+    }
+
+    #card-v4 {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        width: 100%;
+        min-height: 100px;
+        box-sizing: border-box;
+
+        padding: 0 3%;
+    }
+    
+    #card-v4-image {
+        width: 15%;
+        max-width: 70px;
+        max-height: 70px;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+        border-radius: 3px;
+    }
+    
+    #card-v4-url {
+        width: 50%;
+        height: min-content;
+    }
+    
+    #card-v4-title {
+        color: var(--color-GRAY);
+    }
+    
+    #card-v4-title:hover {
+        color: var(--color-RED);
+        transition: color 0.5s ease;
+    }
+    
+    #card-v4-count {
+        width: 7%;
+        color: var(--color-GRAY);
+    }
+    
+    #card-v4-prices {
+        display: flex;
+        flex-direction: column;
+    
+        text-align: right;
+    }
+    
+    #card-v4-prices-new {
+        margin-top: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #card-v4-prices-old {
+        margin-top: 0;
+        
+        text-decoration: line-through;
+        text-decoration-thickness: 1px;
+    
+        color: var(--color-LIGHT-GRAY);
+    }
 }
 
-#buying-summary-weight-weight {
-    color: var(--color-GRAY);
-}
+@media (max-width: 767px) {
+    #buying {    
+        width: 100%;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+    }
+    
+    
+    #buying-blocks {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    
+    #buying-blocks-auth {
+        border: 1px solid var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-blocks-auth-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1%;
+    
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+    
+        background-color: var(--color-LIGHT-BLUE);
+    }
+    
+    #buying-blocks-auth-header-symbol {
+        display: none;
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-header-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-auth-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #buying-blocks-auth-left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        box-sizing: border-box;
+        gap: 3%;
+    
+        padding: 0 5%;
+    }
+    
+    #buying-blocks-auth-left-title {
+        margin: 3% 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-auth-left-login {
+        text-align: left;
+    }
+    
+    #buying-blocks-auth-left-login-text {
+        margin: 0;
+        padding: 0;
+        
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-login-input {
+        width: 100%;
+        height: 30px;
+    
+        border: 1px solid var(--color-GRAY);
+        border-radius: 3px;
+    
+        color: var(--color-GRAY);
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #buying-blocks-auth-left-password {
+        text-align: left;
+    }
+    
+    #buying-blocks-auth-left-password-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-password-input {
+        width: 100%;
+        height: 30px;
+    
+        border: 1px solid var(--color-GRAY);
+        border-radius: 3px;
+    
+        color: var(--color-GRAY);
+        background-color: var(--color-BG-GRAY);
+    }
+    
+    #buying-blocks-auth-left-rememberme {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    }
+    
+    #buying-blocks-auth-left-rememberme-input {
+        width: 15px;
+        height: 15px;
+    
+        border-radius: 20px;
+    }
+    
+    #buying-blocks-auth-left-rememberme-text {
+        margin: 1% 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+        cursor: pointer;
+    }
+    
+    #buying-blocks-auth-left-button {
+        width: 80px;
+        height: 40px;
+    
+        border: none;
+        border-radius: 3px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+    }
+    
+    #buying-blocks-auth-left-forgot {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-left-forgot:hover {
+        color: var(--color-RED);
+        transition: color 0.5s ease;
+    }
+    
+    #buying-blocks-auth-right {
+        flex: 1;
+        box-sizing: border-box;
+    }
+    
+    #buying-blocks-auth-right-up {
+        background-color: var(--color-BG-GRAY);
+        margin: 3% 3%;
+        padding: 3% 3%;
+    }
+    
+    #buying-blocks-auth-right-up-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-auth-right-up-button {
+        width: 200px;
+        height: 40px;
+    
+        border: none;
+        border-radius: 3px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+    }
+    
+    #buying-blocks-auth-right-up-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    
+        width: 200px;
+        height: 40px;
+        
+        padding: 0 10px;
+    
+        border: 2px solid var(--color-RED);
+        border-radius: 2px;
+    
+        color: var(--color-WHITE);
+        background-color: var(--color-RED);
+        
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 7, 7, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+        }
+    }
+    
+    #buying-blocks-auth-right-up-button:not(:hover) {
+        animation: pulse 1s infinite;
+    }
+    
+    #buying-blocks-auth-right-up-button:hover {
+        animation: none;
+    }
+    
+    #buying-blocks-auth-right-text {
+        padding: 3% 3%;
+        
+        color: var(--color-GRAY);
+    }
+    
+    #buying-blocks-goods {
+        display: flex;
+        flex-direction: column;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-blocks-goods-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1%;
+    
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+    
+        background-color: var(--color-LIGHT-BLUE);
+    }
+    
+    #buying-blocks-goods-header-symbol {
+        margin: 0;
+        padding: 0;
+    
+        display: none;
+    }
+    
+    #buying-blocks-goods-header-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-BLACK);
+    }
+    
+    #buying-blocks-goods-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #buying-blocks-info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    
+    p.buying-blocks-info-text {
+        margin: 0;
+        padding: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    
+    
+    #buying-summary {
+        width: 100%;
+        height: min-content;
+    
+        margin: 0;
+        padding: 0 3%;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+        border-radius: 3px;
+    }
+    
+    #buying-summary-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-new-price {
+        text-align: right;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-old-price {
+        text-align: right;
+        text-decoration: line-through;
+        text-decoration-color: var(--color-LIGHT-GRAY);
+        text-decoration-thickness: 1px;
+    
+        color: var(--color-LIGHT-GRAY);
+    }
+    
+    #buying-summary-weight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 0 5%;
+    }
+    
+    #buying-summary-weight-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-weight-weight {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0 5%;
+    }
+    
+    #buying-summary-delivery-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-delivery-delivery {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-discount {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0 5%;
+    
+        background-color: var(--color-LIGHT-GREEN);
+    }
+    
+    #buying-summary-discount-text {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-discount-discount {
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-total-text {
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #buying-summary-total {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5%;
+    
+        color: var(--color-GRAY);
+    }
 
-#buying-summary-delivery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    #card-v4 {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        width: 100%;
+        min-height: 100px;
+        box-sizing: border-box;
 
-    padding: 0 5%;
-}
-
-#buying-summary-delivery-text {
-    color: var(--color-GRAY);
-}
-
-#buying-summary-delivery-delivery {
-    color: var(--color-GRAY);
-}
-
-#buying-summary-discount {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding: 0 5%;
-
-    background-color: var(--color-LIGHT-GREEN);
-}
-
-#buying-summary-discount-text {
-    color: var(--color-GRAY);
-}
-
-#buying-summary-discount-discount {
-    color: var(--color-GRAY);
-}
-
-#buying-summary-total-text {
-    margin: 0;
-    padding: 0;
-    padding-top: 10%;
-
-    color: var(--color-GRAY);
-}
-
-#buying-summary-total {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 5%;
-
-    color: var(--color-GRAY);
+        padding: 0 3%;
+    }
+    
+    #card-v4-image {
+        width: 15%;
+        max-width: 70px;
+        max-height: 70px;
+    
+        border: 1px solid var(--color-LIGHT-GRAY);
+        border-radius: 3px;
+    }
+    
+    #card-v4-url {
+        width: 50%;
+        height: min-content;
+    }
+    
+    #card-v4-title {
+        color: var(--color-GRAY);
+    }
+    
+    #card-v4-title:hover {
+        color: var(--color-RED);
+        transition: color 0.5s ease;
+    }
+    
+    #card-v4-count {
+        width: 7%;
+        color: var(--color-GRAY);
+    }
+    
+    #card-v4-prices {
+        display: flex;
+        flex-direction: column;
+    
+        text-align: right;
+    }
+    
+    #card-v4-prices-new {
+        margin-top: 0;
+    
+        color: var(--color-GRAY);
+    }
+    
+    #card-v4-prices-old {
+        margin-top: 0;
+        
+        text-decoration: line-through;
+        text-decoration-thickness: 1px;
+    
+        color: var(--color-LIGHT-GRAY);
+    }
 }
