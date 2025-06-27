@@ -1,6 +1,8 @@
-function detectDeviceType() {
+type DeviceType = 'mobile' | 'tablet' | 'desktop';
+
+function detectDeviceType(): DeviceType {
     const width = window.innerWidth;
-    let deviceType;
+    let deviceType: DeviceType;
     
     if (width <= 768) {
         deviceType = 'mobile';
@@ -16,17 +18,17 @@ function detectDeviceType() {
     return deviceType;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function handleDOMContentLoaded(): void {
     const deviceType = detectDeviceType();
     
     if (window.location.search.indexOf('width=') === -1) {
         const url = new URL(window.location.href);
-        url.searchParams.set('width', window.innerWidth);
+        url.searchParams.set('width', window.innerWidth.toString());
         window.history.replaceState({}, '', url);
     }
-});
+}
 
-window.addEventListener('resize', () => {
+function handleResize(): void {
     const newDeviceType = detectDeviceType();
     const currentDeviceType = document.body.classList.contains('device-mobile') ? 'mobile' : 
                              document.body.classList.contains('device-tablet') ? 'tablet' : 'desktop';
@@ -34,4 +36,7 @@ window.addEventListener('resize', () => {
     if (newDeviceType !== currentDeviceType) {
         window.location.reload();
     }
-});
+}
+
+document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
+window.addEventListener('resize', handleResize);
