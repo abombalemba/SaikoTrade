@@ -41,8 +41,6 @@
 		background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
 	}
 	
-	/*# sourceMappingURL=main.css.map */
-	
 	a {
 		text-decoration: none;
 	}
@@ -58,10 +56,6 @@
 		color: var(--color-RED);
 	}
 	
-	a {
-		text-decoration: none;
-	}
-	
 	div.body {
 		display: flex;
 		height: 100%;
@@ -74,33 +68,17 @@
 		margin: 0;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*---------------------------------------------------------------------------------------------------*/
-	
 	#main {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-
 		width: 75%;
 		padding-top: 1%;
 		padding-left: 5%;
 		padding-bottom: 1%;
 	}
 	
-	#main-ad {
-	
-	}
+	#main-ad {}
 	
 	#main-catalog {
 		display: flex;
@@ -137,7 +115,6 @@
 	
 	#main-set-discounts-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -170,7 +147,6 @@
 	
 	#main-set-popular-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -203,7 +179,6 @@
 	
 	#main-set-news-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -292,85 +267,79 @@
 		color: var(--color-GRAY);
 	}
 	
-	#main-info {
+	#main-comments {}
 	
-	}
-	
-	#main-comments {
-	
-	}
-
 	.custom-carousel {
-        position: relative;
-        max-width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-    
-    .custom-carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-    
-    .custom-carousel-item {
-        min-width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .custom-carousel-item img {
-        width: 100%;
-        max-height: 330px;
-        display: block;
-    }
-    
-    .custom-carousel-controls {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-    }
-    
-    .custom-carousel-btn {
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        z-index: 10;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 15px;
-    }
-    
-    .custom-carousel-indicators {
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .custom-carousel-indicator {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.5);
-        border: none;
-        cursor: pointer;
-        padding: 0;
-    }
-    
-    .custom-carousel-indicator.active {
-        background: white;
-    }
+		position: relative;
+		max-width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	.custom-carousel-inner {
+		display: flex;
+		transition: transform 0.5s ease;
+	}
+	
+	.custom-carousel-item {
+		min-width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.custom-carousel-item img {
+		width: 100%;
+		max-height: 330px;
+		display: block;
+	}
+	
+	.custom-carousel-controls {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		transform: translateY(-50%);
+	}
+	
+	.custom-carousel-btn {
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		border: none;
+		padding: 10px 15px;
+		cursor: pointer;
+		z-index: 10;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 15px;
+	}
+	
+	.custom-carousel-indicators {
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+	}
+	
+	.custom-carousel-indicator {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.5);
+		border: none;
+		cursor: pointer;
+		padding: 0;
+	}
+	
+	.custom-carousel-indicator.active {
+		background: white;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -416,8 +385,6 @@
 		background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
 	}
 	
-	/*# sourceMappingURL=main.css.map */
-	
 	a {
 		text-decoration: none;
 	}
@@ -433,10 +400,6 @@
 		color: var(--color-RED);
 	}
 	
-	a {
-		text-decoration: none;
-	}
-	
 	div.body {
 		display: flex;
 		height: 100%;
@@ -448,19 +411,6 @@
 	body {
 		margin: 0;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*---------------------------------------------------------------------------------------------------*/
 	
 	#main {
 		width: 80%;
@@ -508,7 +458,6 @@
 	
 	#main-set-discounts-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -541,7 +490,6 @@
 	
 	#main-set-popular-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -574,7 +522,6 @@
 	
 	#main-set-news-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -663,13 +610,7 @@
 		color: var(--color-GRAY);
 	}
 	
-	#main-info {
-	
-	}
-	
-	#main-comments {
-	
-	}
+	#main-comments {}
 }
 
 @media (max-width: 767px) {
@@ -715,8 +656,6 @@
 		background-color: var(--color-BUTTON-TO-BASKET-ACTIVE);
 	}
 	
-	/*# sourceMappingURL=main.css.map */
-	
 	a {
 		text-decoration: none;
 	}
@@ -732,10 +671,6 @@
 		color: var(--color-RED);
 	}
 	
-	a {
-		text-decoration: none;
-	}
-	
 	div.body {
 		display: flex;
 		height: 100%;
@@ -747,19 +682,6 @@
 	body {
 		margin: 0;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*---------------------------------------------------------------------------------------------------*/
 	
 	#main {
 		width: 80%;
@@ -807,7 +729,6 @@
 	
 	#main-set-discounts-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -840,7 +761,6 @@
 	
 	#main-set-popular-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -873,7 +793,6 @@
 	
 	#main-set-news-up-left-title {
 		margin-bottom: 0;
-	
 		color: var(--color-BLACK);
 	}
 	
@@ -962,11 +881,5 @@
 		color: var(--color-GRAY);
 	}
 	
-	#main-info {
-	
-	}
-	
-	#main-comments {
-	
-	}
+	#main-comments {}
 }
