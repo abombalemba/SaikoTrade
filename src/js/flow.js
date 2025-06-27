@@ -10,7 +10,6 @@ function buttonJoin(isHovered) {
     }
 }
 
-
 function buttonToCart(isHovered) {
     const button = document.getElementById('button-to-cart');
 
@@ -22,7 +21,6 @@ function buttonToCart(isHovered) {
         button.classList.add('button-to-cart-normal');
     }
 }
-
 
 function headerUpAccount(isHovered) {
     const text = document.getElementById('header-up-block-account-text');
@@ -50,7 +48,6 @@ function headerUpAddAccount(isHovered) {
     }
 }
 
-
 function headerCenterSearch(isHovered) {
     const block = document.getElementById('header-center-search-button');
 
@@ -60,7 +57,6 @@ function headerCenterSearch(isHovered) {
         block.style.backgroundColor = 'var(--color-RED)';
     }
 }
-
 
 function headerCenterBasket(isHovered) {
     const icon = document.getElementById('header-center-basket-icon');
